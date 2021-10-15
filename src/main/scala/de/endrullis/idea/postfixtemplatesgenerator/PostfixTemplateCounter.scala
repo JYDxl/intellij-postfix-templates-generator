@@ -23,6 +23,7 @@ object PostfixTemplateCounter extends App {
 
 	println("count = " + count)
 
+	//noinspection DuplicatedCode
 	def getCount(file: File): Count = {
 		val lines = managed(Source.fromFile(file, "UTF-8")).acquireAndGet(_.getLines()
 			.map(_.trim)
@@ -34,7 +35,7 @@ object PostfixTemplateCounter extends App {
 	}
 
 	case class Count(noTemplates: Int, noRules: Int) {
-		def + (that: Count) = Count(this.noTemplates + that.noTemplates, this.noRules + that.noRules)
+		def + (that: Count): Count = Count(this.noTemplates + that.noTemplates, this.noRules + that.noRules)
 	}
 
 }
