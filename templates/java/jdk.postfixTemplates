@@ -15,76 +15,76 @@
 ## Collectors
 
 .joining : joining
-	java.lang.CharSequence [java.util.stream.Collectors]  →  java.util.stream.Collectors.joining($expr$, $arg$)
-	java.lang.Object [java.util.stream.Collectors]  →  java.util.stream.Collectors.joining()
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(joining($arg$))
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(joining())
 
 .partitioningBy : partitioningBy
-	java.util.function.Predicate [java.util.stream.Collectors]  →  java.util.stream.Collectors.partitioningBy($expr$, $arg$)
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(partitioningBy($arg$))
 
 .summingLong : summingLong
-	java.util.function.ToLongFunction [java.util.stream.Collectors]  →  java.util.stream.Collectors.summingLong($expr$)
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(summingLong())
 
 .groupingBy : groupingBy
-	java.util.function.Function [java.util.stream.Collectors]  →  java.util.stream.Collectors.groupingBy($expr$, $arg$)
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(groupingBy($arg$))
 
 .summarizingLong : summarizingLong
-	java.util.function.ToLongFunction [java.util.stream.Collectors]  →  java.util.stream.Collectors.summarizingLong($expr$)
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(summarizingLong())
 
 .minBy : minBy
-	java.util.Comparator [java.util.stream.Collectors]  →  java.util.stream.Collectors.minBy($expr$)
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(minBy())
 
 .summarizingInt : summarizingInt
-	java.util.function.ToIntFunction [java.util.stream.Collectors]  →  java.util.stream.Collectors.summarizingInt($expr$)
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(summarizingInt())
 
 .toSet : toSet
-	java.lang.Object [java.util.stream.Collectors]  →  java.util.stream.Collectors.toSet()
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(toSet())
 
 .toMap : toMap
-	java.util.function.Function [java.util.stream.Collectors]  →  java.util.stream.Collectors.toMap($expr$, $arg$)
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(toMap($arg$))
 
 .averagingLong : averagingLong
-	java.util.function.ToLongFunction [java.util.stream.Collectors]  →  java.util.stream.Collectors.averagingLong($expr$)
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(averagingLong())
 
 .toList : toList
-	java.lang.Object [java.util.stream.Collectors]  →  java.util.stream.Collectors.toList()
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(toList())
 
 .mapping : mapping
-	java.util.function.Function [java.util.stream.Collectors]  →  java.util.stream.Collectors.mapping($expr$, $arg$)
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(mapping($arg$))
 
 .summingDouble : summingDouble
-	java.util.function.ToDoubleFunction [java.util.stream.Collectors]  →  java.util.stream.Collectors.summingDouble($expr$)
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(summingDouble())
 
 .summingInt : summingInt
-	java.util.function.ToIntFunction [java.util.stream.Collectors]  →  java.util.stream.Collectors.summingInt($expr$)
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(summingInt())
 
 .toConcurrentMap : toConcurrentMap
-	java.util.function.Function [java.util.stream.Collectors]  →  java.util.stream.Collectors.toConcurrentMap($expr$, $arg$)
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(toConcurrentMap($arg$))
 
 .maxBy : maxBy
-	java.util.Comparator [java.util.stream.Collectors]  →  java.util.stream.Collectors.maxBy($expr$)
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(maxBy())
 
 .counting : counting
-	java.lang.Object [java.util.stream.Collectors]  →  java.util.stream.Collectors.counting()
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(counting())
 
 .groupingByConcurrent : groupingByConcurrent
-	java.util.function.Function [java.util.stream.Collectors]  →  java.util.stream.Collectors.groupingByConcurrent($expr$, $arg$)
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(groupingByConcurrent($arg$))
 
 .reducing : reducing
-	java.util.function.BinaryOperator [java.util.stream.Collectors]  →  java.util.stream.Collectors.reducing($expr$)
-	java.lang.Object [java.util.stream.Collectors]  →  java.util.stream.Collectors.reducing($expr$, $arg$)
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(reducing())
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(reducing($arg$))
 
 .summarizingDouble : summarizingDouble
-	java.util.function.ToDoubleFunction [java.util.stream.Collectors]  →  java.util.stream.Collectors.summarizingDouble($expr$)
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(summarizingDouble())
 
 .toCollection : toCollection
-	java.util.function.Supplier [java.util.stream.Collectors]  →  java.util.stream.Collectors.toCollection($expr$)
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(toCollection())
 
 .averagingDouble : averagingDouble
-	java.util.function.ToDoubleFunction [java.util.stream.Collectors]  →  java.util.stream.Collectors.averagingDouble($expr$)
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(averagingDouble())
 
 .collectingAndThen : collectingAndThen
-	java.util.stream.Collector [java.util.stream.Collectors]  →  java.util.stream.Collectors.collectingAndThen($expr$, $arg$)
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(collectingAndThen($arg$))
 
 .averagingInt : averagingInt
-	java.util.function.ToIntFunction [java.util.stream.Collectors]  →  java.util.stream.Collectors.averagingInt($expr$)
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(averagingInt())
 
