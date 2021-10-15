@@ -1,0 +1,313 @@
+## Templates for JYD_XL Custom Postfix Templates ##
+
+## ProxyUtil
+
+.proxy : proxy
+	java.lang.Object [cn.hutool.aop.ProxyUtil]  →  cn.hutool.aop.ProxyUtil.proxy($expr$, $arg$)
+
+.newProxyInstance : newProxyInstance
+	java.lang.reflect.InvocationHandler [cn.hutool.aop.ProxyUtil]  →  cn.hutool.aop.ProxyUtil.newProxyInstance($expr$, $arg$)
+	java.lang.ClassLoader [cn.hutool.aop.ProxyUtil]  →  cn.hutool.aop.ProxyUtil.newProxyInstance($expr$, $arg$)
+
+
+## BloomFilterUtil
+
+.createBitMap : createBitMap
+	INT [cn.hutool.bloomfilter.BloomFilterUtil]  →  cn.hutool.bloomfilter.BloomFilterUtil.createBitMap($expr$)
+
+.createBitSet : createBitSet
+	INT [cn.hutool.bloomfilter.BloomFilterUtil]  →  cn.hutool.bloomfilter.BloomFilterUtil.createBitSet($expr$, $arg$)
+
+
+## CacheUtil
+
+.newWeakCache : newWeakCache
+	LONG [cn.hutool.cache.CacheUtil]  →  cn.hutool.cache.CacheUtil.newWeakCache($expr$)
+
+.newLRUCache : newLRUCache
+	INT [cn.hutool.cache.CacheUtil]  →  cn.hutool.cache.CacheUtil.newLRUCache($expr$, $arg$)
+
+.newLFUCache : newLFUCache
+	INT [cn.hutool.cache.CacheUtil]  →  cn.hutool.cache.CacheUtil.newLFUCache($expr$, $arg$)
+
+.newNoCache : newNoCache
+	java.lang.Object [cn.hutool.cache.CacheUtil]  →  cn.hutool.cache.CacheUtil.newNoCache()
+
+.newTimedCache : newTimedCache
+	LONG [cn.hutool.cache.CacheUtil]  →  cn.hutool.cache.CacheUtil.newTimedCache($expr$)
+
+.newFIFOCache : newFIFOCache
+	INT [cn.hutool.cache.CacheUtil]  →  cn.hutool.cache.CacheUtil.newFIFOCache($expr$, $arg$)
+
+
+## CaptchaUtil
+
+.createLineCaptcha : createLineCaptcha
+	INT [cn.hutool.captcha.CaptchaUtil]  →  cn.hutool.captcha.CaptchaUtil.createLineCaptcha($expr$, $arg$)
+
+.createShearCaptcha : createShearCaptcha
+	INT [cn.hutool.captcha.CaptchaUtil]  →  cn.hutool.captcha.CaptchaUtil.createShearCaptcha($expr$, $arg$)
+
+.createCircleCaptcha : createCircleCaptcha
+	INT [cn.hutool.captcha.CaptchaUtil]  →  cn.hutool.captcha.CaptchaUtil.createCircleCaptcha($expr$, $arg$)
+
+.createGifCaptcha : createGifCaptcha
+	INT [cn.hutool.captcha.CaptchaUtil]  →  cn.hutool.captcha.CaptchaUtil.createGifCaptcha($expr$, $arg$)
+
+
+## AnnotationUtil
+
+.getTargetType : getTargetType
+	java.lang.Class [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.getTargetType($expr$)
+
+.getAnnotations : getAnnotations
+	java.lang.reflect.AnnotatedElement [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.getAnnotations($expr$, $arg$)
+
+.isDocumented : isDocumented
+	java.lang.Class [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.isDocumented($expr$)
+
+.setValue : setValue
+	java.lang.annotation.Annotation [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.setValue($expr$, $arg$)
+
+.getAnnotationValue : getAnnotationValue
+	java.lang.reflect.AnnotatedElement [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.getAnnotationValue($expr$, $arg$)
+
+.toCombination : toCombination
+	java.lang.reflect.AnnotatedElement [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.toCombination($expr$)
+
+.isInherited : isInherited
+	java.lang.Class [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.isInherited($expr$)
+
+.getRetentionPolicy : getRetentionPolicy
+	java.lang.Class [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.getRetentionPolicy($expr$)
+
+.getAnnotation : getAnnotation
+	java.lang.reflect.AnnotatedElement [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.getAnnotation($expr$, $arg$)
+
+.hasAnnotation : hasAnnotation
+	java.lang.reflect.AnnotatedElement [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.hasAnnotation($expr$, $arg$)
+
+.getAnnotationValueMap : getAnnotationValueMap
+	java.lang.reflect.AnnotatedElement [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.getAnnotationValueMap($expr$, $arg$)
+
+
+## Resources
+
+.asByteSource : asByteSource
+	java.net.URL [com.google.common.io.Resources]  →  com.google.common.io.Resources.asByteSource($expr$)
+
+.getResource : getResource
+	java.lang.String [com.google.common.io.Resources]  →  com.google.common.io.Resources.getResource($expr$)
+	java.lang.Class [com.google.common.io.Resources]  →  com.google.common.io.Resources.getResource($expr$, $arg$)
+
+.readLines : readLines
+	java.net.URL [com.google.common.io.Resources]  →  com.google.common.io.Resources.readLines($expr$, $arg$)
+
+.copy : copy
+	java.net.URL [com.google.common.io.Resources]  →  com.google.common.io.Resources.copy($expr$, $arg$)
+
+.toString : toString
+	java.net.URL [com.google.common.io.Resources]  →  com.google.common.io.Resources.toString($expr$, $arg$)
+
+.toByteArray : toByteArray
+	java.net.URL [com.google.common.io.Resources]  →  com.google.common.io.Resources.toByteArray($expr$)
+
+.asCharSource : asCharSource
+	java.net.URL [com.google.common.io.Resources]  →  com.google.common.io.Resources.asCharSource($expr$, $arg$)
+
+
+## Maps
+
+.toImmutableEnumMap : toImmutableEnumMap
+	java.util.function.Function [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.toImmutableEnumMap($expr$, $arg$)
+
+.synchronizedBiMap : synchronizedBiMap
+	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.synchronizedBiMap($expr$)
+
+.asConverter : asConverter
+	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.asConverter($expr$)
+
+.synchronizedNavigableMap : synchronizedNavigableMap
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.synchronizedNavigableMap($expr$)
+
+.toMap : toMap
+	java.lang.Iterable [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.toMap($expr$, $arg$)
+	java.util.Iterator [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.toMap($expr$, $arg$)
+
+.newIdentityHashMap : newIdentityHashMap
+	java.lang.Object [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newIdentityHashMap()
+
+.newLinkedHashMap : newLinkedHashMap
+	java.util.Map [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newLinkedHashMap($expr$)
+	java.lang.Object [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newLinkedHashMap()
+
+.filterKeys : filterKeys
+	java.util.Map [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterKeys($expr$, $arg$)
+	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterKeys($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterKeys($expr$, $arg$)
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterKeys($expr$, $arg$)
+
+.filterEntries : filterEntries
+	java.util.Map [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterEntries($expr$, $arg$)
+	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterEntries($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterEntries($expr$, $arg$)
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterEntries($expr$, $arg$)
+
+.transformEntries : transformEntries
+	java.util.Map [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.transformEntries($expr$, $arg$)
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.transformEntries($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.transformEntries($expr$, $arg$)
+
+.newHashMapWithExpectedSize : newHashMapWithExpectedSize
+	INT [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newHashMapWithExpectedSize($expr$)
+
+.uniqueIndex : uniqueIndex
+	java.lang.Iterable [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.uniqueIndex($expr$, $arg$)
+	java.util.Iterator [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.uniqueIndex($expr$, $arg$)
+
+.immutableEnumMap : immutableEnumMap
+	java.util.Map [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.immutableEnumMap($expr$)
+
+.newEnumMap : newEnumMap
+	java.util.Map [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newEnumMap($expr$)
+	java.lang.Class [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newEnumMap($expr$)
+
+.unmodifiableBiMap : unmodifiableBiMap
+	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.unmodifiableBiMap($expr$)
+
+.fromProperties : fromProperties
+	java.util.Properties [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.fromProperties($expr$)
+
+.asMap : asMap
+	java.util.NavigableSet [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.asMap($expr$, $arg$)
+	java.util.SortedSet [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.asMap($expr$, $arg$)
+	java.util.Set [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.asMap($expr$, $arg$)
+
+.unmodifiableNavigableMap : unmodifiableNavigableMap
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.unmodifiableNavigableMap($expr$)
+
+.transformValues : transformValues
+	java.util.Map [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.transformValues($expr$, $arg$)
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.transformValues($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.transformValues($expr$, $arg$)
+
+.newConcurrentMap : newConcurrentMap
+	java.lang.Object [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newConcurrentMap()
+
+.filterValues : filterValues
+	java.util.Map [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterValues($expr$, $arg$)
+	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterValues($expr$, $arg$)
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterValues($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterValues($expr$, $arg$)
+
+.subMap : subMap
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.subMap($expr$, $arg$)
+
+.difference : difference
+	java.util.Map [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.difference($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.difference($expr$, $arg$)
+
+.newHashMap : newHashMap
+	java.util.Map [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newHashMap($expr$)
+	java.lang.Object [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newHashMap()
+
+.newLinkedHashMapWithExpectedSize : newLinkedHashMapWithExpectedSize
+	INT [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newLinkedHashMapWithExpectedSize($expr$)
+
+.immutableEntry : immutableEntry
+	java.lang.Object [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.immutableEntry($expr$, $arg$)
+
+.newTreeMap : newTreeMap
+	java.util.Comparator [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newTreeMap($expr$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newTreeMap($expr$)
+	java.lang.Object [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newTreeMap()
+
+
+## Optional
+
+.of : of
+	java.lang.Object [java.util.Optional]  →  java.util.Optional.of($expr$)
+
+.ofNullable : ofNullable
+	java.lang.Object [java.util.Optional]  →  java.util.Optional.ofNullable($expr$)
+
+.empty : empty
+	java.lang.Object [java.util.Optional]  →  java.util.Optional.empty()
+
+
+## Collectors
+
+.joining : joining
+	java.lang.CharSequence [java.util.stream.Collectors]  →  java.util.stream.Collectors.joining($expr$, $arg$)
+	java.lang.Object [java.util.stream.Collectors]  →  java.util.stream.Collectors.joining()
+
+.partitioningBy : partitioningBy
+	java.util.function.Predicate [java.util.stream.Collectors]  →  java.util.stream.Collectors.partitioningBy($expr$, $arg$)
+
+.summingLong : summingLong
+	java.util.function.ToLongFunction [java.util.stream.Collectors]  →  java.util.stream.Collectors.summingLong($expr$)
+
+.groupingBy : groupingBy
+	java.util.function.Function [java.util.stream.Collectors]  →  java.util.stream.Collectors.groupingBy($expr$, $arg$)
+
+.summarizingLong : summarizingLong
+	java.util.function.ToLongFunction [java.util.stream.Collectors]  →  java.util.stream.Collectors.summarizingLong($expr$)
+
+.minBy : minBy
+	java.util.Comparator [java.util.stream.Collectors]  →  java.util.stream.Collectors.minBy($expr$)
+
+.summarizingInt : summarizingInt
+	java.util.function.ToIntFunction [java.util.stream.Collectors]  →  java.util.stream.Collectors.summarizingInt($expr$)
+
+.toSet : toSet
+	java.lang.Object [java.util.stream.Collectors]  →  java.util.stream.Collectors.toSet()
+
+.toMap : toMap
+	java.util.function.Function [java.util.stream.Collectors]  →  java.util.stream.Collectors.toMap($expr$, $arg$)
+
+.averagingLong : averagingLong
+	java.util.function.ToLongFunction [java.util.stream.Collectors]  →  java.util.stream.Collectors.averagingLong($expr$)
+
+.toList : toList
+	java.lang.Object [java.util.stream.Collectors]  →  java.util.stream.Collectors.toList()
+
+.mapping : mapping
+	java.util.function.Function [java.util.stream.Collectors]  →  java.util.stream.Collectors.mapping($expr$, $arg$)
+
+.summingDouble : summingDouble
+	java.util.function.ToDoubleFunction [java.util.stream.Collectors]  →  java.util.stream.Collectors.summingDouble($expr$)
+
+.summingInt : summingInt
+	java.util.function.ToIntFunction [java.util.stream.Collectors]  →  java.util.stream.Collectors.summingInt($expr$)
+
+.toConcurrentMap : toConcurrentMap
+	java.util.function.Function [java.util.stream.Collectors]  →  java.util.stream.Collectors.toConcurrentMap($expr$, $arg$)
+
+.maxBy : maxBy
+	java.util.Comparator [java.util.stream.Collectors]  →  java.util.stream.Collectors.maxBy($expr$)
+
+.counting : counting
+	java.lang.Object [java.util.stream.Collectors]  →  java.util.stream.Collectors.counting()
+
+.groupingByConcurrent : groupingByConcurrent
+	java.util.function.Function [java.util.stream.Collectors]  →  java.util.stream.Collectors.groupingByConcurrent($expr$, $arg$)
+
+.reducing : reducing
+	java.util.function.BinaryOperator [java.util.stream.Collectors]  →  java.util.stream.Collectors.reducing($expr$)
+	java.lang.Object [java.util.stream.Collectors]  →  java.util.stream.Collectors.reducing($expr$, $arg$)
+
+.summarizingDouble : summarizingDouble
+	java.util.function.ToDoubleFunction [java.util.stream.Collectors]  →  java.util.stream.Collectors.summarizingDouble($expr$)
+
+.toCollection : toCollection
+	java.util.function.Supplier [java.util.stream.Collectors]  →  java.util.stream.Collectors.toCollection($expr$)
+
+.averagingDouble : averagingDouble
+	java.util.function.ToDoubleFunction [java.util.stream.Collectors]  →  java.util.stream.Collectors.averagingDouble($expr$)
+
+.collectingAndThen : collectingAndThen
+	java.util.stream.Collector [java.util.stream.Collectors]  →  java.util.stream.Collectors.collectingAndThen($expr$, $arg$)
+
+.averagingInt : averagingInt
+	java.util.function.ToIntFunction [java.util.stream.Collectors]  →  java.util.stream.Collectors.averagingInt($expr$)
+

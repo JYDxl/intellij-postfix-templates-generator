@@ -25,18 +25,14 @@ object PostfixTemplateGenerator {
 	val templateDir = new File("templates")
 
 	val utilsCollections = List(
-		UtilsCollection("hutool", "Hutool是一个小而全的Java工具类库，通过静态方法封装，降低相关API的学习成本，提高工作效率，使Java拥有函数式语言般的优雅，让Java语言也可以“甜甜的”。",
+		UtilsCollection("jydxl", "JYD_XL Custom Postfix Templates",
 			classOf[ProxyUtil],
 			classOf[BloomFilterUtil],
 			classOf[CacheUtil],
 			classOf[CaptchaUtil],
-			classOf[AnnotationUtil]),
-
-		UtilsCollection("guava", "Guava is a suite of core and expanded libraries that include utility classes, Google's collections, I/O classes, and much more.",
+			classOf[AnnotationUtil],
 			classOf[Resources],
-			classOf[Maps]),
-
-		UtilsCollection("jdk", "JDK",
+			classOf[Maps],
 			classOf[Optional[_]],
 			classOf[Collectors]),
 	)
