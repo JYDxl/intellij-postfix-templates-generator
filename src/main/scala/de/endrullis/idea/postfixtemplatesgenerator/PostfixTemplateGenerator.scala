@@ -11,7 +11,8 @@ import resource._
 
 import java.io.{File, PrintStream}
 import java.lang.reflect.Modifier
-import java.util.Optional
+import java.util
+import java.util.{Collections, Optional}
 import java.util.stream.Collectors
 import scala.io.Source
 
@@ -31,10 +32,15 @@ object PostfixTemplateGenerator {
 			classOf[CacheUtil],
 			classOf[CaptchaUtil],
 			classOf[AnnotationUtil],
+
 			classOf[Resources],
 			classOf[Maps],
+
 			classOf[Optional[_]],
-			classOf[Collectors]),
+			classOf[Collectors],
+			classOf[Collections],
+			classOf[util.Arrays],
+			classOf[java.lang.String]),
 	)
 	val langs = List(
 		Lang("java", "ARRAY", _.getCanonicalName),

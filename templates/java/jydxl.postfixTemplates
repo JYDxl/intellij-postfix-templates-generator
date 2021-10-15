@@ -1,5 +1,20 @@
 ## Templates for JYD_XL Custom Postfix Templates ##
 
+.trace : org.slf4j.Logger.trace
+	java.lang.Object [org.slf4j.Logger]  →  log.trace($expr$, $arg$)
+
+.debug : org.slf4j.Logger.debug
+	java.lang.Object [org.slf4j.Logger]  →  log.debug($expr$, $arg$)
+
+.info : org.slf4j.Logger.info
+	java.lang.Object [org.slf4j.Logger]  →  log.info($expr$, $arg$)
+
+.warn : org.slf4j.Logger.warn
+	java.lang.Object [org.slf4j.Logger]  →  log.warn($expr$, $arg$)
+
+.error : org.slf4j.Logger.error
+	java.lang.Object [org.slf4j.Logger]  →  log.error($expr$, $arg$)
+
 ## ProxyUtil
 
 .proxy : cn.hutool.aop.ProxyUtil.proxy
@@ -310,4 +325,245 @@
 
 .averagingInt : java.util.stream.Collectors.averagingInt
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.averagingInt())
+
+
+## Collections
+
+.unmodifiableNavigableSet : java.util.Collections.unmodifiableNavigableSet
+	java.util.NavigableSet [java.util.Collections]  →  java.util.Collections.unmodifiableNavigableSet($expr$)
+
+.checkedSortedMap : java.util.Collections.checkedSortedMap
+	java.util.SortedMap [java.util.Collections]  →  java.util.Collections.checkedSortedMap($expr$, $arg$)
+
+.emptyIterator : java.util.Collections.emptyIterator
+	java.lang.Object [java.util.Collections]  →  java.util.Collections.emptyIterator()
+
+.unmodifiableList : java.util.Collections.unmodifiableList
+	java.util.List [java.util.Collections]  →  java.util.Collections.unmodifiableList($expr$)
+
+.synchronizedCollection : java.util.Collections.synchronizedCollection
+	java.util.Collection [java.util.Collections]  →  java.util.Collections.synchronizedCollection($expr$)
+
+.asLifoQueue : java.util.Collections.asLifoQueue
+	java.util.Deque [java.util.Collections]  →  java.util.Collections.asLifoQueue($expr$)
+
+.checkedQueue : java.util.Collections.checkedQueue
+	java.util.Queue [java.util.Collections]  →  java.util.Collections.checkedQueue($expr$, $arg$)
+
+.reverseOrder : java.util.Collections.reverseOrder
+	java.util.Comparator [java.util.Collections]  →  java.util.Collections.reverseOrder($expr$)
+	java.lang.Object [java.util.Collections]  →  java.util.Collections.reverseOrder()
+
+.synchronizedSet : java.util.Collections.synchronizedSet
+	java.util.Set [java.util.Collections]  →  java.util.Collections.synchronizedSet($expr$)
+
+.synchronizedNavigableMap : java.util.Collections.synchronizedNavigableMap
+	java.util.NavigableMap [java.util.Collections]  →  java.util.Collections.synchronizedNavigableMap($expr$)
+
+.emptyEnumeration : java.util.Collections.emptyEnumeration
+	java.lang.Object [java.util.Collections]  →  java.util.Collections.emptyEnumeration()
+
+.synchronizedNavigableSet : java.util.Collections.synchronizedNavigableSet
+	java.util.NavigableSet [java.util.Collections]  →  java.util.Collections.synchronizedNavigableSet($expr$)
+
+.checkedList : java.util.Collections.checkedList
+	java.util.List [java.util.Collections]  →  java.util.Collections.checkedList($expr$, $arg$)
+
+.emptySortedSet : java.util.Collections.emptySortedSet
+	java.lang.Object [java.util.Collections]  →  java.util.Collections.emptySortedSet()
+
+.addAll : java.util.Collections.addAll
+	java.util.Collection [java.util.Collections]  →  java.util.Collections.addAll($expr$, $arg$)
+
+.nCopies : java.util.Collections.nCopies
+	INT [java.util.Collections]  →  java.util.Collections.nCopies($expr$, $arg$)
+
+.unmodifiableMap : java.util.Collections.unmodifiableMap
+	java.util.Map [java.util.Collections]  →  java.util.Collections.unmodifiableMap($expr$)
+
+.emptyList : java.util.Collections.emptyList
+	java.lang.Object [java.util.Collections]  →  java.util.Collections.emptyList()
+
+.min : java.util.Collections.min
+	java.util.Collection [java.util.Collections]  →  java.util.Collections.min($expr$, $arg$)
+
+.emptySet : java.util.Collections.emptySet
+	java.lang.Object [java.util.Collections]  →  java.util.Collections.emptySet()
+
+.emptyMap : java.util.Collections.emptyMap
+	java.lang.Object [java.util.Collections]  →  java.util.Collections.emptyMap()
+
+.unmodifiableCollection : java.util.Collections.unmodifiableCollection
+	java.util.Collection [java.util.Collections]  →  java.util.Collections.unmodifiableCollection($expr$)
+
+.synchronizedList : java.util.Collections.synchronizedList
+	java.util.List [java.util.Collections]  →  java.util.Collections.synchronizedList($expr$)
+
+.newSetFromMap : java.util.Collections.newSetFromMap
+	java.util.Map [java.util.Collections]  →  java.util.Collections.newSetFromMap($expr$)
+
+.checkedCollection : java.util.Collections.checkedCollection
+	java.util.Collection [java.util.Collections]  →  java.util.Collections.checkedCollection($expr$, $arg$)
+
+.checkedNavigableSet : java.util.Collections.checkedNavigableSet
+	java.util.NavigableSet [java.util.Collections]  →  java.util.Collections.checkedNavigableSet($expr$, $arg$)
+
+.emptyNavigableMap : java.util.Collections.emptyNavigableMap
+	java.lang.Object [java.util.Collections]  →  java.util.Collections.emptyNavigableMap()
+
+.reverse : java.util.Collections.reverse
+	java.util.List [java.util.Collections]  →  java.util.Collections.reverse($expr$)
+
+.rotate : java.util.Collections.rotate
+	java.util.List [java.util.Collections]  →  java.util.Collections.rotate($expr$, $arg$)
+
+.lastIndexOfSubList : java.util.Collections.lastIndexOfSubList
+	java.util.List [java.util.Collections]  →  java.util.Collections.lastIndexOfSubList($expr$, $arg$)
+
+.synchronizedSortedSet : java.util.Collections.synchronizedSortedSet
+	java.util.SortedSet [java.util.Collections]  →  java.util.Collections.synchronizedSortedSet($expr$)
+
+.unmodifiableSortedSet : java.util.Collections.unmodifiableSortedSet
+	java.util.SortedSet [java.util.Collections]  →  java.util.Collections.unmodifiableSortedSet($expr$)
+
+.checkedNavigableMap : java.util.Collections.checkedNavigableMap
+	java.util.NavigableMap [java.util.Collections]  →  java.util.Collections.checkedNavigableMap($expr$, $arg$)
+
+.max : java.util.Collections.max
+	java.util.Collection [java.util.Collections]  →  java.util.Collections.max($expr$, $arg$)
+
+.unmodifiableSortedMap : java.util.Collections.unmodifiableSortedMap
+	java.util.SortedMap [java.util.Collections]  →  java.util.Collections.unmodifiableSortedMap($expr$)
+
+.fill : java.util.Collections.fill
+	java.util.List [java.util.Collections]  →  java.util.Collections.fill($expr$, $arg$)
+
+.emptyNavigableSet : java.util.Collections.emptyNavigableSet
+	java.lang.Object [java.util.Collections]  →  java.util.Collections.emptyNavigableSet()
+
+.checkedSortedSet : java.util.Collections.checkedSortedSet
+	java.util.SortedSet [java.util.Collections]  →  java.util.Collections.checkedSortedSet($expr$, $arg$)
+
+.synchronizedMap : java.util.Collections.synchronizedMap
+	java.util.Map [java.util.Collections]  →  java.util.Collections.synchronizedMap($expr$)
+
+.checkedMap : java.util.Collections.checkedMap
+	java.util.Map [java.util.Collections]  →  java.util.Collections.checkedMap($expr$, $arg$)
+
+.singletonList : java.util.Collections.singletonList
+	java.lang.Object [java.util.Collections]  →  java.util.Collections.singletonList($expr$)
+
+.enumeration : java.util.Collections.enumeration
+	java.util.Collection [java.util.Collections]  →  java.util.Collections.enumeration($expr$)
+
+.unmodifiableNavigableMap : java.util.Collections.unmodifiableNavigableMap
+	java.util.NavigableMap [java.util.Collections]  →  java.util.Collections.unmodifiableNavigableMap($expr$)
+
+.shuffle : java.util.Collections.shuffle
+	java.util.List [java.util.Collections]  →  java.util.Collections.shuffle($expr$, $arg$)
+
+.swap : java.util.Collections.swap
+	java.util.List [java.util.Collections]  →  java.util.Collections.swap($expr$, $arg$)
+
+.copy : java.util.Collections.copy
+	java.util.List [java.util.Collections]  →  java.util.Collections.copy($expr$, $arg$)
+
+.singleton : java.util.Collections.singleton
+	java.lang.Object [java.util.Collections]  →  java.util.Collections.singleton($expr$)
+
+.disjoint : java.util.Collections.disjoint
+	java.util.Collection [java.util.Collections]  →  java.util.Collections.disjoint($expr$, $arg$)
+
+.frequency : java.util.Collections.frequency
+	java.util.Collection [java.util.Collections]  →  java.util.Collections.frequency($expr$, $arg$)
+
+.indexOfSubList : java.util.Collections.indexOfSubList
+	java.util.List [java.util.Collections]  →  java.util.Collections.indexOfSubList($expr$, $arg$)
+
+.checkedSet : java.util.Collections.checkedSet
+	java.util.Set [java.util.Collections]  →  java.util.Collections.checkedSet($expr$, $arg$)
+
+.emptySortedMap : java.util.Collections.emptySortedMap
+	java.lang.Object [java.util.Collections]  →  java.util.Collections.emptySortedMap()
+
+.sort : java.util.Collections.sort
+	java.util.List [java.util.Collections]  →  java.util.Collections.sort($expr$, $arg$)
+
+.binarySearch : java.util.Collections.binarySearch
+	java.util.List [java.util.Collections]  →  java.util.Collections.binarySearch($expr$, $arg$)
+
+.unmodifiableSet : java.util.Collections.unmodifiableSet
+	java.util.Set [java.util.Collections]  →  java.util.Collections.unmodifiableSet($expr$)
+
+.synchronizedSortedMap : java.util.Collections.synchronizedSortedMap
+	java.util.SortedMap [java.util.Collections]  →  java.util.Collections.synchronizedSortedMap($expr$)
+
+.replaceAll : java.util.Collections.replaceAll
+	java.util.List [java.util.Collections]  →  java.util.Collections.replaceAll($expr$, $arg$)
+
+.singletonMap : java.util.Collections.singletonMap
+	java.lang.Object [java.util.Collections]  →  java.util.Collections.singletonMap($expr$, $arg$)
+
+.emptyListIterator : java.util.Collections.emptyListIterator
+	java.lang.Object [java.util.Collections]  →  java.util.Collections.emptyListIterator()
+
+.list : java.util.Collections.list
+	java.util.Enumeration [java.util.Collections]  →  java.util.Collections.list($expr$)
+
+
+## Arrays
+
+.asList : java.util.Arrays.asList
+	ARRAY [java.util.Arrays]  →  java.util.Arrays.asList($expr$)
+
+.parallelPrefix : java.util.Arrays.parallelPrefix
+	ARRAY [java.util.Arrays]  →  java.util.Arrays.parallelPrefix($expr$, $arg$)
+
+.parallelSetAll : java.util.Arrays.parallelSetAll
+	ARRAY [java.util.Arrays]  →  java.util.Arrays.parallelSetAll($expr$, $arg$)
+
+.equals : java.util.Arrays.equals
+	ARRAY [java.util.Arrays]  →  java.util.Arrays.equals($expr$, $arg$)
+
+.deepHashCode : java.util.Arrays.deepHashCode
+	ARRAY [java.util.Arrays]  →  java.util.Arrays.deepHashCode($expr$)
+
+.copyOf : java.util.Arrays.copyOf
+	ARRAY [java.util.Arrays]  →  java.util.Arrays.copyOf($expr$, $arg$)
+
+.deepEquals : java.util.Arrays.deepEquals
+	ARRAY [java.util.Arrays]  →  java.util.Arrays.deepEquals($expr$, $arg$)
+
+.fill : java.util.Arrays.fill
+	ARRAY [java.util.Arrays]  →  java.util.Arrays.fill($expr$, $arg$)
+
+.stream : java.util.Arrays.stream
+	ARRAY [java.util.Arrays]  →  java.util.Arrays.stream($expr$, $arg$)
+
+.copyOfRange : java.util.Arrays.copyOfRange
+	ARRAY [java.util.Arrays]  →  java.util.Arrays.copyOfRange($expr$, $arg$)
+
+.deepToString : java.util.Arrays.deepToString
+	ARRAY [java.util.Arrays]  →  java.util.Arrays.deepToString($expr$)
+
+.parallelSort : java.util.Arrays.parallelSort
+	ARRAY [java.util.Arrays]  →  java.util.Arrays.parallelSort($expr$, $arg$)
+
+.toString : java.util.Arrays.toString
+	ARRAY [java.util.Arrays]  →  java.util.Arrays.toString($expr$)
+
+.setAll : java.util.Arrays.setAll
+	ARRAY [java.util.Arrays]  →  java.util.Arrays.setAll($expr$, $arg$)
+
+.sort : java.util.Arrays.sort
+	ARRAY [java.util.Arrays]  →  java.util.Arrays.sort($expr$, $arg$)
+
+.binarySearch : java.util.Arrays.binarySearch
+	ARRAY [java.util.Arrays]  →  java.util.Arrays.binarySearch($expr$, $arg$)
+
+.spliterator : java.util.Arrays.spliterator
+	ARRAY [java.util.Arrays]  →  java.util.Arrays.spliterator($expr$, $arg$)
+
+.hashCode : java.util.Arrays.hashCode
+	ARRAY [java.util.Arrays]  →  java.util.Arrays.hashCode($expr$)
 
