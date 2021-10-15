@@ -74,15 +74,15 @@ object PostfixTemplateGenerator {
 		val allMethods = utilClass.getMethods.toList.filter{m ⇒
 			Modifier.isStatic(m.getModifiers) &&
 			Modifier.isPublic(m.getModifiers) &&
-			m.getParameterCount > 0 &&
+			m.getParameterCount >= 0 &&
 			m.getAnnotation(classOf[Deprecated]) == null &&
-			!lang.classMethodExcludes.contains(lang.mapType(m.getParameterTypes.head), m.getName)
+			!lang.classMethodExcludes.contains(lang.mapType(if (m.getParameterCount > 1) m.getParameterTypes.head else classOf[Object]), m.getName)
 		}
 
 		allMethods.groupBy(_.getName).filterNot(_._1.contains("_")).foreach{case (name, methods) ⇒
 			out.println("." + name + " : " + name)
 
-			methods.groupBy(m ⇒ lang.mapType(m.getParameterTypes.head)).foreach{case (matchingType, ms) ⇒
+			methods.filter(_.getParameterCount > 0).groupBy(m ⇒ lang.mapType(m.getParameterTypes.head)).foreach{case (matchingType, ms) ⇒
 				val params = ms.filter(_.getParameterCount > 1).map(_.getParameterTypes()(1)).toSet
 
 				val className = utilClass.getCanonicalName
@@ -95,6 +95,16 @@ object PostfixTemplateGenerator {
 				} else {
 					s"$utilClassName.$name($$expr$$, $$arg$$)"
 				}
+
+				out.println(s"\t$leftSide  →  $rightSide")
+			}
+			methods.filter(_.getParameterCount == 0).groupBy(_ ⇒ lang.mapType(classOf[Object])).foreach { case (matchingType, _) ⇒
+				val className     = utilClass.getCanonicalName
+				val utilClassName = lang.utilClassName(utilClass)
+
+				val leftSide = s"$matchingType [$className]"
+
+				val rightSide = s"$utilClassName.$name()"
 
 				out.println(s"\t$leftSide  →  $rightSide")
 			}

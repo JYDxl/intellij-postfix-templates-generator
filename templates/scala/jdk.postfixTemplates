@@ -8,11 +8,15 @@
 .of : of
 	java.lang.Object [java.util.Optional]  →  Optional.of($expr$)
 
+.empty : empty
+	java.lang.Object [java.util.Optional]  →  Optional.empty()
+
 
 ## Collectors
 
 .joining : joining
 	java.lang.CharSequence [java.util.stream.Collectors]  →  Collectors.joining($expr$, $arg$)
+	java.lang.Object [java.util.stream.Collectors]  →  Collectors.joining()
 
 .partitioningBy : partitioningBy
 	java.util.function.Predicate [java.util.stream.Collectors]  →  Collectors.partitioningBy($expr$, $arg$)
@@ -32,11 +36,17 @@
 .summarizingInt : summarizingInt
 	java.util.function.ToIntFunction [java.util.stream.Collectors]  →  Collectors.summarizingInt($expr$)
 
+.toSet : toSet
+	java.lang.Object [java.util.stream.Collectors]  →  Collectors.toSet()
+
 .toMap : toMap
 	java.util.function.Function [java.util.stream.Collectors]  →  Collectors.toMap($expr$, $arg$)
 
 .averagingLong : averagingLong
 	java.util.function.ToLongFunction [java.util.stream.Collectors]  →  Collectors.averagingLong($expr$)
+
+.toList : toList
+	java.lang.Object [java.util.stream.Collectors]  →  Collectors.toList()
 
 .mapping : mapping
 	java.util.function.Function [java.util.stream.Collectors]  →  Collectors.mapping($expr$, $arg$)
@@ -52,6 +62,9 @@
 
 .maxBy : maxBy
 	java.util.Comparator [java.util.stream.Collectors]  →  Collectors.maxBy($expr$)
+
+.counting : counting
+	java.lang.Object [java.util.stream.Collectors]  →  Collectors.counting()
 
 .groupingByConcurrent : groupingByConcurrent
 	java.util.function.Function [java.util.stream.Collectors]  →  Collectors.groupingByConcurrent($expr$, $arg$)

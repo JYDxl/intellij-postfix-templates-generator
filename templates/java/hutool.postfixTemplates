@@ -30,6 +30,9 @@
 .newLFUCache : newLFUCache
 	INT [cn.hutool.cache.CacheUtil]  →  cn.hutool.cache.CacheUtil.newLFUCache($expr$, $arg$)
 
+.newNoCache : newNoCache
+	java.lang.Object [cn.hutool.cache.CacheUtil]  →  cn.hutool.cache.CacheUtil.newNoCache()
+
 .newTimedCache : newTimedCache
 	LONG [cn.hutool.cache.CacheUtil]  →  cn.hutool.cache.CacheUtil.newTimedCache($expr$)
 

@@ -43,20 +43,24 @@
 	java.lang.Iterable [com.google.common.collect.Maps]  →  Maps.toMap($expr$, $arg$)
 	java.util.Iterator [com.google.common.collect.Maps]  →  Maps.toMap($expr$, $arg$)
 
+.newIdentityHashMap : newIdentityHashMap
+	java.lang.Object [com.google.common.collect.Maps]  →  Maps.newIdentityHashMap()
+
 .newLinkedHashMap : newLinkedHashMap
 	java.util.Map [com.google.common.collect.Maps]  →  Maps.newLinkedHashMap($expr$)
+	java.lang.Object [com.google.common.collect.Maps]  →  Maps.newLinkedHashMap()
 
 .filterKeys : filterKeys
 	java.util.Map [com.google.common.collect.Maps]  →  Maps.filterKeys($expr$, $arg$)
 	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  Maps.filterKeys($expr$, $arg$)
-	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.filterKeys($expr$, $arg$)
 	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.filterKeys($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.filterKeys($expr$, $arg$)
 
 .filterEntries : filterEntries
 	java.util.Map [com.google.common.collect.Maps]  →  Maps.filterEntries($expr$, $arg$)
 	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  Maps.filterEntries($expr$, $arg$)
-	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.filterEntries($expr$, $arg$)
 	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.filterEntries($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.filterEntries($expr$, $arg$)
 
 .transformEntries : transformEntries
 	java.util.Map [com.google.common.collect.Maps]  →  Maps.transformEntries($expr$, $arg$)
@@ -96,11 +100,14 @@
 	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.transformValues($expr$, $arg$)
 	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.transformValues($expr$, $arg$)
 
+.newConcurrentMap : newConcurrentMap
+	java.lang.Object [com.google.common.collect.Maps]  →  Maps.newConcurrentMap()
+
 .filterValues : filterValues
 	java.util.Map [com.google.common.collect.Maps]  →  Maps.filterValues($expr$, $arg$)
 	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  Maps.filterValues($expr$, $arg$)
-	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.filterValues($expr$, $arg$)
 	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.filterValues($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.filterValues($expr$, $arg$)
 
 .subMap : subMap
 	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.subMap($expr$, $arg$)
@@ -111,6 +118,7 @@
 
 .newHashMap : newHashMap
 	java.util.Map [com.google.common.collect.Maps]  →  Maps.newHashMap($expr$)
+	java.lang.Object [com.google.common.collect.Maps]  →  Maps.newHashMap()
 
 .newLinkedHashMapWithExpectedSize : newLinkedHashMapWithExpectedSize
 	INT [com.google.common.collect.Maps]  →  Maps.newLinkedHashMapWithExpectedSize($expr$)
@@ -121,4 +129,5 @@
 .newTreeMap : newTreeMap
 	java.util.Comparator [com.google.common.collect.Maps]  →  Maps.newTreeMap($expr$)
 	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.newTreeMap($expr$)
+	java.lang.Object [com.google.common.collect.Maps]  →  Maps.newTreeMap()
 
