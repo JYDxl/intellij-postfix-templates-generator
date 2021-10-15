@@ -552,3 +552,26 @@
 .hashCode : java.util.Arrays.hashCode
 	scala.Array [java.util.Arrays]  →  Arrays.hashCode($expr$)
 
+
+## String
+
+.join : java.lang.String.join
+	java.lang.CharSequence [java.lang.String]  →  String.join($expr$, $arg$)
+
+.copyValueOf : java.lang.String.copyValueOf
+	scala.Array [java.lang.String]  →  String.copyValueOf($expr$, $arg$)
+
+.valueOf : java.lang.String.valueOf
+	scala.Array [java.lang.String]  →  String.valueOf($expr$, $arg$)
+	FLOAT [java.lang.String]  →  String.valueOf($expr$)
+	CHAR [java.lang.String]  →  String.valueOf($expr$)
+	DOUBLE [java.lang.String]  →  String.valueOf($expr$)
+	INT [java.lang.String]  →  String.valueOf($expr$)
+	java.lang.Object [java.lang.String]  →  String.valueOf($expr$)
+	BOOLEAN [java.lang.String]  →  String.valueOf($expr$)
+	LONG [java.lang.String]  →  String.valueOf($expr$)
+
+.format : java.lang.String.format
+	java.lang.String [java.lang.String]  →  String.format($expr$, $arg$)
+	java.util.Locale [java.lang.String]  →  String.format($expr$, $arg$)
+
