@@ -76,7 +76,7 @@ object PostfixTemplateGenerator {
 		}
 
 		allMethods.groupBy(_.getName).filterNot(_._1.contains("_")).foreach{case (name, methods) ⇒
-			out.println("." + name + " : " + name)
+			out.println("." + name + " : " + utilClass.getCanonicalName + "." + methods.head.getName)
 
 			methods.filter(_.getParameterCount > 0).groupBy(m ⇒ lang.mapType(m.getParameterTypes.head)).foreach{case (matchingType, ms) ⇒
 				val params = ms.filter(_.getParameterCount > 1).map(_.getParameterTypes()(1)).toSet
