@@ -55,14 +55,14 @@ object PostfixTemplateGenerator {
 		Lang("scala", "scala.Array", _.getCanonicalName.replaceFirst(".*\\.", ""))
 	)
 
-	def main(args: Array[String]) {
+	def main(args: Array[String]): Unit = {
 		for (lang ← langs; utilsCollection ← utilsCollections) {
 			val dir = new File(templateDir, lang.name)
 			generateTemplateFile(dir, utilsCollection, lang)
 		}
 	}
 
-	def generateTemplateFile(dir: File, utilsCollection: UtilsCollection, lang: Lang) {
+	def generateTemplateFile(dir: File, utilsCollection: UtilsCollection, lang: Lang): Unit = {
 		dir.mkdirs()
 		
 		val file = new File(dir, utilsCollection.name + ".postfixTemplates")
@@ -79,7 +79,7 @@ object PostfixTemplateGenerator {
 		out.close()
 	}
 
-	def printTemplates(utilClass: Class[_], lang: Lang, out: PrintStream) {
+	def printTemplates(utilClass: Class[_], lang: Lang, out: PrintStream): Unit = {
 		val allMethods = utilClass.getMethods.toList.filter{m ⇒
 			Modifier.isStatic(m.getModifiers) &&
 			Modifier.isPublic(m.getModifiers) &&
