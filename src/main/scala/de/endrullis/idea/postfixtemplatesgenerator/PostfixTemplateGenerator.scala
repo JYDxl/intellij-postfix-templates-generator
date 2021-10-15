@@ -1,14 +1,18 @@
 package de.endrullis.idea.postfixtemplatesgenerator
 
-import java.io.{File, PrintStream}
-import java.lang.reflect.Modifier
-
-import org.apache.commons.beanutils.ConstructorUtils
-import org.apache.commons.io.{EndianUtils, FileUtils, FilenameUtils, IOUtils}
-import org.apache.commons.lang3._
-import org.junit.Assert
+import cn.hutool.aop.ProxyUtil
+import cn.hutool.bloomfilter.BloomFilterUtil
+import cn.hutool.cache.CacheUtil
+import cn.hutool.captcha.CaptchaUtil
+import cn.hutool.core.annotation.AnnotationUtil
+import com.google.common.collect.Maps
+import com.google.common.io.Resources
 import resource._
 
+import java.io.{File, PrintStream}
+import java.lang.reflect.Modifier
+import java.util.Optional
+import java.util.stream.Collectors
 import scala.io.Source
 
 /**
@@ -21,37 +25,24 @@ object PostfixTemplateGenerator {
 	val templateDir = new File("templates")
 
 	val utilsCollections = List(
-		UtilsCollection("commons-lang", "Apache commons-lang3",
-			classOf[ArrayUtils],
-			classOf[BooleanUtils],
-			classOf[CharSetUtils],
-			classOf[CharUtils],
-			classOf[ClassUtils],
-			classOf[LocaleUtils],
-			classOf[ObjectUtils],
-			classOf[RegExUtils],
-			classOf[SerializationUtils],
-			classOf[StringUtils],
-			classOf[SystemUtils],
-			classOf[ThreadUtils]),
-		
-		UtilsCollection("commons-io", "Apache commons-io",
-			classOf[EndianUtils],
-			classOf[FilenameUtils],
-			classOf[FileUtils],
-			classOf[IOUtils]),
+		UtilsCollection("hutool", "Hutool是一个小而全的Java工具类库，通过静态方法封装，降低相关API的学习成本，提高工作效率，使Java拥有函数式语言般的优雅，让Java语言也可以“甜甜的”。",
+			classOf[ProxyUtil],
+			classOf[BloomFilterUtil],
+			classOf[CacheUtil],
+			classOf[CaptchaUtil],
+			classOf[AnnotationUtil]),
 
-		UtilsCollection("junit4", "JUnit 4",
-			classOf[Assert]),
+		UtilsCollection("guava", "Guava is a suite of core and expanded libraries that include utility classes, Google's collections, I/O classes, and much more.",
+			classOf[Resources],
+			classOf[Maps]),
 
-		//UtilsCollection("commons-codec", "Apache commons-codec", classOf[])
-		// Hex decode/encode
-
-		UtilsCollection("commons-beanutils", "Apache commons-beanutils", classOf[ConstructorUtils]),
-		UtilsCollection("java-math", "java.lang.Math", classOf[Math]),
+		UtilsCollection("jdk", "JDK",
+			classOf[Optional[_]],
+			classOf[Collectors]),
 	)
 	val langs = List(
 		Lang("java", "ARRAY", _.getCanonicalName),
+//		Lang("kotlin", "ARRAY", _.getCanonicalName),TODO
 		Lang("scala", "scala.Array", _.getCanonicalName.replaceFirst(".*\\.", ""))
 	)
 

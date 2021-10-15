@@ -1,0 +1,77 @@
+## Templates for JDK ##
+
+## Optional
+
+.ofNullable : ofNullable
+	java.lang.Object [java.util.Optional]  →  Optional.ofNullable($expr$)
+
+.of : of
+	java.lang.Object [java.util.Optional]  →  Optional.of($expr$)
+
+
+## Collectors
+
+.joining : joining
+	java.lang.CharSequence [java.util.stream.Collectors]  →  Collectors.joining($expr$, $arg$)
+
+.partitioningBy : partitioningBy
+	java.util.function.Predicate [java.util.stream.Collectors]  →  Collectors.partitioningBy($expr$, $arg$)
+
+.summingLong : summingLong
+	java.util.function.ToLongFunction [java.util.stream.Collectors]  →  Collectors.summingLong($expr$)
+
+.groupingBy : groupingBy
+	java.util.function.Function [java.util.stream.Collectors]  →  Collectors.groupingBy($expr$, $arg$)
+
+.summarizingLong : summarizingLong
+	java.util.function.ToLongFunction [java.util.stream.Collectors]  →  Collectors.summarizingLong($expr$)
+
+.minBy : minBy
+	java.util.Comparator [java.util.stream.Collectors]  →  Collectors.minBy($expr$)
+
+.summarizingInt : summarizingInt
+	java.util.function.ToIntFunction [java.util.stream.Collectors]  →  Collectors.summarizingInt($expr$)
+
+.toMap : toMap
+	java.util.function.Function [java.util.stream.Collectors]  →  Collectors.toMap($expr$, $arg$)
+
+.averagingLong : averagingLong
+	java.util.function.ToLongFunction [java.util.stream.Collectors]  →  Collectors.averagingLong($expr$)
+
+.mapping : mapping
+	java.util.function.Function [java.util.stream.Collectors]  →  Collectors.mapping($expr$, $arg$)
+
+.summingDouble : summingDouble
+	java.util.function.ToDoubleFunction [java.util.stream.Collectors]  →  Collectors.summingDouble($expr$)
+
+.summingInt : summingInt
+	java.util.function.ToIntFunction [java.util.stream.Collectors]  →  Collectors.summingInt($expr$)
+
+.toConcurrentMap : toConcurrentMap
+	java.util.function.Function [java.util.stream.Collectors]  →  Collectors.toConcurrentMap($expr$, $arg$)
+
+.maxBy : maxBy
+	java.util.Comparator [java.util.stream.Collectors]  →  Collectors.maxBy($expr$)
+
+.groupingByConcurrent : groupingByConcurrent
+	java.util.function.Function [java.util.stream.Collectors]  →  Collectors.groupingByConcurrent($expr$, $arg$)
+
+.reducing : reducing
+	java.util.function.BinaryOperator [java.util.stream.Collectors]  →  Collectors.reducing($expr$)
+	java.lang.Object [java.util.stream.Collectors]  →  Collectors.reducing($expr$, $arg$)
+
+.summarizingDouble : summarizingDouble
+	java.util.function.ToDoubleFunction [java.util.stream.Collectors]  →  Collectors.summarizingDouble($expr$)
+
+.toCollection : toCollection
+	java.util.function.Supplier [java.util.stream.Collectors]  →  Collectors.toCollection($expr$)
+
+.averagingDouble : averagingDouble
+	java.util.function.ToDoubleFunction [java.util.stream.Collectors]  →  Collectors.averagingDouble($expr$)
+
+.collectingAndThen : collectingAndThen
+	java.util.stream.Collector [java.util.stream.Collectors]  →  Collectors.collectingAndThen($expr$, $arg$)
+
+.averagingInt : averagingInt
+	java.util.function.ToIntFunction [java.util.stream.Collectors]  →  Collectors.averagingInt($expr$)
+

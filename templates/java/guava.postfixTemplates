@@ -1,0 +1,124 @@
+## Templates for Guava is a suite of core and expanded libraries that include utility classes, Google's collections, I/O classes, and much more. ##
+
+## Resources
+
+.asByteSource : asByteSource
+	java.net.URL [com.google.common.io.Resources]  →  com.google.common.io.Resources.asByteSource($expr$)
+
+.getResource : getResource
+	java.lang.String [com.google.common.io.Resources]  →  com.google.common.io.Resources.getResource($expr$)
+	java.lang.Class [com.google.common.io.Resources]  →  com.google.common.io.Resources.getResource($expr$, $arg$)
+
+.readLines : readLines
+	java.net.URL [com.google.common.io.Resources]  →  com.google.common.io.Resources.readLines($expr$, $arg$)
+
+.copy : copy
+	java.net.URL [com.google.common.io.Resources]  →  com.google.common.io.Resources.copy($expr$, $arg$)
+
+.toString : toString
+	java.net.URL [com.google.common.io.Resources]  →  com.google.common.io.Resources.toString($expr$, $arg$)
+
+.toByteArray : toByteArray
+	java.net.URL [com.google.common.io.Resources]  →  com.google.common.io.Resources.toByteArray($expr$)
+
+.asCharSource : asCharSource
+	java.net.URL [com.google.common.io.Resources]  →  com.google.common.io.Resources.asCharSource($expr$, $arg$)
+
+
+## Maps
+
+.toImmutableEnumMap : toImmutableEnumMap
+	java.util.function.Function [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.toImmutableEnumMap($expr$, $arg$)
+
+.synchronizedBiMap : synchronizedBiMap
+	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.synchronizedBiMap($expr$)
+
+.asConverter : asConverter
+	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.asConverter($expr$)
+
+.synchronizedNavigableMap : synchronizedNavigableMap
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.synchronizedNavigableMap($expr$)
+
+.toMap : toMap
+	java.lang.Iterable [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.toMap($expr$, $arg$)
+	java.util.Iterator [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.toMap($expr$, $arg$)
+
+.newLinkedHashMap : newLinkedHashMap
+	java.util.Map [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newLinkedHashMap($expr$)
+
+.filterKeys : filterKeys
+	java.util.Map [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterKeys($expr$, $arg$)
+	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterKeys($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterKeys($expr$, $arg$)
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterKeys($expr$, $arg$)
+
+.filterEntries : filterEntries
+	java.util.Map [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterEntries($expr$, $arg$)
+	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterEntries($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterEntries($expr$, $arg$)
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterEntries($expr$, $arg$)
+
+.transformEntries : transformEntries
+	java.util.Map [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.transformEntries($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.transformEntries($expr$, $arg$)
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.transformEntries($expr$, $arg$)
+
+.newHashMapWithExpectedSize : newHashMapWithExpectedSize
+	INT [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newHashMapWithExpectedSize($expr$)
+
+.uniqueIndex : uniqueIndex
+	java.lang.Iterable [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.uniqueIndex($expr$, $arg$)
+	java.util.Iterator [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.uniqueIndex($expr$, $arg$)
+
+.immutableEnumMap : immutableEnumMap
+	java.util.Map [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.immutableEnumMap($expr$)
+
+.newEnumMap : newEnumMap
+	java.util.Map [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newEnumMap($expr$)
+	java.lang.Class [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newEnumMap($expr$)
+
+.unmodifiableBiMap : unmodifiableBiMap
+	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.unmodifiableBiMap($expr$)
+
+.fromProperties : fromProperties
+	java.util.Properties [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.fromProperties($expr$)
+
+.asMap : asMap
+	java.util.SortedSet [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.asMap($expr$, $arg$)
+	java.util.NavigableSet [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.asMap($expr$, $arg$)
+	java.util.Set [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.asMap($expr$, $arg$)
+
+.unmodifiableNavigableMap : unmodifiableNavigableMap
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.unmodifiableNavigableMap($expr$)
+
+.transformValues : transformValues
+	java.util.Map [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.transformValues($expr$, $arg$)
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.transformValues($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.transformValues($expr$, $arg$)
+
+.filterValues : filterValues
+	java.util.Map [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterValues($expr$, $arg$)
+	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterValues($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterValues($expr$, $arg$)
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.filterValues($expr$, $arg$)
+
+.subMap : subMap
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.subMap($expr$, $arg$)
+
+.difference : difference
+	java.util.Map [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.difference($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.difference($expr$, $arg$)
+
+.newHashMap : newHashMap
+	java.util.Map [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newHashMap($expr$)
+
+.newLinkedHashMapWithExpectedSize : newLinkedHashMapWithExpectedSize
+	INT [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newLinkedHashMapWithExpectedSize($expr$)
+
+.immutableEntry : immutableEntry
+	java.lang.Object [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.immutableEntry($expr$, $arg$)
+
+.newTreeMap : newTreeMap
+	java.util.Comparator [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newTreeMap($expr$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  com.google.common.collect.Maps.newTreeMap($expr$)
+

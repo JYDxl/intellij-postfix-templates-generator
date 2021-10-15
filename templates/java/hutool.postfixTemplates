@@ -1,0 +1,89 @@
+## Templates for Hutool是一个小而全的Java工具类库，通过静态方法封装，降低相关API的学习成本，提高工作效率，使Java拥有函数式语言般的优雅，让Java语言也可以“甜甜的”。 ##
+
+## ProxyUtil
+
+.proxy : proxy
+	java.lang.Object [cn.hutool.aop.ProxyUtil]  →  cn.hutool.aop.ProxyUtil.proxy($expr$, $arg$)
+
+.newProxyInstance : newProxyInstance
+	java.lang.reflect.InvocationHandler [cn.hutool.aop.ProxyUtil]  →  cn.hutool.aop.ProxyUtil.newProxyInstance($expr$, $arg$)
+	java.lang.ClassLoader [cn.hutool.aop.ProxyUtil]  →  cn.hutool.aop.ProxyUtil.newProxyInstance($expr$, $arg$)
+
+
+## BloomFilterUtil
+
+.createBitMap : createBitMap
+	INT [cn.hutool.bloomfilter.BloomFilterUtil]  →  cn.hutool.bloomfilter.BloomFilterUtil.createBitMap($expr$)
+
+.createBitSet : createBitSet
+	INT [cn.hutool.bloomfilter.BloomFilterUtil]  →  cn.hutool.bloomfilter.BloomFilterUtil.createBitSet($expr$, $arg$)
+
+
+## CacheUtil
+
+.newWeakCache : newWeakCache
+	LONG [cn.hutool.cache.CacheUtil]  →  cn.hutool.cache.CacheUtil.newWeakCache($expr$)
+
+.newLRUCache : newLRUCache
+	INT [cn.hutool.cache.CacheUtil]  →  cn.hutool.cache.CacheUtil.newLRUCache($expr$, $arg$)
+
+.newLFUCache : newLFUCache
+	INT [cn.hutool.cache.CacheUtil]  →  cn.hutool.cache.CacheUtil.newLFUCache($expr$, $arg$)
+
+.newTimedCache : newTimedCache
+	LONG [cn.hutool.cache.CacheUtil]  →  cn.hutool.cache.CacheUtil.newTimedCache($expr$)
+
+.newFIFOCache : newFIFOCache
+	INT [cn.hutool.cache.CacheUtil]  →  cn.hutool.cache.CacheUtil.newFIFOCache($expr$, $arg$)
+
+
+## CaptchaUtil
+
+.createLineCaptcha : createLineCaptcha
+	INT [cn.hutool.captcha.CaptchaUtil]  →  cn.hutool.captcha.CaptchaUtil.createLineCaptcha($expr$, $arg$)
+
+.createShearCaptcha : createShearCaptcha
+	INT [cn.hutool.captcha.CaptchaUtil]  →  cn.hutool.captcha.CaptchaUtil.createShearCaptcha($expr$, $arg$)
+
+.createCircleCaptcha : createCircleCaptcha
+	INT [cn.hutool.captcha.CaptchaUtil]  →  cn.hutool.captcha.CaptchaUtil.createCircleCaptcha($expr$, $arg$)
+
+.createGifCaptcha : createGifCaptcha
+	INT [cn.hutool.captcha.CaptchaUtil]  →  cn.hutool.captcha.CaptchaUtil.createGifCaptcha($expr$, $arg$)
+
+
+## AnnotationUtil
+
+.getTargetType : getTargetType
+	java.lang.Class [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.getTargetType($expr$)
+
+.getAnnotations : getAnnotations
+	java.lang.reflect.AnnotatedElement [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.getAnnotations($expr$, $arg$)
+
+.isDocumented : isDocumented
+	java.lang.Class [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.isDocumented($expr$)
+
+.setValue : setValue
+	java.lang.annotation.Annotation [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.setValue($expr$, $arg$)
+
+.getAnnotationValue : getAnnotationValue
+	java.lang.reflect.AnnotatedElement [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.getAnnotationValue($expr$, $arg$)
+
+.toCombination : toCombination
+	java.lang.reflect.AnnotatedElement [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.toCombination($expr$)
+
+.isInherited : isInherited
+	java.lang.Class [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.isInherited($expr$)
+
+.getRetentionPolicy : getRetentionPolicy
+	java.lang.Class [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.getRetentionPolicy($expr$)
+
+.getAnnotation : getAnnotation
+	java.lang.reflect.AnnotatedElement [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.getAnnotation($expr$, $arg$)
+
+.hasAnnotation : hasAnnotation
+	java.lang.reflect.AnnotatedElement [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.hasAnnotation($expr$, $arg$)
+
+.getAnnotationValueMap : getAnnotationValueMap
+	java.lang.reflect.AnnotatedElement [cn.hutool.core.annotation.AnnotationUtil]  →  cn.hutool.core.annotation.AnnotationUtil.getAnnotationValueMap($expr$, $arg$)
+
