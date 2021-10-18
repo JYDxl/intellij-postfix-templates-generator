@@ -7,6 +7,8 @@ import cn.hutool.captcha.CaptchaUtil
 import cn.hutool.core.annotation.AnnotationUtil
 import com.google.common.collect.Maps
 import com.google.common.io.Resources
+import org.github.util.tree.TreeUtil
+import org.github.util.{BitUtil, FuncUtil}
 import resource._
 
 import java.io.{File, PrintStream}
@@ -27,6 +29,10 @@ object PostfixTemplateGenerator {
 
 	val utilsCollections = List(
 		UtilsCollection("jydxl", "JYD_XL Custom Postfix Templates",
+			classOf[BitUtil],
+			classOf[FuncUtil],
+			classOf[TreeUtil],
+
 			classOf[ProxyUtil],
 			classOf[BloomFilterUtil],
 			classOf[CacheUtil],

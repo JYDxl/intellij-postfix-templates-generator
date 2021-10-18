@@ -1,5 +1,42 @@
 ## Templates for JYD_XL Custom Postfix Templates ##
 
+## BitUtil
+
+.lastN : org.github.util.BitUtil.lastN
+	LONG [org.github.util.BitUtil]  →  BitUtil.lastN($expr$, $arg$)
+	INT [org.github.util.BitUtil]  →  BitUtil.lastN($expr$, $arg$)
+
+
+## FuncUtil
+
+.throwing : org.github.util.FuncUtil.throwing
+	java.lang.Object [org.github.util.FuncUtil]  →  FuncUtil.throwing()
+
+.map : org.github.util.FuncUtil.map
+	java.lang.Object [org.github.util.FuncUtil]  →  FuncUtil.map($expr$, $arg$)
+
+.nonNull : org.github.util.FuncUtil.nonNull
+	java.lang.Object [org.github.util.FuncUtil]  →  FuncUtil.nonNull()
+
+.optional : org.github.util.FuncUtil.optional
+	java.util.function.Function [org.github.util.FuncUtil]  →  FuncUtil.optional($expr$, $arg$)
+
+.stream : org.github.util.FuncUtil.stream
+	java.util.Collection [org.github.util.FuncUtil]  →  FuncUtil.stream($expr$)
+
+.pass : org.github.util.FuncUtil.pass
+	java.lang.Object [org.github.util.FuncUtil]  →  FuncUtil.pass()
+
+
+## TreeUtil
+
+.findAllChild : org.github.util.tree.TreeUtil.findAllChild
+	java.util.List [org.github.util.tree.TreeUtil]  →  TreeUtil.findAllChild($expr$, $arg$)
+
+.buildTree : org.github.util.tree.TreeUtil.buildTree
+	java.util.List [org.github.util.tree.TreeUtil]  →  TreeUtil.buildTree($expr$, $arg$)
+
+
 ## ProxyUtil
 
 .proxy : cn.hutool.aop.ProxyUtil.proxy
@@ -498,6 +535,12 @@
 
 ## Arrays
 
+.compareUnsigned : java.util.Arrays.compareUnsigned
+	scala.Array [java.util.Arrays]  →  Arrays.compareUnsigned($expr$, $arg$)
+
+.mismatch : java.util.Arrays.mismatch
+	scala.Array [java.util.Arrays]  →  Arrays.mismatch($expr$, $arg$)
+
 .asList : java.util.Arrays.asList
 	scala.Array [java.util.Arrays]  →  Arrays.asList($expr$)
 
@@ -545,6 +588,9 @@
 
 .binarySearch : java.util.Arrays.binarySearch
 	scala.Array [java.util.Arrays]  →  Arrays.binarySearch($expr$, $arg$)
+
+.compare : java.util.Arrays.compare
+	scala.Array [java.util.Arrays]  →  Arrays.compare($expr$, $arg$)
 
 .spliterator : java.util.Arrays.spliterator
 	scala.Array [java.util.Arrays]  →  Arrays.spliterator($expr$, $arg$)
