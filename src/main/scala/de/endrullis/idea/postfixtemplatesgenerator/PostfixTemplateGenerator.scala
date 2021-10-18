@@ -56,15 +56,15 @@ object PostfixTemplateGenerator {
 
 	def main(args: Array[String]): Unit = {
 		for (lang ← langs; utilsCollection ← utilsCollections) {
-			val dir = new File(templateDir, lang.name)
-			generateTemplateFile(dir, utilsCollection, lang)
+//			val dir = new File(templateDir, lang.name)
+			generateTemplateFile(templateDir, utilsCollection, lang)
 		}
 	}
 
 	def generateTemplateFile(dir: File, utilsCollection: UtilsCollection, lang: Lang): Unit = {
 		dir.mkdirs()
 		
-		val file = new File(dir, utilsCollection.name + ".postfixTemplates")
+		val file = new File(dir, lang.name + ".postfixTemplates")
 		val out = new PrintStream(file)
 		out.println(s"## Templates for ${utilsCollection.description} ##")
 
