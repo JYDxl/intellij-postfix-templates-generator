@@ -1,0 +1,14 @@
+.trace : org.slf4j.Logger.trace
+    ANY                 [org.slf4j.Logger]          →  log.trace {$expr$}
+
+.debug : org.slf4j.Logger.debug
+    ANY                 [org.slf4j.Logger]          →  log.debug {$expr$}
+
+.info : org.slf4j.Logger.info
+    ANY                 [org.slf4j.Logger]          →  log.info {$expr$}
+
+.warn : org.slf4j.Logger.warn
+    ANY                 [org.slf4j.Logger]          →  log.warn {$expr$}
+
+.error : org.slf4j.Logger.error
+    ANY                 [org.slf4j.Logger]          →  log.error {$expr$}
