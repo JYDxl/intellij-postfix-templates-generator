@@ -501,40 +501,39 @@
 
 .joining : java.util.stream.Collectors.joining
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.joining($arg$))
-	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.joining())
 
 .partitioningBy : java.util.stream.Collectors.partitioningBy
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.partitioningBy($arg$))
 
 .summingLong : java.util.stream.Collectors.summingLong
-	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.summingLong())
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.summingLong($arg$))
 
 .groupingBy : java.util.stream.Collectors.groupingBy
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.groupingBy($arg$))
 
 .summarizingLong : java.util.stream.Collectors.summarizingLong
-	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.summarizingLong())
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.summarizingLong($arg$))
 
 .toUnmodifiableSet : java.util.stream.Collectors.toUnmodifiableSet
-	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.toUnmodifiableSet())
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.toUnmodifiableSet($arg$))
 
 .minBy : java.util.stream.Collectors.minBy
-	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.minBy())
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.minBy($arg$))
 
 .summarizingInt : java.util.stream.Collectors.summarizingInt
-	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.summarizingInt())
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.summarizingInt($arg$))
 
 .toSet : java.util.stream.Collectors.toSet
-	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.toSet())
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.toSet($arg$))
 
 .toMap : java.util.stream.Collectors.toMap
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.toMap($arg$))
 
 .averagingLong : java.util.stream.Collectors.averagingLong
-	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.averagingLong())
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.averagingLong($arg$))
 
 .toList : java.util.stream.Collectors.toList
-	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.toList())
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.toList($arg$))
 
 .teeing : java.util.stream.Collectors.teeing
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.teeing($arg$))
@@ -543,32 +542,31 @@
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.mapping($arg$))
 
 .summingDouble : java.util.stream.Collectors.summingDouble
-	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.summingDouble())
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.summingDouble($arg$))
 
 .summingInt : java.util.stream.Collectors.summingInt
-	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.summingInt())
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.summingInt($arg$))
 
 .toConcurrentMap : java.util.stream.Collectors.toConcurrentMap
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.toConcurrentMap($arg$))
 
 .maxBy : java.util.stream.Collectors.maxBy
-	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.maxBy())
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.maxBy($arg$))
 
 .toUnmodifiableMap : java.util.stream.Collectors.toUnmodifiableMap
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.toUnmodifiableMap($arg$))
 
 .counting : java.util.stream.Collectors.counting
-	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.counting())
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.counting($arg$))
 
 .groupingByConcurrent : java.util.stream.Collectors.groupingByConcurrent
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.groupingByConcurrent($arg$))
 
 .reducing : java.util.stream.Collectors.reducing
-	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.reducing())
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.reducing($arg$))
 
 .summarizingDouble : java.util.stream.Collectors.summarizingDouble
-	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.summarizingDouble())
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.summarizingDouble($arg$))
 
 .filtering : java.util.stream.Collectors.filtering
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.filtering($arg$))
@@ -577,19 +575,19 @@
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.flatMapping($arg$))
 
 .toCollection : java.util.stream.Collectors.toCollection
-	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.toCollection())
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.toCollection($arg$))
 
 .averagingDouble : java.util.stream.Collectors.averagingDouble
-	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.averagingDouble())
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.averagingDouble($arg$))
 
 .toUnmodifiableList : java.util.stream.Collectors.toUnmodifiableList
-	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.toUnmodifiableList())
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.toUnmodifiableList($arg$))
 
 .collectingAndThen : java.util.stream.Collectors.collectingAndThen
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.collectingAndThen($arg$))
 
 .averagingInt : java.util.stream.Collectors.averagingInt
-	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.averagingInt())
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.averagingInt($arg$))
 
 
 ## Collections
