@@ -169,6 +169,215 @@
 	java.net.URL [com.google.common.io.Resources]  →  com.google.common.io.Resources.asCharSource($expr$, $arg$)
 
 
+## Multimaps
+
+.newSortedSetMultimap : com.google.common.collect.Multimaps.newSortedSetMultimap
+	java.util.Map [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.newSortedSetMultimap($expr$, $arg$)
+
+.synchronizedMultimap : com.google.common.collect.Multimaps.synchronizedMultimap
+	com.google.common.collect.Multimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.synchronizedMultimap($expr$)
+
+.forMap : com.google.common.collect.Multimaps.forMap
+	java.util.Map [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.forMap($expr$)
+
+.filterKeys : com.google.common.collect.Multimaps.filterKeys
+	com.google.common.collect.SetMultimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.filterKeys($expr$, $arg$)
+	com.google.common.collect.ListMultimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.filterKeys($expr$, $arg$)
+	com.google.common.collect.Multimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.filterKeys($expr$, $arg$)
+
+.toMultimap : com.google.common.collect.Multimaps.toMultimap
+	java.util.function.Function [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.toMultimap($expr$, $arg$)
+
+.filterEntries : com.google.common.collect.Multimaps.filterEntries
+	com.google.common.collect.SetMultimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.filterEntries($expr$, $arg$)
+	com.google.common.collect.Multimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.filterEntries($expr$, $arg$)
+
+.invertFrom : com.google.common.collect.Multimaps.invertFrom
+	com.google.common.collect.Multimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.invertFrom($expr$, $arg$)
+
+.transformEntries : com.google.common.collect.Multimaps.transformEntries
+	com.google.common.collect.ListMultimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.transformEntries($expr$, $arg$)
+	com.google.common.collect.Multimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.transformEntries($expr$, $arg$)
+
+.unmodifiableListMultimap : com.google.common.collect.Multimaps.unmodifiableListMultimap
+	com.google.common.collect.ListMultimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.unmodifiableListMultimap($expr$)
+
+.newListMultimap : com.google.common.collect.Multimaps.newListMultimap
+	java.util.Map [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.newListMultimap($expr$, $arg$)
+
+.unmodifiableSetMultimap : com.google.common.collect.Multimaps.unmodifiableSetMultimap
+	com.google.common.collect.SetMultimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.unmodifiableSetMultimap($expr$)
+
+.newSetMultimap : com.google.common.collect.Multimaps.newSetMultimap
+	java.util.Map [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.newSetMultimap($expr$, $arg$)
+
+.newMultimap : com.google.common.collect.Multimaps.newMultimap
+	java.util.Map [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.newMultimap($expr$, $arg$)
+
+.unmodifiableMultimap : com.google.common.collect.Multimaps.unmodifiableMultimap
+	com.google.common.collect.Multimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.unmodifiableMultimap($expr$)
+
+.asMap : com.google.common.collect.Multimaps.asMap
+	com.google.common.collect.SortedSetMultimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.asMap($expr$)
+	com.google.common.collect.SetMultimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.asMap($expr$)
+	com.google.common.collect.ListMultimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.asMap($expr$)
+	com.google.common.collect.Multimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.asMap($expr$)
+
+.flatteningToMultimap : com.google.common.collect.Multimaps.flatteningToMultimap
+	java.util.function.Function [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.flatteningToMultimap($expr$, $arg$)
+
+.transformValues : com.google.common.collect.Multimaps.transformValues
+	com.google.common.collect.Multimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.transformValues($expr$, $arg$)
+	com.google.common.collect.ListMultimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.transformValues($expr$, $arg$)
+
+.synchronizedListMultimap : com.google.common.collect.Multimaps.synchronizedListMultimap
+	com.google.common.collect.ListMultimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.synchronizedListMultimap($expr$)
+
+.synchronizedSortedSetMultimap : com.google.common.collect.Multimaps.synchronizedSortedSetMultimap
+	com.google.common.collect.SortedSetMultimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.synchronizedSortedSetMultimap($expr$)
+
+.filterValues : com.google.common.collect.Multimaps.filterValues
+	com.google.common.collect.SetMultimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.filterValues($expr$, $arg$)
+	com.google.common.collect.Multimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.filterValues($expr$, $arg$)
+
+.unmodifiableSortedSetMultimap : com.google.common.collect.Multimaps.unmodifiableSortedSetMultimap
+	com.google.common.collect.SortedSetMultimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.unmodifiableSortedSetMultimap($expr$)
+
+.synchronizedSetMultimap : com.google.common.collect.Multimaps.synchronizedSetMultimap
+	com.google.common.collect.SetMultimap [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.synchronizedSetMultimap($expr$)
+
+.index : com.google.common.collect.Multimaps.index
+	java.lang.Iterable [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.index($expr$, $arg$)
+	java.util.Iterator [com.google.common.collect.Multimaps]  →  com.google.common.collect.Multimaps.index($expr$, $arg$)
+
+
+## Lists
+
+.asList : com.google.common.collect.Lists.asList
+	java.lang.Object [com.google.common.collect.Lists]  →  com.google.common.collect.Lists.asList($expr$, $arg$)
+
+.newArrayList : com.google.common.collect.Lists.newArrayList
+	ARRAY [com.google.common.collect.Lists]  →  com.google.common.collect.Lists.newArrayList($expr$)
+	java.lang.Iterable [com.google.common.collect.Lists]  →  com.google.common.collect.Lists.newArrayList($expr$)
+	java.util.Iterator [com.google.common.collect.Lists]  →  com.google.common.collect.Lists.newArrayList($expr$)
+	java.lang.Object [com.google.common.collect.Lists]  →  com.google.common.collect.Lists.newArrayList()
+
+.partition : com.google.common.collect.Lists.partition
+	java.util.List [com.google.common.collect.Lists]  →  com.google.common.collect.Lists.partition($expr$, $arg$)
+
+.cartesianProduct : com.google.common.collect.Lists.cartesianProduct
+	ARRAY [com.google.common.collect.Lists]  →  com.google.common.collect.Lists.cartesianProduct($expr$)
+	java.util.List [com.google.common.collect.Lists]  →  com.google.common.collect.Lists.cartesianProduct($expr$)
+
+.charactersOf : com.google.common.collect.Lists.charactersOf
+	java.lang.String [com.google.common.collect.Lists]  →  com.google.common.collect.Lists.charactersOf($expr$)
+	java.lang.CharSequence [com.google.common.collect.Lists]  →  com.google.common.collect.Lists.charactersOf($expr$)
+
+.reverse : com.google.common.collect.Lists.reverse
+	java.util.List [com.google.common.collect.Lists]  →  com.google.common.collect.Lists.reverse($expr$)
+
+.newArrayListWithExpectedSize : com.google.common.collect.Lists.newArrayListWithExpectedSize
+	INT [com.google.common.collect.Lists]  →  com.google.common.collect.Lists.newArrayListWithExpectedSize($expr$)
+
+.newCopyOnWriteArrayList : com.google.common.collect.Lists.newCopyOnWriteArrayList
+	java.lang.Iterable [com.google.common.collect.Lists]  →  com.google.common.collect.Lists.newCopyOnWriteArrayList($expr$)
+	java.lang.Object [com.google.common.collect.Lists]  →  com.google.common.collect.Lists.newCopyOnWriteArrayList()
+
+.newArrayListWithCapacity : com.google.common.collect.Lists.newArrayListWithCapacity
+	INT [com.google.common.collect.Lists]  →  com.google.common.collect.Lists.newArrayListWithCapacity($expr$)
+
+.newLinkedList : com.google.common.collect.Lists.newLinkedList
+	java.lang.Iterable [com.google.common.collect.Lists]  →  com.google.common.collect.Lists.newLinkedList($expr$)
+	java.lang.Object [com.google.common.collect.Lists]  →  com.google.common.collect.Lists.newLinkedList()
+
+.transform : com.google.common.collect.Lists.transform
+	java.util.List [com.google.common.collect.Lists]  →  com.google.common.collect.Lists.transform($expr$, $arg$)
+
+
+## Sets
+
+.subSet : com.google.common.collect.Sets.subSet
+	java.util.NavigableSet [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.subSet($expr$, $arg$)
+
+.unmodifiableNavigableSet : com.google.common.collect.Sets.unmodifiableNavigableSet
+	java.util.NavigableSet [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.unmodifiableNavigableSet($expr$)
+
+.symmetricDifference : com.google.common.collect.Sets.symmetricDifference
+	java.util.Set [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.symmetricDifference($expr$, $arg$)
+
+.newConcurrentHashSet : com.google.common.collect.Sets.newConcurrentHashSet
+	java.lang.Iterable [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.newConcurrentHashSet($expr$)
+	java.lang.Object [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.newConcurrentHashSet()
+
+.union : com.google.common.collect.Sets.union
+	java.util.Set [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.union($expr$, $arg$)
+
+.intersection : com.google.common.collect.Sets.intersection
+	java.util.Set [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.intersection($expr$, $arg$)
+
+.synchronizedNavigableSet : com.google.common.collect.Sets.synchronizedNavigableSet
+	java.util.NavigableSet [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.synchronizedNavigableSet($expr$)
+
+.newLinkedHashSet : com.google.common.collect.Sets.newLinkedHashSet
+	java.lang.Iterable [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.newLinkedHashSet($expr$)
+	java.lang.Object [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.newLinkedHashSet()
+
+.cartesianProduct : com.google.common.collect.Sets.cartesianProduct
+	ARRAY [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.cartesianProduct($expr$)
+	java.util.List [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.cartesianProduct($expr$)
+
+.newCopyOnWriteArraySet : com.google.common.collect.Sets.newCopyOnWriteArraySet
+	java.lang.Iterable [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.newCopyOnWriteArraySet($expr$)
+	java.lang.Object [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.newCopyOnWriteArraySet()
+
+.filter : com.google.common.collect.Sets.filter
+	java.util.SortedSet [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.filter($expr$, $arg$)
+	java.util.NavigableSet [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.filter($expr$, $arg$)
+	java.util.Set [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.filter($expr$, $arg$)
+
+.newHashSetWithExpectedSize : com.google.common.collect.Sets.newHashSetWithExpectedSize
+	INT [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.newHashSetWithExpectedSize($expr$)
+
+.newEnumSet : com.google.common.collect.Sets.newEnumSet
+	java.lang.Iterable [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.newEnumSet($expr$, $arg$)
+
+.combinations : com.google.common.collect.Sets.combinations
+	java.util.Set [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.combinations($expr$, $arg$)
+
+.newHashSet : com.google.common.collect.Sets.newHashSet
+	ARRAY [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.newHashSet($expr$)
+	java.lang.Iterable [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.newHashSet($expr$)
+	java.util.Iterator [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.newHashSet($expr$)
+	java.lang.Object [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.newHashSet()
+
+.newTreeSet : com.google.common.collect.Sets.newTreeSet
+	java.util.Comparator [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.newTreeSet($expr$)
+	java.lang.Iterable [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.newTreeSet($expr$)
+	java.lang.Object [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.newTreeSet()
+
+.complementOf : com.google.common.collect.Sets.complementOf
+	java.util.Collection [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.complementOf($expr$, $arg$)
+
+.newLinkedHashSetWithExpectedSize : com.google.common.collect.Sets.newLinkedHashSetWithExpectedSize
+	INT [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.newLinkedHashSetWithExpectedSize($expr$)
+
+.toImmutableEnumSet : com.google.common.collect.Sets.toImmutableEnumSet
+	java.lang.Object [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.toImmutableEnumSet()
+
+.immutableEnumSet : com.google.common.collect.Sets.immutableEnumSet
+	java.lang.Enum [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.immutableEnumSet($expr$, $arg$)
+	java.lang.Iterable [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.immutableEnumSet($expr$)
+
+.newIdentityHashSet : com.google.common.collect.Sets.newIdentityHashSet
+	java.lang.Object [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.newIdentityHashSet()
+
+.powerSet : com.google.common.collect.Sets.powerSet
+	java.util.Set [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.powerSet($expr$)
+
+.difference : com.google.common.collect.Sets.difference
+	java.util.Set [com.google.common.collect.Sets]  →  com.google.common.collect.Sets.difference($expr$, $arg$)
+
+
 ## Maps
 
 .toImmutableEnumMap : com.google.common.collect.Maps.toImmutableEnumMap
@@ -306,6 +515,9 @@
 .summarizingLong : java.util.stream.Collectors.summarizingLong
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.summarizingLong())
 
+.toUnmodifiableSet : java.util.stream.Collectors.toUnmodifiableSet
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.toUnmodifiableSet())
+
 .minBy : java.util.stream.Collectors.minBy
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.minBy())
 
@@ -324,6 +536,9 @@
 .toList : java.util.stream.Collectors.toList
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.toList())
 
+.teeing : java.util.stream.Collectors.teeing
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.teeing($arg$))
+
 .mapping : java.util.stream.Collectors.mapping
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.mapping($arg$))
 
@@ -339,6 +554,9 @@
 .maxBy : java.util.stream.Collectors.maxBy
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.maxBy())
 
+.toUnmodifiableMap : java.util.stream.Collectors.toUnmodifiableMap
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.toUnmodifiableMap($arg$))
+
 .counting : java.util.stream.Collectors.counting
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.counting())
 
@@ -352,11 +570,20 @@
 .summarizingDouble : java.util.stream.Collectors.summarizingDouble
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.summarizingDouble())
 
+.filtering : java.util.stream.Collectors.filtering
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.filtering($arg$))
+
+.flatMapping : java.util.stream.Collectors.flatMapping
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.flatMapping($arg$))
+
 .toCollection : java.util.stream.Collectors.toCollection
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.toCollection())
 
 .averagingDouble : java.util.stream.Collectors.averagingDouble
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.averagingDouble())
+
+.toUnmodifiableList : java.util.stream.Collectors.toUnmodifiableList
+	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.toUnmodifiableList())
 
 .collectingAndThen : java.util.stream.Collectors.collectingAndThen
 	java.util.stream.Stream [java.util.stream.Collectors]  →  $expr$.collect(Collectors.collectingAndThen($arg$))

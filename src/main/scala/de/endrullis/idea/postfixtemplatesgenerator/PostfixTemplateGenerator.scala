@@ -5,7 +5,7 @@ import cn.hutool.bloomfilter.BloomFilterUtil
 import cn.hutool.cache.CacheUtil
 import cn.hutool.captcha.CaptchaUtil
 import cn.hutool.core.annotation.AnnotationUtil
-import com.google.common.collect.Maps
+import com.google.common.collect.{Lists, Maps, Multimaps, Sets}
 import com.google.common.io.Resources
 import org.github.util.tree.TreeUtil
 import org.github.util.{BitUtil, FuncUtil}
@@ -40,6 +40,9 @@ object PostfixTemplateGenerator {
 			classOf[AnnotationUtil],
 
 			classOf[Resources],
+			classOf[Multimaps],
+			classOf[Lists],
+			classOf[Sets],
 			classOf[Maps],
 
 			classOf[Optional[_]],
