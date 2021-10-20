@@ -1,17 +1,18 @@
 package de.endrullis.idea.postfixtemplatesgenerator;
 
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 import lombok.*;
 import static cn.hutool.core.util.ClassUtil.*;
 import static com.google.common.collect.ImmutableSortedSet.*;
+import static java.lang.System.*;
 import static java.lang.reflect.Modifier.isPublic;
 import static java.lang.reflect.Modifier.isStatic;
 import static java.util.Comparator.*;
+import static java.util.stream.Collectors.*;
+import static java.util.stream.Stream.*;
 
 public class Main {
   public static void main(String[] args) {
-    scan("com.google.common");
+    scan("com.google.common", "cn.hutool");
   }
 
   private static void scan(String... packages) {
@@ -19,7 +20,7 @@ public class Main {
       val classes = scanPackage(pack, Main::filter);
       val result  = copyOf(comparing(Class::getTypeName), classes);
       result.forEach(Main::println);
-      System.out.println();
+      out.println();
     }
   }
 
@@ -36,10 +37,10 @@ public class Main {
   private static void println(Class<?> clazz) {
     val length = clazz.getTypeParameters().length;
     if (length == 0) {
-      System.out.println("classOf[" + clazz.getTypeName() + "],");
+      out.println("classOf[" + clazz.getTypeName() + "],");
     } else {
-      val generic = Stream.generate(() -> "_").limit(length).collect(Collectors.joining(",", "[", "]"));
-      System.out.println("classOf[" + clazz.getTypeName() + generic + "],");
+      val generic = generate(() -> "_").limit(length).collect(joining(",", "[", "]"));
+      out.println("classOf[" + clazz.getTypeName() + generic + "],");
     }
   }
 }
