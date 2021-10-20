@@ -128,29 +128,1427 @@
 	java.lang.reflect.AnnotatedElement [cn.hutool.core.annotation.AnnotationUtil]  →  AnnotationUtil.getAnnotationValueMap($expr$, $arg$)
 
 
-## Resources
+## Ascii
 
-.asByteSource : com.google.common.io.Resources.asByteSource
-	java.net.URL [com.google.common.io.Resources]  →  Resources.asByteSource($expr$)
+.equalsIgnoreCase : com.google.common.base.Ascii.equalsIgnoreCase
+	java.lang.CharSequence [com.google.common.base.Ascii]  →  Ascii.equalsIgnoreCase($expr$, $arg$)
 
-.getResource : com.google.common.io.Resources.getResource
-	java.lang.String [com.google.common.io.Resources]  →  Resources.getResource($expr$)
-	java.lang.Class [com.google.common.io.Resources]  →  Resources.getResource($expr$, $arg$)
+.truncate : com.google.common.base.Ascii.truncate
+	java.lang.CharSequence [com.google.common.base.Ascii]  →  Ascii.truncate($expr$, $arg$)
 
-.readLines : com.google.common.io.Resources.readLines
-	java.net.URL [com.google.common.io.Resources]  →  Resources.readLines($expr$, $arg$)
+.toLowerCase : com.google.common.base.Ascii.toLowerCase
+	java.lang.String [com.google.common.base.Ascii]  →  Ascii.toLowerCase($expr$)
+	CHAR [com.google.common.base.Ascii]  →  Ascii.toLowerCase($expr$)
+	java.lang.CharSequence [com.google.common.base.Ascii]  →  Ascii.toLowerCase($expr$)
 
-.copy : com.google.common.io.Resources.copy
-	java.net.URL [com.google.common.io.Resources]  →  Resources.copy($expr$, $arg$)
+.isLowerCase : com.google.common.base.Ascii.isLowerCase
+	CHAR [com.google.common.base.Ascii]  →  Ascii.isLowerCase($expr$)
 
-.toString : com.google.common.io.Resources.toString
-	java.net.URL [com.google.common.io.Resources]  →  Resources.toString($expr$, $arg$)
+.isUpperCase : com.google.common.base.Ascii.isUpperCase
+	CHAR [com.google.common.base.Ascii]  →  Ascii.isUpperCase($expr$)
 
-.toByteArray : com.google.common.io.Resources.toByteArray
-	java.net.URL [com.google.common.io.Resources]  →  Resources.toByteArray($expr$)
+.toUpperCase : com.google.common.base.Ascii.toUpperCase
+	java.lang.String [com.google.common.base.Ascii]  →  Ascii.toUpperCase($expr$)
+	CHAR [com.google.common.base.Ascii]  →  Ascii.toUpperCase($expr$)
+	java.lang.CharSequence [com.google.common.base.Ascii]  →  Ascii.toUpperCase($expr$)
 
-.asCharSource : com.google.common.io.Resources.asCharSource
-	java.net.URL [com.google.common.io.Resources]  →  Resources.asCharSource($expr$, $arg$)
+
+## CharMatcher
+
+.forPredicate : com.google.common.base.CharMatcher.forPredicate
+	com.google.common.base.Predicate [com.google.common.base.CharMatcher]  →  CharMatcher.forPredicate($expr$)
+
+.any : com.google.common.base.CharMatcher.any
+	java.lang.Object [com.google.common.base.CharMatcher]  →  CharMatcher.any()
+
+.is : com.google.common.base.CharMatcher.is
+	CHAR [com.google.common.base.CharMatcher]  →  CharMatcher.is($expr$)
+
+.javaIsoControl : com.google.common.base.CharMatcher.javaIsoControl
+	java.lang.Object [com.google.common.base.CharMatcher]  →  CharMatcher.javaIsoControl()
+
+.anyOf : com.google.common.base.CharMatcher.anyOf
+	java.lang.CharSequence [com.google.common.base.CharMatcher]  →  CharMatcher.anyOf($expr$)
+
+.breakingWhitespace : com.google.common.base.CharMatcher.breakingWhitespace
+	java.lang.Object [com.google.common.base.CharMatcher]  →  CharMatcher.breakingWhitespace()
+
+.ascii : com.google.common.base.CharMatcher.ascii
+	java.lang.Object [com.google.common.base.CharMatcher]  →  CharMatcher.ascii()
+
+.noneOf : com.google.common.base.CharMatcher.noneOf
+	java.lang.CharSequence [com.google.common.base.CharMatcher]  →  CharMatcher.noneOf($expr$)
+
+.isNot : com.google.common.base.CharMatcher.isNot
+	CHAR [com.google.common.base.CharMatcher]  →  CharMatcher.isNot($expr$)
+
+.whitespace : com.google.common.base.CharMatcher.whitespace
+	java.lang.Object [com.google.common.base.CharMatcher]  →  CharMatcher.whitespace()
+
+.none : com.google.common.base.CharMatcher.none
+	java.lang.Object [com.google.common.base.CharMatcher]  →  CharMatcher.none()
+
+.inRange : com.google.common.base.CharMatcher.inRange
+	CHAR [com.google.common.base.CharMatcher]  →  CharMatcher.inRange($expr$, $arg$)
+
+
+## Converter
+
+.from : com.google.common.base.Converter.from
+	com.google.common.base.Function [com.google.common.base.Converter]  →  Converter.from($expr$, $arg$)
+
+.identity : com.google.common.base.Converter.identity
+	java.lang.Object [com.google.common.base.Converter]  →  Converter.identity()
+
+
+## Defaults
+
+.defaultValue : com.google.common.base.Defaults.defaultValue
+	java.lang.Class [com.google.common.base.Defaults]  →  Defaults.defaultValue($expr$)
+
+
+## Enums
+
+.stringConverter : com.google.common.base.Enums.stringConverter
+	java.lang.Class [com.google.common.base.Enums]  →  Enums.stringConverter($expr$)
+
+.getIfPresent : com.google.common.base.Enums.getIfPresent
+	java.lang.Class [com.google.common.base.Enums]  →  Enums.getIfPresent($expr$, $arg$)
+
+.getField : com.google.common.base.Enums.getField
+	java.lang.Enum [com.google.common.base.Enums]  →  Enums.getField($expr$)
+
+
+## Equivalence
+
+.identity : com.google.common.base.Equivalence.identity
+	java.lang.Object [com.google.common.base.Equivalence]  →  Equivalence.identity()
+
+.equals : com.google.common.base.Equivalence.equals
+	java.lang.Object [com.google.common.base.Equivalence]  →  Equivalence.equals()
+
+
+## FinalizablePhantomReference
+
+.reachabilityFence : com.google.common.base.FinalizablePhantomReference.reachabilityFence
+	java.lang.Object [com.google.common.base.FinalizablePhantomReference]  →  FinalizablePhantomReference.reachabilityFence($expr$)
+
+
+## FinalizableSoftReference
+
+.reachabilityFence : com.google.common.base.FinalizableSoftReference.reachabilityFence
+	java.lang.Object [com.google.common.base.FinalizableSoftReference]  →  FinalizableSoftReference.reachabilityFence($expr$)
+
+
+## FinalizableWeakReference
+
+.reachabilityFence : com.google.common.base.FinalizableWeakReference.reachabilityFence
+	java.lang.Object [com.google.common.base.FinalizableWeakReference]  →  FinalizableWeakReference.reachabilityFence($expr$)
+
+
+## Functions
+
+.constant : com.google.common.base.Functions.constant
+	java.lang.Object [com.google.common.base.Functions]  →  Functions.constant($expr$)
+
+.forPredicate : com.google.common.base.Functions.forPredicate
+	com.google.common.base.Predicate [com.google.common.base.Functions]  →  Functions.forPredicate($expr$)
+
+.compose : com.google.common.base.Functions.compose
+	com.google.common.base.Function [com.google.common.base.Functions]  →  Functions.compose($expr$, $arg$)
+
+.forMap : com.google.common.base.Functions.forMap
+	java.util.Map [com.google.common.base.Functions]  →  Functions.forMap($expr$, $arg$)
+
+.forSupplier : com.google.common.base.Functions.forSupplier
+	com.google.common.base.Supplier [com.google.common.base.Functions]  →  Functions.forSupplier($expr$)
+
+.toStringFunction : com.google.common.base.Functions.toStringFunction
+	java.lang.Object [com.google.common.base.Functions]  →  Functions.toStringFunction()
+
+.identity : com.google.common.base.Functions.identity
+	java.lang.Object [com.google.common.base.Functions]  →  Functions.identity()
+
+
+## Joiner
+
+.on : com.google.common.base.Joiner.on
+	java.lang.String [com.google.common.base.Joiner]  →  Joiner.on($expr$)
+	CHAR [com.google.common.base.Joiner]  →  Joiner.on($expr$)
+
+
+## MoreObjects
+
+.toStringHelper : com.google.common.base.MoreObjects.toStringHelper
+	java.lang.String [com.google.common.base.MoreObjects]  →  MoreObjects.toStringHelper($expr$)
+	java.lang.Class [com.google.common.base.MoreObjects]  →  MoreObjects.toStringHelper($expr$)
+	java.lang.Object [com.google.common.base.MoreObjects]  →  MoreObjects.toStringHelper($expr$)
+
+.firstNonNull : com.google.common.base.MoreObjects.firstNonNull
+	java.lang.Object [com.google.common.base.MoreObjects]  →  MoreObjects.firstNonNull($expr$, $arg$)
+
+
+## Objects
+
+.equal : com.google.common.base.Objects.equal
+	java.lang.Object [com.google.common.base.Objects]  →  Objects.equal($expr$, $arg$)
+
+.hashCode : com.google.common.base.Objects.hashCode
+	scala.Array [com.google.common.base.Objects]  →  Objects.hashCode($expr$)
+
+
+## Optional
+
+.absent : com.google.common.base.Optional.absent
+	java.lang.Object [com.google.common.base.Optional]  →  Optional.absent()
+
+.presentInstances : com.google.common.base.Optional.presentInstances
+	java.lang.Iterable [com.google.common.base.Optional]  →  Optional.presentInstances($expr$)
+
+.toJavaUtil : com.google.common.base.Optional.toJavaUtil
+	com.google.common.base.Optional [com.google.common.base.Optional]  →  Optional.toJavaUtil($expr$)
+
+.fromJavaUtil : com.google.common.base.Optional.fromJavaUtil
+	java.util.Optional [com.google.common.base.Optional]  →  Optional.fromJavaUtil($expr$)
+
+.fromNullable : com.google.common.base.Optional.fromNullable
+	java.lang.Object [com.google.common.base.Optional]  →  Optional.fromNullable($expr$)
+
+.of : com.google.common.base.Optional.of
+	java.lang.Object [com.google.common.base.Optional]  →  Optional.of($expr$)
+
+
+## Preconditions
+
+.checkArgument : com.google.common.base.Preconditions.checkArgument
+	BOOLEAN [com.google.common.base.Preconditions]  →  Preconditions.checkArgument($expr$, $arg$)
+
+.checkElementIndex : com.google.common.base.Preconditions.checkElementIndex
+	INT [com.google.common.base.Preconditions]  →  Preconditions.checkElementIndex($expr$, $arg$)
+
+.checkState : com.google.common.base.Preconditions.checkState
+	BOOLEAN [com.google.common.base.Preconditions]  →  Preconditions.checkState($expr$, $arg$)
+
+.checkNotNull : com.google.common.base.Preconditions.checkNotNull
+	java.lang.Object [com.google.common.base.Preconditions]  →  Preconditions.checkNotNull($expr$, $arg$)
+
+.checkPositionIndexes : com.google.common.base.Preconditions.checkPositionIndexes
+	INT [com.google.common.base.Preconditions]  →  Preconditions.checkPositionIndexes($expr$, $arg$)
+
+.checkPositionIndex : com.google.common.base.Preconditions.checkPositionIndex
+	INT [com.google.common.base.Preconditions]  →  Preconditions.checkPositionIndex($expr$, $arg$)
+
+
+## Predicates
+
+.in : com.google.common.base.Predicates.in
+	java.util.Collection [com.google.common.base.Predicates]  →  Predicates.in($expr$)
+
+.instanceOf : com.google.common.base.Predicates.instanceOf
+	java.lang.Class [com.google.common.base.Predicates]  →  Predicates.instanceOf($expr$)
+
+.compose : com.google.common.base.Predicates.compose
+	com.google.common.base.Predicate [com.google.common.base.Predicates]  →  Predicates.compose($expr$, $arg$)
+
+.isNull : com.google.common.base.Predicates.isNull
+	java.lang.Object [com.google.common.base.Predicates]  →  Predicates.isNull()
+
+.subtypeOf : com.google.common.base.Predicates.subtypeOf
+	java.lang.Class [com.google.common.base.Predicates]  →  Predicates.subtypeOf($expr$)
+
+.or : com.google.common.base.Predicates.or
+	scala.Array [com.google.common.base.Predicates]  →  Predicates.or($expr$)
+	com.google.common.base.Predicate [com.google.common.base.Predicates]  →  Predicates.or($expr$, $arg$)
+	java.lang.Iterable [com.google.common.base.Predicates]  →  Predicates.or($expr$)
+
+.notNull : com.google.common.base.Predicates.notNull
+	java.lang.Object [com.google.common.base.Predicates]  →  Predicates.notNull()
+
+.not : com.google.common.base.Predicates.not
+	com.google.common.base.Predicate [com.google.common.base.Predicates]  →  Predicates.not($expr$)
+
+.alwaysTrue : com.google.common.base.Predicates.alwaysTrue
+	java.lang.Object [com.google.common.base.Predicates]  →  Predicates.alwaysTrue()
+
+.equalTo : com.google.common.base.Predicates.equalTo
+	java.lang.Object [com.google.common.base.Predicates]  →  Predicates.equalTo($expr$)
+
+.containsPattern : com.google.common.base.Predicates.containsPattern
+	java.lang.String [com.google.common.base.Predicates]  →  Predicates.containsPattern($expr$)
+
+.contains : com.google.common.base.Predicates.contains
+	java.util.regex.Pattern [com.google.common.base.Predicates]  →  Predicates.contains($expr$)
+
+.alwaysFalse : com.google.common.base.Predicates.alwaysFalse
+	java.lang.Object [com.google.common.base.Predicates]  →  Predicates.alwaysFalse()
+
+.and : com.google.common.base.Predicates.and
+	scala.Array [com.google.common.base.Predicates]  →  Predicates.and($expr$)
+	com.google.common.base.Predicate [com.google.common.base.Predicates]  →  Predicates.and($expr$, $arg$)
+	java.lang.Iterable [com.google.common.base.Predicates]  →  Predicates.and($expr$)
+
+
+## Splitter
+
+.on : com.google.common.base.Splitter.on
+	java.lang.String [com.google.common.base.Splitter]  →  Splitter.on($expr$)
+	CHAR [com.google.common.base.Splitter]  →  Splitter.on($expr$)
+	com.google.common.base.CharMatcher [com.google.common.base.Splitter]  →  Splitter.on($expr$)
+	java.util.regex.Pattern [com.google.common.base.Splitter]  →  Splitter.on($expr$)
+
+.fixedLength : com.google.common.base.Splitter.fixedLength
+	INT [com.google.common.base.Splitter]  →  Splitter.fixedLength($expr$)
+
+.onPattern : com.google.common.base.Splitter.onPattern
+	java.lang.String [com.google.common.base.Splitter]  →  Splitter.onPattern($expr$)
+
+
+## Stopwatch
+
+.createUnstarted : com.google.common.base.Stopwatch.createUnstarted
+	com.google.common.base.Ticker [com.google.common.base.Stopwatch]  →  Stopwatch.createUnstarted($expr$)
+	java.lang.Object [com.google.common.base.Stopwatch]  →  Stopwatch.createUnstarted()
+
+.createStarted : com.google.common.base.Stopwatch.createStarted
+	com.google.common.base.Ticker [com.google.common.base.Stopwatch]  →  Stopwatch.createStarted($expr$)
+	java.lang.Object [com.google.common.base.Stopwatch]  →  Stopwatch.createStarted()
+
+
+## Strings
+
+.padEnd : com.google.common.base.Strings.padEnd
+	java.lang.String [com.google.common.base.Strings]  →  Strings.padEnd($expr$, $arg$)
+
+.commonPrefix : com.google.common.base.Strings.commonPrefix
+	java.lang.CharSequence [com.google.common.base.Strings]  →  Strings.commonPrefix($expr$, $arg$)
+
+.commonSuffix : com.google.common.base.Strings.commonSuffix
+	java.lang.CharSequence [com.google.common.base.Strings]  →  Strings.commonSuffix($expr$, $arg$)
+
+.lenientFormat : com.google.common.base.Strings.lenientFormat
+	java.lang.String [com.google.common.base.Strings]  →  Strings.lenientFormat($expr$, $arg$)
+
+.isNullOrEmpty : com.google.common.base.Strings.isNullOrEmpty
+	java.lang.String [com.google.common.base.Strings]  →  Strings.isNullOrEmpty($expr$)
+
+.repeat : com.google.common.base.Strings.repeat
+	java.lang.String [com.google.common.base.Strings]  →  Strings.repeat($expr$, $arg$)
+
+.nullToEmpty : com.google.common.base.Strings.nullToEmpty
+	java.lang.String [com.google.common.base.Strings]  →  Strings.nullToEmpty($expr$)
+
+.padStart : com.google.common.base.Strings.padStart
+	java.lang.String [com.google.common.base.Strings]  →  Strings.padStart($expr$, $arg$)
+
+.emptyToNull : com.google.common.base.Strings.emptyToNull
+	java.lang.String [com.google.common.base.Strings]  →  Strings.emptyToNull($expr$)
+
+
+## Suppliers
+
+.compose : com.google.common.base.Suppliers.compose
+	com.google.common.base.Function [com.google.common.base.Suppliers]  →  Suppliers.compose($expr$, $arg$)
+
+.ofInstance : com.google.common.base.Suppliers.ofInstance
+	java.lang.Object [com.google.common.base.Suppliers]  →  Suppliers.ofInstance($expr$)
+
+.synchronizedSupplier : com.google.common.base.Suppliers.synchronizedSupplier
+	com.google.common.base.Supplier [com.google.common.base.Suppliers]  →  Suppliers.synchronizedSupplier($expr$)
+
+.supplierFunction : com.google.common.base.Suppliers.supplierFunction
+	java.lang.Object [com.google.common.base.Suppliers]  →  Suppliers.supplierFunction()
+
+.memoizeWithExpiration : com.google.common.base.Suppliers.memoizeWithExpiration
+	com.google.common.base.Supplier [com.google.common.base.Suppliers]  →  Suppliers.memoizeWithExpiration($expr$, $arg$)
+
+.memoize : com.google.common.base.Suppliers.memoize
+	com.google.common.base.Supplier [com.google.common.base.Suppliers]  →  Suppliers.memoize($expr$)
+
+
+## Throwables
+
+.getCausalChain : com.google.common.base.Throwables.getCausalChain
+	java.lang.Throwable [com.google.common.base.Throwables]  →  Throwables.getCausalChain($expr$)
+
+.lazyStackTrace : com.google.common.base.Throwables.lazyStackTrace
+	java.lang.Throwable [com.google.common.base.Throwables]  →  Throwables.lazyStackTrace($expr$)
+
+.propagateIfPossible : com.google.common.base.Throwables.propagateIfPossible
+	java.lang.Throwable [com.google.common.base.Throwables]  →  Throwables.propagateIfPossible($expr$, $arg$)
+
+.getCauseAs : com.google.common.base.Throwables.getCauseAs
+	java.lang.Throwable [com.google.common.base.Throwables]  →  Throwables.getCauseAs($expr$, $arg$)
+
+.lazyStackTraceIsLazy : com.google.common.base.Throwables.lazyStackTraceIsLazy
+	java.lang.Object [com.google.common.base.Throwables]  →  Throwables.lazyStackTraceIsLazy()
+
+.throwIfInstanceOf : com.google.common.base.Throwables.throwIfInstanceOf
+	java.lang.Throwable [com.google.common.base.Throwables]  →  Throwables.throwIfInstanceOf($expr$, $arg$)
+
+.getRootCause : com.google.common.base.Throwables.getRootCause
+	java.lang.Throwable [com.google.common.base.Throwables]  →  Throwables.getRootCause($expr$)
+
+.throwIfUnchecked : com.google.common.base.Throwables.throwIfUnchecked
+	java.lang.Throwable [com.google.common.base.Throwables]  →  Throwables.throwIfUnchecked($expr$)
+
+.getStackTraceAsString : com.google.common.base.Throwables.getStackTraceAsString
+	java.lang.Throwable [com.google.common.base.Throwables]  →  Throwables.getStackTraceAsString($expr$)
+
+
+## Ticker
+
+.systemTicker : com.google.common.base.Ticker.systemTicker
+	java.lang.Object [com.google.common.base.Ticker]  →  Ticker.systemTicker()
+
+
+## Utf8
+
+.encodedLength : com.google.common.base.Utf8.encodedLength
+	java.lang.CharSequence [com.google.common.base.Utf8]  →  Utf8.encodedLength($expr$)
+
+.isWellFormed : com.google.common.base.Utf8.isWellFormed
+	scala.Array [com.google.common.base.Utf8]  →  Utf8.isWellFormed($expr$, $arg$)
+
+
+## Verify
+
+.verify : com.google.common.base.Verify.verify
+	BOOLEAN [com.google.common.base.Verify]  →  Verify.verify($expr$, $arg$)
+
+.verifyNotNull : com.google.common.base.Verify.verifyNotNull
+	java.lang.Object [com.google.common.base.Verify]  →  Verify.verifyNotNull($expr$, $arg$)
+
+
+## Finalizer
+
+.startFinalizer : com.google.common.base.internal.Finalizer.startFinalizer
+	java.lang.Class [com.google.common.base.internal.Finalizer]  →  Finalizer.startFinalizer($expr$, $arg$)
+
+
+## CacheBuilder
+
+.newBuilder : com.google.common.cache.CacheBuilder.newBuilder
+	java.lang.Object [com.google.common.cache.CacheBuilder]  →  CacheBuilder.newBuilder()
+
+.from : com.google.common.cache.CacheBuilder.from
+	java.lang.String [com.google.common.cache.CacheBuilder]  →  CacheBuilder.from($expr$)
+	com.google.common.cache.CacheBuilderSpec [com.google.common.cache.CacheBuilder]  →  CacheBuilder.from($expr$)
+
+
+## CacheBuilderSpec
+
+.disableCaching : com.google.common.cache.CacheBuilderSpec.disableCaching
+	java.lang.Object [com.google.common.cache.CacheBuilderSpec]  →  CacheBuilderSpec.disableCaching()
+
+.parse : com.google.common.cache.CacheBuilderSpec.parse
+	java.lang.String [com.google.common.cache.CacheBuilderSpec]  →  CacheBuilderSpec.parse($expr$)
+
+
+## CacheLoader
+
+.from : com.google.common.cache.CacheLoader.from
+	com.google.common.base.Function [com.google.common.cache.CacheLoader]  →  CacheLoader.from($expr$)
+	com.google.common.base.Supplier [com.google.common.cache.CacheLoader]  →  CacheLoader.from($expr$)
+
+.asyncReloading : com.google.common.cache.CacheLoader.asyncReloading
+	com.google.common.cache.CacheLoader [com.google.common.cache.CacheLoader]  →  CacheLoader.asyncReloading($expr$, $arg$)
+
+
+## RemovalListeners
+
+.asynchronous : com.google.common.cache.RemovalListeners.asynchronous
+	com.google.common.cache.RemovalListener [com.google.common.cache.RemovalListeners]  →  RemovalListeners.asynchronous($expr$, $arg$)
+
+
+## RemovalNotification
+
+.create : com.google.common.cache.RemovalNotification.create
+	java.lang.Object [com.google.common.cache.RemovalNotification]  →  RemovalNotification.create($expr$, $arg$)
+
+
+## ArrayListMultimap
+
+.create : com.google.common.collect.ArrayListMultimap.create
+	INT [com.google.common.collect.ArrayListMultimap]  →  ArrayListMultimap.create($expr$, $arg$)
+	com.google.common.collect.Multimap [com.google.common.collect.ArrayListMultimap]  →  ArrayListMultimap.create($expr$)
+	java.lang.Object [com.google.common.collect.ArrayListMultimap]  →  ArrayListMultimap.create()
+
+
+## ArrayTable
+
+.create : com.google.common.collect.ArrayTable.create
+	com.google.common.collect.Table [com.google.common.collect.ArrayTable]  →  ArrayTable.create($expr$)
+	java.lang.Iterable [com.google.common.collect.ArrayTable]  →  ArrayTable.create($expr$, $arg$)
+
+
+## Collections2
+
+.orderedPermutations : com.google.common.collect.Collections2.orderedPermutations
+	java.lang.Iterable [com.google.common.collect.Collections2]  →  Collections2.orderedPermutations($expr$, $arg$)
+
+.filter : com.google.common.collect.Collections2.filter
+	java.util.Collection [com.google.common.collect.Collections2]  →  Collections2.filter($expr$, $arg$)
+
+.transform : com.google.common.collect.Collections2.transform
+	java.util.Collection [com.google.common.collect.Collections2]  →  Collections2.transform($expr$, $arg$)
+
+.permutations : com.google.common.collect.Collections2.permutations
+	java.util.Collection [com.google.common.collect.Collections2]  →  Collections2.permutations($expr$)
+
+
+## Comparators
+
+.lexicographical : com.google.common.collect.Comparators.lexicographical
+	java.util.Comparator [com.google.common.collect.Comparators]  →  Comparators.lexicographical($expr$)
+
+.min : com.google.common.collect.Comparators.min
+	java.lang.Comparable [com.google.common.collect.Comparators]  →  Comparators.min($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.Comparators]  →  Comparators.min($expr$, $arg$)
+
+.emptiesLast : com.google.common.collect.Comparators.emptiesLast
+	java.util.Comparator [com.google.common.collect.Comparators]  →  Comparators.emptiesLast($expr$)
+
+.isInStrictOrder : com.google.common.collect.Comparators.isInStrictOrder
+	java.lang.Iterable [com.google.common.collect.Comparators]  →  Comparators.isInStrictOrder($expr$, $arg$)
+
+.isInOrder : com.google.common.collect.Comparators.isInOrder
+	java.lang.Iterable [com.google.common.collect.Comparators]  →  Comparators.isInOrder($expr$, $arg$)
+
+.least : com.google.common.collect.Comparators.least
+	INT [com.google.common.collect.Comparators]  →  Comparators.least($expr$, $arg$)
+
+.max : com.google.common.collect.Comparators.max
+	java.lang.Comparable [com.google.common.collect.Comparators]  →  Comparators.max($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.Comparators]  →  Comparators.max($expr$, $arg$)
+
+.greatest : com.google.common.collect.Comparators.greatest
+	INT [com.google.common.collect.Comparators]  →  Comparators.greatest($expr$, $arg$)
+
+.emptiesFirst : com.google.common.collect.Comparators.emptiesFirst
+	java.util.Comparator [com.google.common.collect.Comparators]  →  Comparators.emptiesFirst($expr$)
+
+
+## ComparisonChain
+
+.start : com.google.common.collect.ComparisonChain.start
+	java.lang.Object [com.google.common.collect.ComparisonChain]  →  ComparisonChain.start()
+
+
+## ConcurrentHashMultiset
+
+.create : com.google.common.collect.ConcurrentHashMultiset.create
+	java.util.concurrent.ConcurrentMap [com.google.common.collect.ConcurrentHashMultiset]  →  ConcurrentHashMultiset.create($expr$)
+	java.lang.Iterable [com.google.common.collect.ConcurrentHashMultiset]  →  ConcurrentHashMultiset.create($expr$)
+	java.lang.Object [com.google.common.collect.ConcurrentHashMultiset]  →  ConcurrentHashMultiset.create()
+
+
+## ContiguousSet
+
+.reverseOrder : com.google.common.collect.ContiguousSet.reverseOrder
+	java.lang.Object [com.google.common.collect.ContiguousSet]  →  ContiguousSet.reverseOrder()
+
+.closed : com.google.common.collect.ContiguousSet.closed
+	LONG [com.google.common.collect.ContiguousSet]  →  ContiguousSet.closed($expr$, $arg$)
+	INT [com.google.common.collect.ContiguousSet]  →  ContiguousSet.closed($expr$, $arg$)
+
+.copyOfSorted : com.google.common.collect.ContiguousSet.copyOfSorted
+	java.util.SortedSet [com.google.common.collect.ContiguousSet]  →  ContiguousSet.copyOfSorted($expr$)
+
+.create : com.google.common.collect.ContiguousSet.create
+	com.google.common.collect.Range [com.google.common.collect.ContiguousSet]  →  ContiguousSet.create($expr$, $arg$)
+
+.builder : com.google.common.collect.ContiguousSet.builder
+	java.lang.Object [com.google.common.collect.ContiguousSet]  →  ContiguousSet.builder()
+
+.copyOf : com.google.common.collect.ContiguousSet.copyOf
+	java.util.Iterator [com.google.common.collect.ContiguousSet]  →  ContiguousSet.copyOf($expr$)
+	java.util.Comparator [com.google.common.collect.ContiguousSet]  →  ContiguousSet.copyOf($expr$, $arg$)
+	java.lang.Iterable [com.google.common.collect.ContiguousSet]  →  ContiguousSet.copyOf($expr$)
+	java.util.Collection [com.google.common.collect.ContiguousSet]  →  ContiguousSet.copyOf($expr$)
+	scala.Array [com.google.common.collect.ContiguousSet]  →  ContiguousSet.copyOf($expr$)
+
+.naturalOrder : com.google.common.collect.ContiguousSet.naturalOrder
+	java.lang.Object [com.google.common.collect.ContiguousSet]  →  ContiguousSet.naturalOrder()
+
+.orderedBy : com.google.common.collect.ContiguousSet.orderedBy
+	java.util.Comparator [com.google.common.collect.ContiguousSet]  →  ContiguousSet.orderedBy($expr$)
+
+.builderWithExpectedSize : com.google.common.collect.ContiguousSet.builderWithExpectedSize
+	INT [com.google.common.collect.ContiguousSet]  →  ContiguousSet.builderWithExpectedSize($expr$)
+
+.closedOpen : com.google.common.collect.ContiguousSet.closedOpen
+	LONG [com.google.common.collect.ContiguousSet]  →  ContiguousSet.closedOpen($expr$, $arg$)
+	INT [com.google.common.collect.ContiguousSet]  →  ContiguousSet.closedOpen($expr$, $arg$)
+
+.of : com.google.common.collect.ContiguousSet.of
+	java.lang.Comparable [com.google.common.collect.ContiguousSet]  →  ContiguousSet.of($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ContiguousSet]  →  ContiguousSet.of($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ContiguousSet]  →  ContiguousSet.of()
+
+.toImmutableSortedSet : com.google.common.collect.ContiguousSet.toImmutableSortedSet
+	java.util.Comparator [com.google.common.collect.ContiguousSet]  →  ContiguousSet.toImmutableSortedSet($expr$)
+
+
+## DiscreteDomain
+
+.bigIntegers : com.google.common.collect.DiscreteDomain.bigIntegers
+	java.lang.Object [com.google.common.collect.DiscreteDomain]  →  DiscreteDomain.bigIntegers()
+
+.integers : com.google.common.collect.DiscreteDomain.integers
+	java.lang.Object [com.google.common.collect.DiscreteDomain]  →  DiscreteDomain.integers()
+
+.longs : com.google.common.collect.DiscreteDomain.longs
+	java.lang.Object [com.google.common.collect.DiscreteDomain]  →  DiscreteDomain.longs()
+
+
+## EnumBiMap
+
+.create : com.google.common.collect.EnumBiMap.create
+	java.util.Map [com.google.common.collect.EnumBiMap]  →  EnumBiMap.create($expr$)
+	java.lang.Class [com.google.common.collect.EnumBiMap]  →  EnumBiMap.create($expr$, $arg$)
+
+
+## EnumHashBiMap
+
+.create : com.google.common.collect.EnumHashBiMap.create
+	java.util.Map [com.google.common.collect.EnumHashBiMap]  →  EnumHashBiMap.create($expr$)
+	java.lang.Class [com.google.common.collect.EnumHashBiMap]  →  EnumHashBiMap.create($expr$)
+
+
+## EnumMultiset
+
+.create : com.google.common.collect.EnumMultiset.create
+	java.lang.Iterable [com.google.common.collect.EnumMultiset]  →  EnumMultiset.create($expr$, $arg$)
+	java.lang.Class [com.google.common.collect.EnumMultiset]  →  EnumMultiset.create($expr$)
+
+
+## EvictingQueue
+
+.create : com.google.common.collect.EvictingQueue.create
+	INT [com.google.common.collect.EvictingQueue]  →  EvictingQueue.create($expr$)
+
+
+## FluentIterable
+
+.of : com.google.common.collect.FluentIterable.of
+	java.lang.Object [com.google.common.collect.FluentIterable]  →  FluentIterable.of($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.FluentIterable]  →  FluentIterable.of()
+
+.from : com.google.common.collect.FluentIterable.from
+	scala.Array [com.google.common.collect.FluentIterable]  →  FluentIterable.from($expr$)
+	java.lang.Iterable [com.google.common.collect.FluentIterable]  →  FluentIterable.from($expr$)
+
+.concat : com.google.common.collect.FluentIterable.concat
+	scala.Array [com.google.common.collect.FluentIterable]  →  FluentIterable.concat($expr$)
+	java.lang.Iterable [com.google.common.collect.FluentIterable]  →  FluentIterable.concat($expr$, $arg$)
+
+
+## HashBasedTable
+
+.create : com.google.common.collect.HashBasedTable.create
+	com.google.common.collect.Table [com.google.common.collect.HashBasedTable]  →  HashBasedTable.create($expr$)
+	INT [com.google.common.collect.HashBasedTable]  →  HashBasedTable.create($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.HashBasedTable]  →  HashBasedTable.create()
+
+
+## HashBiMap
+
+.create : com.google.common.collect.HashBiMap.create
+	java.util.Map [com.google.common.collect.HashBiMap]  →  HashBiMap.create($expr$)
+	INT [com.google.common.collect.HashBiMap]  →  HashBiMap.create($expr$)
+	java.lang.Object [com.google.common.collect.HashBiMap]  →  HashBiMap.create()
+
+
+## HashMultimap
+
+.create : com.google.common.collect.HashMultimap.create
+	INT [com.google.common.collect.HashMultimap]  →  HashMultimap.create($expr$, $arg$)
+	com.google.common.collect.Multimap [com.google.common.collect.HashMultimap]  →  HashMultimap.create($expr$)
+	java.lang.Object [com.google.common.collect.HashMultimap]  →  HashMultimap.create()
+
+
+## HashMultiset
+
+.create : com.google.common.collect.HashMultiset.create
+	java.lang.Iterable [com.google.common.collect.HashMultiset]  →  HashMultiset.create($expr$)
+	INT [com.google.common.collect.HashMultiset]  →  HashMultiset.create($expr$)
+	java.lang.Object [com.google.common.collect.HashMultiset]  →  HashMultiset.create()
+
+
+## ImmutableBiMap
+
+.builder : com.google.common.collect.ImmutableBiMap.builder
+	java.lang.Object [com.google.common.collect.ImmutableBiMap]  →  ImmutableBiMap.builder()
+
+.toImmutableBiMap : com.google.common.collect.ImmutableBiMap.toImmutableBiMap
+	java.util.function.Function [com.google.common.collect.ImmutableBiMap]  →  ImmutableBiMap.toImmutableBiMap($expr$, $arg$)
+
+.copyOf : com.google.common.collect.ImmutableBiMap.copyOf
+	java.util.Map [com.google.common.collect.ImmutableBiMap]  →  ImmutableBiMap.copyOf($expr$)
+	java.lang.Iterable [com.google.common.collect.ImmutableBiMap]  →  ImmutableBiMap.copyOf($expr$)
+
+.builderWithExpectedSize : com.google.common.collect.ImmutableBiMap.builderWithExpectedSize
+	INT [com.google.common.collect.ImmutableBiMap]  →  ImmutableBiMap.builderWithExpectedSize($expr$)
+
+.ofEntries : com.google.common.collect.ImmutableBiMap.ofEntries
+	scala.Array [com.google.common.collect.ImmutableBiMap]  →  ImmutableBiMap.ofEntries($expr$)
+
+.of : com.google.common.collect.ImmutableBiMap.of
+	java.lang.Object [com.google.common.collect.ImmutableBiMap]  →  ImmutableBiMap.of($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ImmutableBiMap]  →  ImmutableBiMap.of()
+
+
+## ImmutableClassToInstanceMap
+
+.builder : com.google.common.collect.ImmutableClassToInstanceMap.builder
+	java.lang.Object [com.google.common.collect.ImmutableClassToInstanceMap]  →  ImmutableClassToInstanceMap.builder()
+
+.of : com.google.common.collect.ImmutableClassToInstanceMap.of
+	java.lang.Class [com.google.common.collect.ImmutableClassToInstanceMap]  →  ImmutableClassToInstanceMap.of($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ImmutableClassToInstanceMap]  →  ImmutableClassToInstanceMap.of()
+
+.copyOf : com.google.common.collect.ImmutableClassToInstanceMap.copyOf
+	java.util.Map [com.google.common.collect.ImmutableClassToInstanceMap]  →  ImmutableClassToInstanceMap.copyOf($expr$)
+
+
+## ImmutableList
+
+.builder : com.google.common.collect.ImmutableList.builder
+	java.lang.Object [com.google.common.collect.ImmutableList]  →  ImmutableList.builder()
+
+.sortedCopyOf : com.google.common.collect.ImmutableList.sortedCopyOf
+	java.util.Comparator [com.google.common.collect.ImmutableList]  →  ImmutableList.sortedCopyOf($expr$, $arg$)
+	java.lang.Iterable [com.google.common.collect.ImmutableList]  →  ImmutableList.sortedCopyOf($expr$)
+
+.copyOf : com.google.common.collect.ImmutableList.copyOf
+	java.util.Collection [com.google.common.collect.ImmutableList]  →  ImmutableList.copyOf($expr$)
+	scala.Array [com.google.common.collect.ImmutableList]  →  ImmutableList.copyOf($expr$)
+	java.lang.Iterable [com.google.common.collect.ImmutableList]  →  ImmutableList.copyOf($expr$)
+	java.util.Iterator [com.google.common.collect.ImmutableList]  →  ImmutableList.copyOf($expr$)
+
+.builderWithExpectedSize : com.google.common.collect.ImmutableList.builderWithExpectedSize
+	INT [com.google.common.collect.ImmutableList]  →  ImmutableList.builderWithExpectedSize($expr$)
+
+.toImmutableList : com.google.common.collect.ImmutableList.toImmutableList
+	java.lang.Object [com.google.common.collect.ImmutableList]  →  ImmutableList.toImmutableList()
+
+.of : com.google.common.collect.ImmutableList.of
+	java.lang.Object [com.google.common.collect.ImmutableList]  →  ImmutableList.of($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ImmutableList]  →  ImmutableList.of()
+
+
+## ImmutableListMultimap
+
+.toImmutableListMultimap : com.google.common.collect.ImmutableListMultimap.toImmutableListMultimap
+	java.util.function.Function [com.google.common.collect.ImmutableListMultimap]  →  ImmutableListMultimap.toImmutableListMultimap($expr$, $arg$)
+
+.builder : com.google.common.collect.ImmutableListMultimap.builder
+	java.lang.Object [com.google.common.collect.ImmutableListMultimap]  →  ImmutableListMultimap.builder()
+
+.copyOf : com.google.common.collect.ImmutableListMultimap.copyOf
+	java.lang.Iterable [com.google.common.collect.ImmutableListMultimap]  →  ImmutableListMultimap.copyOf($expr$)
+	com.google.common.collect.Multimap [com.google.common.collect.ImmutableListMultimap]  →  ImmutableListMultimap.copyOf($expr$)
+
+.flatteningToImmutableListMultimap : com.google.common.collect.ImmutableListMultimap.flatteningToImmutableListMultimap
+	java.util.function.Function [com.google.common.collect.ImmutableListMultimap]  →  ImmutableListMultimap.flatteningToImmutableListMultimap($expr$, $arg$)
+
+.of : com.google.common.collect.ImmutableListMultimap.of
+	java.lang.Object [com.google.common.collect.ImmutableListMultimap]  →  ImmutableListMultimap.of($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ImmutableListMultimap]  →  ImmutableListMultimap.of()
+
+
+## ImmutableMap
+
+.toImmutableMap : com.google.common.collect.ImmutableMap.toImmutableMap
+	java.util.function.Function [com.google.common.collect.ImmutableMap]  →  ImmutableMap.toImmutableMap($expr$, $arg$)
+
+.builder : com.google.common.collect.ImmutableMap.builder
+	java.lang.Object [com.google.common.collect.ImmutableMap]  →  ImmutableMap.builder()
+
+.copyOf : com.google.common.collect.ImmutableMap.copyOf
+	java.util.Map [com.google.common.collect.ImmutableMap]  →  ImmutableMap.copyOf($expr$)
+	java.lang.Iterable [com.google.common.collect.ImmutableMap]  →  ImmutableMap.copyOf($expr$)
+
+.builderWithExpectedSize : com.google.common.collect.ImmutableMap.builderWithExpectedSize
+	INT [com.google.common.collect.ImmutableMap]  →  ImmutableMap.builderWithExpectedSize($expr$)
+
+.ofEntries : com.google.common.collect.ImmutableMap.ofEntries
+	scala.Array [com.google.common.collect.ImmutableMap]  →  ImmutableMap.ofEntries($expr$)
+
+.of : com.google.common.collect.ImmutableMap.of
+	java.lang.Object [com.google.common.collect.ImmutableMap]  →  ImmutableMap.of($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ImmutableMap]  →  ImmutableMap.of()
+
+
+## ImmutableMultimap
+
+.builder : com.google.common.collect.ImmutableMultimap.builder
+	java.lang.Object [com.google.common.collect.ImmutableMultimap]  →  ImmutableMultimap.builder()
+
+.of : com.google.common.collect.ImmutableMultimap.of
+	java.lang.Object [com.google.common.collect.ImmutableMultimap]  →  ImmutableMultimap.of($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ImmutableMultimap]  →  ImmutableMultimap.of()
+
+.copyOf : com.google.common.collect.ImmutableMultimap.copyOf
+	java.lang.Iterable [com.google.common.collect.ImmutableMultimap]  →  ImmutableMultimap.copyOf($expr$)
+	com.google.common.collect.Multimap [com.google.common.collect.ImmutableMultimap]  →  ImmutableMultimap.copyOf($expr$)
+
+
+## ImmutableMultiset
+
+.builder : com.google.common.collect.ImmutableMultiset.builder
+	java.lang.Object [com.google.common.collect.ImmutableMultiset]  →  ImmutableMultiset.builder()
+
+.toImmutableMultiset : com.google.common.collect.ImmutableMultiset.toImmutableMultiset
+	java.util.function.Function [com.google.common.collect.ImmutableMultiset]  →  ImmutableMultiset.toImmutableMultiset($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ImmutableMultiset]  →  ImmutableMultiset.toImmutableMultiset()
+
+.of : com.google.common.collect.ImmutableMultiset.of
+	java.lang.Object [com.google.common.collect.ImmutableMultiset]  →  ImmutableMultiset.of($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ImmutableMultiset]  →  ImmutableMultiset.of()
+
+.copyOf : com.google.common.collect.ImmutableMultiset.copyOf
+	scala.Array [com.google.common.collect.ImmutableMultiset]  →  ImmutableMultiset.copyOf($expr$)
+	java.lang.Iterable [com.google.common.collect.ImmutableMultiset]  →  ImmutableMultiset.copyOf($expr$)
+	java.util.Iterator [com.google.common.collect.ImmutableMultiset]  →  ImmutableMultiset.copyOf($expr$)
+
+
+## ImmutableRangeMap
+
+.builder : com.google.common.collect.ImmutableRangeMap.builder
+	java.lang.Object [com.google.common.collect.ImmutableRangeMap]  →  ImmutableRangeMap.builder()
+
+.of : com.google.common.collect.ImmutableRangeMap.of
+	com.google.common.collect.Range [com.google.common.collect.ImmutableRangeMap]  →  ImmutableRangeMap.of($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ImmutableRangeMap]  →  ImmutableRangeMap.of()
+
+.copyOf : com.google.common.collect.ImmutableRangeMap.copyOf
+	com.google.common.collect.RangeMap [com.google.common.collect.ImmutableRangeMap]  →  ImmutableRangeMap.copyOf($expr$)
+
+.toImmutableRangeMap : com.google.common.collect.ImmutableRangeMap.toImmutableRangeMap
+	java.util.function.Function [com.google.common.collect.ImmutableRangeMap]  →  ImmutableRangeMap.toImmutableRangeMap($expr$, $arg$)
+
+
+## ImmutableRangeSet
+
+.unionOf : com.google.common.collect.ImmutableRangeSet.unionOf
+	java.lang.Iterable [com.google.common.collect.ImmutableRangeSet]  →  ImmutableRangeSet.unionOf($expr$)
+
+.builder : com.google.common.collect.ImmutableRangeSet.builder
+	java.lang.Object [com.google.common.collect.ImmutableRangeSet]  →  ImmutableRangeSet.builder()
+
+.copyOf : com.google.common.collect.ImmutableRangeSet.copyOf
+	java.lang.Iterable [com.google.common.collect.ImmutableRangeSet]  →  ImmutableRangeSet.copyOf($expr$)
+	com.google.common.collect.RangeSet [com.google.common.collect.ImmutableRangeSet]  →  ImmutableRangeSet.copyOf($expr$)
+
+.toImmutableRangeSet : com.google.common.collect.ImmutableRangeSet.toImmutableRangeSet
+	java.lang.Object [com.google.common.collect.ImmutableRangeSet]  →  ImmutableRangeSet.toImmutableRangeSet()
+
+.of : com.google.common.collect.ImmutableRangeSet.of
+	com.google.common.collect.Range [com.google.common.collect.ImmutableRangeSet]  →  ImmutableRangeSet.of($expr$)
+	java.lang.Object [com.google.common.collect.ImmutableRangeSet]  →  ImmutableRangeSet.of()
+
+
+## ImmutableSet
+
+.builder : com.google.common.collect.ImmutableSet.builder
+	java.lang.Object [com.google.common.collect.ImmutableSet]  →  ImmutableSet.builder()
+
+.toImmutableSet : com.google.common.collect.ImmutableSet.toImmutableSet
+	java.lang.Object [com.google.common.collect.ImmutableSet]  →  ImmutableSet.toImmutableSet()
+
+.copyOf : com.google.common.collect.ImmutableSet.copyOf
+	java.util.Collection [com.google.common.collect.ImmutableSet]  →  ImmutableSet.copyOf($expr$)
+	scala.Array [com.google.common.collect.ImmutableSet]  →  ImmutableSet.copyOf($expr$)
+	java.lang.Iterable [com.google.common.collect.ImmutableSet]  →  ImmutableSet.copyOf($expr$)
+	java.util.Iterator [com.google.common.collect.ImmutableSet]  →  ImmutableSet.copyOf($expr$)
+
+.builderWithExpectedSize : com.google.common.collect.ImmutableSet.builderWithExpectedSize
+	INT [com.google.common.collect.ImmutableSet]  →  ImmutableSet.builderWithExpectedSize($expr$)
+
+.of : com.google.common.collect.ImmutableSet.of
+	java.lang.Object [com.google.common.collect.ImmutableSet]  →  ImmutableSet.of($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ImmutableSet]  →  ImmutableSet.of()
+
+
+## ImmutableSetMultimap
+
+.flatteningToImmutableSetMultimap : com.google.common.collect.ImmutableSetMultimap.flatteningToImmutableSetMultimap
+	java.util.function.Function [com.google.common.collect.ImmutableSetMultimap]  →  ImmutableSetMultimap.flatteningToImmutableSetMultimap($expr$, $arg$)
+
+.builder : com.google.common.collect.ImmutableSetMultimap.builder
+	java.lang.Object [com.google.common.collect.ImmutableSetMultimap]  →  ImmutableSetMultimap.builder()
+
+.toImmutableSetMultimap : com.google.common.collect.ImmutableSetMultimap.toImmutableSetMultimap
+	java.util.function.Function [com.google.common.collect.ImmutableSetMultimap]  →  ImmutableSetMultimap.toImmutableSetMultimap($expr$, $arg$)
+
+.copyOf : com.google.common.collect.ImmutableSetMultimap.copyOf
+	java.lang.Iterable [com.google.common.collect.ImmutableSetMultimap]  →  ImmutableSetMultimap.copyOf($expr$)
+	com.google.common.collect.Multimap [com.google.common.collect.ImmutableSetMultimap]  →  ImmutableSetMultimap.copyOf($expr$)
+
+.of : com.google.common.collect.ImmutableSetMultimap.of
+	java.lang.Object [com.google.common.collect.ImmutableSetMultimap]  →  ImmutableSetMultimap.of($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ImmutableSetMultimap]  →  ImmutableSetMultimap.of()
+
+
+## ImmutableSortedMap
+
+.reverseOrder : com.google.common.collect.ImmutableSortedMap.reverseOrder
+	java.lang.Object [com.google.common.collect.ImmutableSortedMap]  →  ImmutableSortedMap.reverseOrder()
+
+.copyOfSorted : com.google.common.collect.ImmutableSortedMap.copyOfSorted
+	java.util.SortedMap [com.google.common.collect.ImmutableSortedMap]  →  ImmutableSortedMap.copyOfSorted($expr$)
+
+.toImmutableSortedMap : com.google.common.collect.ImmutableSortedMap.toImmutableSortedMap
+	java.util.Comparator [com.google.common.collect.ImmutableSortedMap]  →  ImmutableSortedMap.toImmutableSortedMap($expr$, $arg$)
+
+.builder : com.google.common.collect.ImmutableSortedMap.builder
+	java.lang.Object [com.google.common.collect.ImmutableSortedMap]  →  ImmutableSortedMap.builder()
+
+.copyOf : com.google.common.collect.ImmutableSortedMap.copyOf
+	java.util.Map [com.google.common.collect.ImmutableSortedMap]  →  ImmutableSortedMap.copyOf($expr$, $arg$)
+	java.lang.Iterable [com.google.common.collect.ImmutableSortedMap]  →  ImmutableSortedMap.copyOf($expr$, $arg$)
+
+.naturalOrder : com.google.common.collect.ImmutableSortedMap.naturalOrder
+	java.lang.Object [com.google.common.collect.ImmutableSortedMap]  →  ImmutableSortedMap.naturalOrder()
+
+.orderedBy : com.google.common.collect.ImmutableSortedMap.orderedBy
+	java.util.Comparator [com.google.common.collect.ImmutableSortedMap]  →  ImmutableSortedMap.orderedBy($expr$)
+
+.builderWithExpectedSize : com.google.common.collect.ImmutableSortedMap.builderWithExpectedSize
+	INT [com.google.common.collect.ImmutableSortedMap]  →  ImmutableSortedMap.builderWithExpectedSize($expr$)
+
+.ofEntries : com.google.common.collect.ImmutableSortedMap.ofEntries
+	scala.Array [com.google.common.collect.ImmutableSortedMap]  →  ImmutableSortedMap.ofEntries($expr$)
+
+.of : com.google.common.collect.ImmutableSortedMap.of
+	java.lang.Comparable [com.google.common.collect.ImmutableSortedMap]  →  ImmutableSortedMap.of($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ImmutableSortedMap]  →  ImmutableSortedMap.of($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ImmutableSortedMap]  →  ImmutableSortedMap.of()
+
+
+## ImmutableSortedMultiset
+
+.reverseOrder : com.google.common.collect.ImmutableSortedMultiset.reverseOrder
+	java.lang.Object [com.google.common.collect.ImmutableSortedMultiset]  →  ImmutableSortedMultiset.reverseOrder()
+
+.toImmutableSortedMultiset : com.google.common.collect.ImmutableSortedMultiset.toImmutableSortedMultiset
+	java.util.Comparator [com.google.common.collect.ImmutableSortedMultiset]  →  ImmutableSortedMultiset.toImmutableSortedMultiset($expr$, $arg$)
+
+.copyOfSorted : com.google.common.collect.ImmutableSortedMultiset.copyOfSorted
+	com.google.common.collect.SortedMultiset [com.google.common.collect.ImmutableSortedMultiset]  →  ImmutableSortedMultiset.copyOfSorted($expr$)
+
+.builder : com.google.common.collect.ImmutableSortedMultiset.builder
+	java.lang.Object [com.google.common.collect.ImmutableSortedMultiset]  →  ImmutableSortedMultiset.builder()
+
+.copyOf : com.google.common.collect.ImmutableSortedMultiset.copyOf
+	scala.Array [com.google.common.collect.ImmutableSortedMultiset]  →  ImmutableSortedMultiset.copyOf($expr$)
+	java.util.Comparator [com.google.common.collect.ImmutableSortedMultiset]  →  ImmutableSortedMultiset.copyOf($expr$, $arg$)
+	java.lang.Iterable [com.google.common.collect.ImmutableSortedMultiset]  →  ImmutableSortedMultiset.copyOf($expr$)
+	java.util.Iterator [com.google.common.collect.ImmutableSortedMultiset]  →  ImmutableSortedMultiset.copyOf($expr$)
+
+.naturalOrder : com.google.common.collect.ImmutableSortedMultiset.naturalOrder
+	java.lang.Object [com.google.common.collect.ImmutableSortedMultiset]  →  ImmutableSortedMultiset.naturalOrder()
+
+.orderedBy : com.google.common.collect.ImmutableSortedMultiset.orderedBy
+	java.util.Comparator [com.google.common.collect.ImmutableSortedMultiset]  →  ImmutableSortedMultiset.orderedBy($expr$)
+
+.of : com.google.common.collect.ImmutableSortedMultiset.of
+	java.lang.Comparable [com.google.common.collect.ImmutableSortedMultiset]  →  ImmutableSortedMultiset.of($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ImmutableSortedMultiset]  →  ImmutableSortedMultiset.of($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ImmutableSortedMultiset]  →  ImmutableSortedMultiset.of()
+
+
+## ImmutableSortedSet
+
+.reverseOrder : com.google.common.collect.ImmutableSortedSet.reverseOrder
+	java.lang.Object [com.google.common.collect.ImmutableSortedSet]  →  ImmutableSortedSet.reverseOrder()
+
+.copyOfSorted : com.google.common.collect.ImmutableSortedSet.copyOfSorted
+	java.util.SortedSet [com.google.common.collect.ImmutableSortedSet]  →  ImmutableSortedSet.copyOfSorted($expr$)
+
+.builder : com.google.common.collect.ImmutableSortedSet.builder
+	java.lang.Object [com.google.common.collect.ImmutableSortedSet]  →  ImmutableSortedSet.builder()
+
+.copyOf : com.google.common.collect.ImmutableSortedSet.copyOf
+	java.util.Iterator [com.google.common.collect.ImmutableSortedSet]  →  ImmutableSortedSet.copyOf($expr$)
+	java.util.Comparator [com.google.common.collect.ImmutableSortedSet]  →  ImmutableSortedSet.copyOf($expr$, $arg$)
+	java.lang.Iterable [com.google.common.collect.ImmutableSortedSet]  →  ImmutableSortedSet.copyOf($expr$)
+	java.util.Collection [com.google.common.collect.ImmutableSortedSet]  →  ImmutableSortedSet.copyOf($expr$)
+	scala.Array [com.google.common.collect.ImmutableSortedSet]  →  ImmutableSortedSet.copyOf($expr$)
+
+.naturalOrder : com.google.common.collect.ImmutableSortedSet.naturalOrder
+	java.lang.Object [com.google.common.collect.ImmutableSortedSet]  →  ImmutableSortedSet.naturalOrder()
+
+.orderedBy : com.google.common.collect.ImmutableSortedSet.orderedBy
+	java.util.Comparator [com.google.common.collect.ImmutableSortedSet]  →  ImmutableSortedSet.orderedBy($expr$)
+
+.builderWithExpectedSize : com.google.common.collect.ImmutableSortedSet.builderWithExpectedSize
+	INT [com.google.common.collect.ImmutableSortedSet]  →  ImmutableSortedSet.builderWithExpectedSize($expr$)
+
+.of : com.google.common.collect.ImmutableSortedSet.of
+	java.lang.Comparable [com.google.common.collect.ImmutableSortedSet]  →  ImmutableSortedSet.of($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ImmutableSortedSet]  →  ImmutableSortedSet.of($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ImmutableSortedSet]  →  ImmutableSortedSet.of()
+
+.toImmutableSortedSet : com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet
+	java.util.Comparator [com.google.common.collect.ImmutableSortedSet]  →  ImmutableSortedSet.toImmutableSortedSet($expr$)
+
+
+## ImmutableTable
+
+.builder : com.google.common.collect.ImmutableTable.builder
+	java.lang.Object [com.google.common.collect.ImmutableTable]  →  ImmutableTable.builder()
+
+.of : com.google.common.collect.ImmutableTable.of
+	java.lang.Object [com.google.common.collect.ImmutableTable]  →  ImmutableTable.of($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ImmutableTable]  →  ImmutableTable.of()
+
+.copyOf : com.google.common.collect.ImmutableTable.copyOf
+	com.google.common.collect.Table [com.google.common.collect.ImmutableTable]  →  ImmutableTable.copyOf($expr$)
+
+.toImmutableTable : com.google.common.collect.ImmutableTable.toImmutableTable
+	java.util.function.Function [com.google.common.collect.ImmutableTable]  →  ImmutableTable.toImmutableTable($expr$, $arg$)
+
+
+## Interners
+
+.newBuilder : com.google.common.collect.Interners.newBuilder
+	java.lang.Object [com.google.common.collect.Interners]  →  Interners.newBuilder()
+
+.newStrongInterner : com.google.common.collect.Interners.newStrongInterner
+	java.lang.Object [com.google.common.collect.Interners]  →  Interners.newStrongInterner()
+
+.asFunction : com.google.common.collect.Interners.asFunction
+	com.google.common.collect.Interner [com.google.common.collect.Interners]  →  Interners.asFunction($expr$)
+
+.newWeakInterner : com.google.common.collect.Interners.newWeakInterner
+	java.lang.Object [com.google.common.collect.Interners]  →  Interners.newWeakInterner()
+
+
+## Iterables
+
+.find : com.google.common.collect.Iterables.find
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.find($expr$, $arg$)
+
+.any : com.google.common.collect.Iterables.any
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.any($expr$, $arg$)
+
+.tryFind : com.google.common.collect.Iterables.tryFind
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.tryFind($expr$, $arg$)
+
+.size : com.google.common.collect.Iterables.size
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.size($expr$)
+
+.elementsEqual : com.google.common.collect.Iterables.elementsEqual
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.elementsEqual($expr$, $arg$)
+
+.getLast : com.google.common.collect.Iterables.getLast
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.getLast($expr$, $arg$)
+
+.all : com.google.common.collect.Iterables.all
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.all($expr$, $arg$)
+
+.addAll : com.google.common.collect.Iterables.addAll
+	java.util.Collection [com.google.common.collect.Iterables]  →  Iterables.addAll($expr$, $arg$)
+
+.consumingIterable : com.google.common.collect.Iterables.consumingIterable
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.consumingIterable($expr$)
+
+.concat : com.google.common.collect.Iterables.concat
+	scala.Array [com.google.common.collect.Iterables]  →  Iterables.concat($expr$)
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.concat($expr$, $arg$)
+
+.partition : com.google.common.collect.Iterables.partition
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.partition($expr$, $arg$)
+
+.unmodifiableIterable : com.google.common.collect.Iterables.unmodifiableIterable
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.unmodifiableIterable($expr$)
+
+.skip : com.google.common.collect.Iterables.skip
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.skip($expr$, $arg$)
+
+.getOnlyElement : com.google.common.collect.Iterables.getOnlyElement
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.getOnlyElement($expr$, $arg$)
+
+.filter : com.google.common.collect.Iterables.filter
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.filter($expr$, $arg$)
+
+.mergeSorted : com.google.common.collect.Iterables.mergeSorted
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.mergeSorted($expr$, $arg$)
+
+.cycle : com.google.common.collect.Iterables.cycle
+	scala.Array [com.google.common.collect.Iterables]  →  Iterables.cycle($expr$)
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.cycle($expr$)
+
+.retainAll : com.google.common.collect.Iterables.retainAll
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.retainAll($expr$, $arg$)
+
+.paddedPartition : com.google.common.collect.Iterables.paddedPartition
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.paddedPartition($expr$, $arg$)
+
+.toArray : com.google.common.collect.Iterables.toArray
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.toArray($expr$, $arg$)
+
+.toString : com.google.common.collect.Iterables.toString
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.toString($expr$)
+
+.removeIf : com.google.common.collect.Iterables.removeIf
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.removeIf($expr$, $arg$)
+
+.frequency : com.google.common.collect.Iterables.frequency
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.frequency($expr$, $arg$)
+
+.get : com.google.common.collect.Iterables.get
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.get($expr$, $arg$)
+
+.removeAll : com.google.common.collect.Iterables.removeAll
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.removeAll($expr$, $arg$)
+
+.contains : com.google.common.collect.Iterables.contains
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.contains($expr$, $arg$)
+
+.isEmpty : com.google.common.collect.Iterables.isEmpty
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.isEmpty($expr$)
+
+.limit : com.google.common.collect.Iterables.limit
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.limit($expr$, $arg$)
+
+.transform : com.google.common.collect.Iterables.transform
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.transform($expr$, $arg$)
+
+.indexOf : com.google.common.collect.Iterables.indexOf
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.indexOf($expr$, $arg$)
+
+.getFirst : com.google.common.collect.Iterables.getFirst
+	java.lang.Iterable [com.google.common.collect.Iterables]  →  Iterables.getFirst($expr$, $arg$)
+
+
+## Iterators
+
+.find : com.google.common.collect.Iterators.find
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.find($expr$, $arg$)
+
+.any : com.google.common.collect.Iterators.any
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.any($expr$, $arg$)
+
+.getNext : com.google.common.collect.Iterators.getNext
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.getNext($expr$, $arg$)
+
+.tryFind : com.google.common.collect.Iterators.tryFind
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.tryFind($expr$, $arg$)
+
+.size : com.google.common.collect.Iterators.size
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.size($expr$)
+
+.elementsEqual : com.google.common.collect.Iterators.elementsEqual
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.elementsEqual($expr$, $arg$)
+
+.getLast : com.google.common.collect.Iterators.getLast
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.getLast($expr$, $arg$)
+
+.all : com.google.common.collect.Iterators.all
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.all($expr$, $arg$)
+
+.consumingIterator : com.google.common.collect.Iterators.consumingIterator
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.consumingIterator($expr$)
+
+.addAll : com.google.common.collect.Iterators.addAll
+	java.util.Collection [com.google.common.collect.Iterators]  →  Iterators.addAll($expr$, $arg$)
+
+.concat : com.google.common.collect.Iterators.concat
+	scala.Array [com.google.common.collect.Iterators]  →  Iterators.concat($expr$)
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.concat($expr$, $arg$)
+
+.partition : com.google.common.collect.Iterators.partition
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.partition($expr$, $arg$)
+
+.advance : com.google.common.collect.Iterators.advance
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.advance($expr$, $arg$)
+
+.getOnlyElement : com.google.common.collect.Iterators.getOnlyElement
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.getOnlyElement($expr$, $arg$)
+
+.filter : com.google.common.collect.Iterators.filter
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.filter($expr$, $arg$)
+
+.mergeSorted : com.google.common.collect.Iterators.mergeSorted
+	java.lang.Iterable [com.google.common.collect.Iterators]  →  Iterators.mergeSorted($expr$, $arg$)
+
+.peekingIterator : com.google.common.collect.Iterators.peekingIterator
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.peekingIterator($expr$)
+
+.cycle : com.google.common.collect.Iterators.cycle
+	scala.Array [com.google.common.collect.Iterators]  →  Iterators.cycle($expr$)
+	java.lang.Iterable [com.google.common.collect.Iterators]  →  Iterators.cycle($expr$)
+
+.retainAll : com.google.common.collect.Iterators.retainAll
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.retainAll($expr$, $arg$)
+
+.paddedPartition : com.google.common.collect.Iterators.paddedPartition
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.paddedPartition($expr$, $arg$)
+
+.toArray : com.google.common.collect.Iterators.toArray
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.toArray($expr$, $arg$)
+
+.forArray : com.google.common.collect.Iterators.forArray
+	scala.Array [com.google.common.collect.Iterators]  →  Iterators.forArray($expr$)
+
+.forEnumeration : com.google.common.collect.Iterators.forEnumeration
+	java.util.Enumeration [com.google.common.collect.Iterators]  →  Iterators.forEnumeration($expr$)
+
+.toString : com.google.common.collect.Iterators.toString
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.toString($expr$)
+
+.removeIf : com.google.common.collect.Iterators.removeIf
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.removeIf($expr$, $arg$)
+
+.frequency : com.google.common.collect.Iterators.frequency
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.frequency($expr$, $arg$)
+
+.get : com.google.common.collect.Iterators.get
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.get($expr$, $arg$)
+
+.removeAll : com.google.common.collect.Iterators.removeAll
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.removeAll($expr$, $arg$)
+
+.singletonIterator : com.google.common.collect.Iterators.singletonIterator
+	java.lang.Object [com.google.common.collect.Iterators]  →  Iterators.singletonIterator($expr$)
+
+.contains : com.google.common.collect.Iterators.contains
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.contains($expr$, $arg$)
+
+.limit : com.google.common.collect.Iterators.limit
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.limit($expr$, $arg$)
+
+.transform : com.google.common.collect.Iterators.transform
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.transform($expr$, $arg$)
+
+.indexOf : com.google.common.collect.Iterators.indexOf
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.indexOf($expr$, $arg$)
+
+.asEnumeration : com.google.common.collect.Iterators.asEnumeration
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.asEnumeration($expr$)
+
+.unmodifiableIterator : com.google.common.collect.Iterators.unmodifiableIterator
+	java.util.Iterator [com.google.common.collect.Iterators]  →  Iterators.unmodifiableIterator($expr$)
+
+
+## LinkedHashMultimap
+
+.create : com.google.common.collect.LinkedHashMultimap.create
+	INT [com.google.common.collect.LinkedHashMultimap]  →  LinkedHashMultimap.create($expr$, $arg$)
+	com.google.common.collect.Multimap [com.google.common.collect.LinkedHashMultimap]  →  LinkedHashMultimap.create($expr$)
+	java.lang.Object [com.google.common.collect.LinkedHashMultimap]  →  LinkedHashMultimap.create()
+
+
+## LinkedHashMultiset
+
+.create : com.google.common.collect.LinkedHashMultiset.create
+	java.lang.Iterable [com.google.common.collect.LinkedHashMultiset]  →  LinkedHashMultiset.create($expr$)
+	INT [com.google.common.collect.LinkedHashMultiset]  →  LinkedHashMultiset.create($expr$)
+	java.lang.Object [com.google.common.collect.LinkedHashMultiset]  →  LinkedHashMultiset.create()
+
+
+## LinkedListMultimap
+
+.create : com.google.common.collect.LinkedListMultimap.create
+	INT [com.google.common.collect.LinkedListMultimap]  →  LinkedListMultimap.create($expr$)
+	com.google.common.collect.Multimap [com.google.common.collect.LinkedListMultimap]  →  LinkedListMultimap.create($expr$)
+	java.lang.Object [com.google.common.collect.LinkedListMultimap]  →  LinkedListMultimap.create()
+
+
+## Lists
+
+.asList : com.google.common.collect.Lists.asList
+	java.lang.Object [com.google.common.collect.Lists]  →  Lists.asList($expr$, $arg$)
+
+.newArrayList : com.google.common.collect.Lists.newArrayList
+	scala.Array [com.google.common.collect.Lists]  →  Lists.newArrayList($expr$)
+	java.lang.Iterable [com.google.common.collect.Lists]  →  Lists.newArrayList($expr$)
+	java.util.Iterator [com.google.common.collect.Lists]  →  Lists.newArrayList($expr$)
+	java.lang.Object [com.google.common.collect.Lists]  →  Lists.newArrayList()
+
+.partition : com.google.common.collect.Lists.partition
+	java.util.List [com.google.common.collect.Lists]  →  Lists.partition($expr$, $arg$)
+
+.cartesianProduct : com.google.common.collect.Lists.cartesianProduct
+	scala.Array [com.google.common.collect.Lists]  →  Lists.cartesianProduct($expr$)
+	java.util.List [com.google.common.collect.Lists]  →  Lists.cartesianProduct($expr$)
+
+.charactersOf : com.google.common.collect.Lists.charactersOf
+	java.lang.String [com.google.common.collect.Lists]  →  Lists.charactersOf($expr$)
+	java.lang.CharSequence [com.google.common.collect.Lists]  →  Lists.charactersOf($expr$)
+
+.reverse : com.google.common.collect.Lists.reverse
+	java.util.List [com.google.common.collect.Lists]  →  Lists.reverse($expr$)
+
+.newArrayListWithExpectedSize : com.google.common.collect.Lists.newArrayListWithExpectedSize
+	INT [com.google.common.collect.Lists]  →  Lists.newArrayListWithExpectedSize($expr$)
+
+.newCopyOnWriteArrayList : com.google.common.collect.Lists.newCopyOnWriteArrayList
+	java.lang.Iterable [com.google.common.collect.Lists]  →  Lists.newCopyOnWriteArrayList($expr$)
+	java.lang.Object [com.google.common.collect.Lists]  →  Lists.newCopyOnWriteArrayList()
+
+.newArrayListWithCapacity : com.google.common.collect.Lists.newArrayListWithCapacity
+	INT [com.google.common.collect.Lists]  →  Lists.newArrayListWithCapacity($expr$)
+
+.newLinkedList : com.google.common.collect.Lists.newLinkedList
+	java.lang.Iterable [com.google.common.collect.Lists]  →  Lists.newLinkedList($expr$)
+	java.lang.Object [com.google.common.collect.Lists]  →  Lists.newLinkedList()
+
+.transform : com.google.common.collect.Lists.transform
+	java.util.List [com.google.common.collect.Lists]  →  Lists.transform($expr$, $arg$)
+
+
+## Maps
+
+.toImmutableEnumMap : com.google.common.collect.Maps.toImmutableEnumMap
+	java.util.function.Function [com.google.common.collect.Maps]  →  Maps.toImmutableEnumMap($expr$, $arg$)
+
+.synchronizedBiMap : com.google.common.collect.Maps.synchronizedBiMap
+	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  Maps.synchronizedBiMap($expr$)
+
+.asConverter : com.google.common.collect.Maps.asConverter
+	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  Maps.asConverter($expr$)
+
+.synchronizedNavigableMap : com.google.common.collect.Maps.synchronizedNavigableMap
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.synchronizedNavigableMap($expr$)
+
+.toMap : com.google.common.collect.Maps.toMap
+	java.lang.Iterable [com.google.common.collect.Maps]  →  Maps.toMap($expr$, $arg$)
+	java.util.Iterator [com.google.common.collect.Maps]  →  Maps.toMap($expr$, $arg$)
+
+.newIdentityHashMap : com.google.common.collect.Maps.newIdentityHashMap
+	java.lang.Object [com.google.common.collect.Maps]  →  Maps.newIdentityHashMap()
+
+.newLinkedHashMap : com.google.common.collect.Maps.newLinkedHashMap
+	java.util.Map [com.google.common.collect.Maps]  →  Maps.newLinkedHashMap($expr$)
+	java.lang.Object [com.google.common.collect.Maps]  →  Maps.newLinkedHashMap()
+
+.filterKeys : com.google.common.collect.Maps.filterKeys
+	java.util.Map [com.google.common.collect.Maps]  →  Maps.filterKeys($expr$, $arg$)
+	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  Maps.filterKeys($expr$, $arg$)
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.filterKeys($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.filterKeys($expr$, $arg$)
+
+.filterEntries : com.google.common.collect.Maps.filterEntries
+	java.util.Map [com.google.common.collect.Maps]  →  Maps.filterEntries($expr$, $arg$)
+	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  Maps.filterEntries($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.filterEntries($expr$, $arg$)
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.filterEntries($expr$, $arg$)
+
+.transformEntries : com.google.common.collect.Maps.transformEntries
+	java.util.Map [com.google.common.collect.Maps]  →  Maps.transformEntries($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.transformEntries($expr$, $arg$)
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.transformEntries($expr$, $arg$)
+
+.newHashMapWithExpectedSize : com.google.common.collect.Maps.newHashMapWithExpectedSize
+	INT [com.google.common.collect.Maps]  →  Maps.newHashMapWithExpectedSize($expr$)
+
+.uniqueIndex : com.google.common.collect.Maps.uniqueIndex
+	java.lang.Iterable [com.google.common.collect.Maps]  →  Maps.uniqueIndex($expr$, $arg$)
+	java.util.Iterator [com.google.common.collect.Maps]  →  Maps.uniqueIndex($expr$, $arg$)
+
+.immutableEnumMap : com.google.common.collect.Maps.immutableEnumMap
+	java.util.Map [com.google.common.collect.Maps]  →  Maps.immutableEnumMap($expr$)
+
+.newEnumMap : com.google.common.collect.Maps.newEnumMap
+	java.util.Map [com.google.common.collect.Maps]  →  Maps.newEnumMap($expr$)
+	java.lang.Class [com.google.common.collect.Maps]  →  Maps.newEnumMap($expr$)
+
+.unmodifiableBiMap : com.google.common.collect.Maps.unmodifiableBiMap
+	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  Maps.unmodifiableBiMap($expr$)
+
+.fromProperties : com.google.common.collect.Maps.fromProperties
+	java.util.Properties [com.google.common.collect.Maps]  →  Maps.fromProperties($expr$)
+
+.asMap : com.google.common.collect.Maps.asMap
+	java.util.NavigableSet [com.google.common.collect.Maps]  →  Maps.asMap($expr$, $arg$)
+	java.util.SortedSet [com.google.common.collect.Maps]  →  Maps.asMap($expr$, $arg$)
+	java.util.Set [com.google.common.collect.Maps]  →  Maps.asMap($expr$, $arg$)
+
+.unmodifiableNavigableMap : com.google.common.collect.Maps.unmodifiableNavigableMap
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.unmodifiableNavigableMap($expr$)
+
+.transformValues : com.google.common.collect.Maps.transformValues
+	java.util.Map [com.google.common.collect.Maps]  →  Maps.transformValues($expr$, $arg$)
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.transformValues($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.transformValues($expr$, $arg$)
+
+.newConcurrentMap : com.google.common.collect.Maps.newConcurrentMap
+	java.lang.Object [com.google.common.collect.Maps]  →  Maps.newConcurrentMap()
+
+.filterValues : com.google.common.collect.Maps.filterValues
+	java.util.Map [com.google.common.collect.Maps]  →  Maps.filterValues($expr$, $arg$)
+	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  Maps.filterValues($expr$, $arg$)
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.filterValues($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.filterValues($expr$, $arg$)
+
+.subMap : com.google.common.collect.Maps.subMap
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.subMap($expr$, $arg$)
+
+.difference : com.google.common.collect.Maps.difference
+	java.util.Map [com.google.common.collect.Maps]  →  Maps.difference($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.difference($expr$, $arg$)
+
+.newHashMap : com.google.common.collect.Maps.newHashMap
+	java.util.Map [com.google.common.collect.Maps]  →  Maps.newHashMap($expr$)
+	java.lang.Object [com.google.common.collect.Maps]  →  Maps.newHashMap()
+
+.newLinkedHashMapWithExpectedSize : com.google.common.collect.Maps.newLinkedHashMapWithExpectedSize
+	INT [com.google.common.collect.Maps]  →  Maps.newLinkedHashMapWithExpectedSize($expr$)
+
+.immutableEntry : com.google.common.collect.Maps.immutableEntry
+	java.lang.Object [com.google.common.collect.Maps]  →  Maps.immutableEntry($expr$, $arg$)
+
+.newTreeMap : com.google.common.collect.Maps.newTreeMap
+	java.util.Comparator [com.google.common.collect.Maps]  →  Maps.newTreeMap($expr$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.newTreeMap($expr$)
+	java.lang.Object [com.google.common.collect.Maps]  →  Maps.newTreeMap()
+
+
+## MinMaxPriorityQueue
+
+.expectedSize : com.google.common.collect.MinMaxPriorityQueue.expectedSize
+	INT [com.google.common.collect.MinMaxPriorityQueue]  →  MinMaxPriorityQueue.expectedSize($expr$)
+
+.maximumSize : com.google.common.collect.MinMaxPriorityQueue.maximumSize
+	INT [com.google.common.collect.MinMaxPriorityQueue]  →  MinMaxPriorityQueue.maximumSize($expr$)
+
+.orderedBy : com.google.common.collect.MinMaxPriorityQueue.orderedBy
+	java.util.Comparator [com.google.common.collect.MinMaxPriorityQueue]  →  MinMaxPriorityQueue.orderedBy($expr$)
+
+.create : com.google.common.collect.MinMaxPriorityQueue.create
+	java.lang.Iterable [com.google.common.collect.MinMaxPriorityQueue]  →  MinMaxPriorityQueue.create($expr$)
+	java.lang.Object [com.google.common.collect.MinMaxPriorityQueue]  →  MinMaxPriorityQueue.create()
+
+
+## MoreCollectors
+
+.toOptional : com.google.common.collect.MoreCollectors.toOptional
+	java.lang.Object [com.google.common.collect.MoreCollectors]  →  MoreCollectors.toOptional()
+
+.onlyElement : com.google.common.collect.MoreCollectors.onlyElement
+	java.lang.Object [com.google.common.collect.MoreCollectors]  →  MoreCollectors.onlyElement()
+
+
+## MultimapBuilder
+
+.enumKeys : com.google.common.collect.MultimapBuilder.enumKeys
+	java.lang.Class [com.google.common.collect.MultimapBuilder]  →  MultimapBuilder.enumKeys($expr$)
+
+.treeKeys : com.google.common.collect.MultimapBuilder.treeKeys
+	java.util.Comparator [com.google.common.collect.MultimapBuilder]  →  MultimapBuilder.treeKeys($expr$)
+	java.lang.Object [com.google.common.collect.MultimapBuilder]  →  MultimapBuilder.treeKeys()
+
+.linkedHashKeys : com.google.common.collect.MultimapBuilder.linkedHashKeys
+	INT [com.google.common.collect.MultimapBuilder]  →  MultimapBuilder.linkedHashKeys($expr$)
+	java.lang.Object [com.google.common.collect.MultimapBuilder]  →  MultimapBuilder.linkedHashKeys()
+
+.hashKeys : com.google.common.collect.MultimapBuilder.hashKeys
+	INT [com.google.common.collect.MultimapBuilder]  →  MultimapBuilder.hashKeys($expr$)
+	java.lang.Object [com.google.common.collect.MultimapBuilder]  →  MultimapBuilder.hashKeys()
 
 
 ## Multimaps
@@ -180,8 +1578,8 @@
 	com.google.common.collect.Multimap [com.google.common.collect.Multimaps]  →  Multimaps.invertFrom($expr$, $arg$)
 
 .transformEntries : com.google.common.collect.Multimaps.transformEntries
-	com.google.common.collect.ListMultimap [com.google.common.collect.Multimaps]  →  Multimaps.transformEntries($expr$, $arg$)
 	com.google.common.collect.Multimap [com.google.common.collect.Multimaps]  →  Multimaps.transformEntries($expr$, $arg$)
+	com.google.common.collect.ListMultimap [com.google.common.collect.Multimaps]  →  Multimaps.transformEntries($expr$, $arg$)
 
 .unmodifiableListMultimap : com.google.common.collect.Multimaps.unmodifiableListMultimap
 	com.google.common.collect.ListMultimap [com.google.common.collect.Multimaps]  →  Multimaps.unmodifiableListMultimap($expr$)
@@ -235,47 +1633,181 @@
 	java.util.Iterator [com.google.common.collect.Multimaps]  →  Multimaps.index($expr$, $arg$)
 
 
-## Lists
+## Multisets
 
-.asList : com.google.common.collect.Lists.asList
-	java.lang.Object [com.google.common.collect.Lists]  →  Lists.asList($expr$, $arg$)
+.union : com.google.common.collect.Multisets.union
+	com.google.common.collect.Multiset [com.google.common.collect.Multisets]  →  Multisets.union($expr$, $arg$)
 
-.newArrayList : com.google.common.collect.Lists.newArrayList
-	scala.Array [com.google.common.collect.Lists]  →  Lists.newArrayList($expr$)
-	java.lang.Iterable [com.google.common.collect.Lists]  →  Lists.newArrayList($expr$)
-	java.util.Iterator [com.google.common.collect.Lists]  →  Lists.newArrayList($expr$)
-	java.lang.Object [com.google.common.collect.Lists]  →  Lists.newArrayList()
+.intersection : com.google.common.collect.Multisets.intersection
+	com.google.common.collect.Multiset [com.google.common.collect.Multisets]  →  Multisets.intersection($expr$, $arg$)
 
-.partition : com.google.common.collect.Lists.partition
-	java.util.List [com.google.common.collect.Lists]  →  Lists.partition($expr$, $arg$)
+.unmodifiableMultiset : com.google.common.collect.Multisets.unmodifiableMultiset
+	com.google.common.collect.Multiset [com.google.common.collect.Multisets]  →  Multisets.unmodifiableMultiset($expr$)
 
-.cartesianProduct : com.google.common.collect.Lists.cartesianProduct
-	scala.Array [com.google.common.collect.Lists]  →  Lists.cartesianProduct($expr$)
-	java.util.List [com.google.common.collect.Lists]  →  Lists.cartesianProduct($expr$)
+.toMultiset : com.google.common.collect.Multisets.toMultiset
+	java.util.function.Function [com.google.common.collect.Multisets]  →  Multisets.toMultiset($expr$, $arg$)
 
-.charactersOf : com.google.common.collect.Lists.charactersOf
-	java.lang.String [com.google.common.collect.Lists]  →  Lists.charactersOf($expr$)
-	java.lang.CharSequence [com.google.common.collect.Lists]  →  Lists.charactersOf($expr$)
+.removeOccurrences : com.google.common.collect.Multisets.removeOccurrences
+	com.google.common.collect.Multiset [com.google.common.collect.Multisets]  →  Multisets.removeOccurrences($expr$, $arg$)
 
-.reverse : com.google.common.collect.Lists.reverse
-	java.util.List [com.google.common.collect.Lists]  →  Lists.reverse($expr$)
+.retainOccurrences : com.google.common.collect.Multisets.retainOccurrences
+	com.google.common.collect.Multiset [com.google.common.collect.Multisets]  →  Multisets.retainOccurrences($expr$, $arg$)
 
-.newArrayListWithExpectedSize : com.google.common.collect.Lists.newArrayListWithExpectedSize
-	INT [com.google.common.collect.Lists]  →  Lists.newArrayListWithExpectedSize($expr$)
+.filter : com.google.common.collect.Multisets.filter
+	com.google.common.collect.Multiset [com.google.common.collect.Multisets]  →  Multisets.filter($expr$, $arg$)
 
-.newCopyOnWriteArrayList : com.google.common.collect.Lists.newCopyOnWriteArrayList
-	java.lang.Iterable [com.google.common.collect.Lists]  →  Lists.newCopyOnWriteArrayList($expr$)
-	java.lang.Object [com.google.common.collect.Lists]  →  Lists.newCopyOnWriteArrayList()
+.copyHighestCountFirst : com.google.common.collect.Multisets.copyHighestCountFirst
+	com.google.common.collect.Multiset [com.google.common.collect.Multisets]  →  Multisets.copyHighestCountFirst($expr$)
 
-.newArrayListWithCapacity : com.google.common.collect.Lists.newArrayListWithCapacity
-	INT [com.google.common.collect.Lists]  →  Lists.newArrayListWithCapacity($expr$)
+.unmodifiableSortedMultiset : com.google.common.collect.Multisets.unmodifiableSortedMultiset
+	com.google.common.collect.SortedMultiset [com.google.common.collect.Multisets]  →  Multisets.unmodifiableSortedMultiset($expr$)
 
-.newLinkedList : com.google.common.collect.Lists.newLinkedList
-	java.lang.Iterable [com.google.common.collect.Lists]  →  Lists.newLinkedList($expr$)
-	java.lang.Object [com.google.common.collect.Lists]  →  Lists.newLinkedList()
+.difference : com.google.common.collect.Multisets.difference
+	com.google.common.collect.Multiset [com.google.common.collect.Multisets]  →  Multisets.difference($expr$, $arg$)
 
-.transform : com.google.common.collect.Lists.transform
-	java.util.List [com.google.common.collect.Lists]  →  Lists.transform($expr$, $arg$)
+.sum : com.google.common.collect.Multisets.sum
+	com.google.common.collect.Multiset [com.google.common.collect.Multisets]  →  Multisets.sum($expr$, $arg$)
+
+.immutableEntry : com.google.common.collect.Multisets.immutableEntry
+	java.lang.Object [com.google.common.collect.Multisets]  →  Multisets.immutableEntry($expr$, $arg$)
+
+.containsOccurrences : com.google.common.collect.Multisets.containsOccurrences
+	com.google.common.collect.Multiset [com.google.common.collect.Multisets]  →  Multisets.containsOccurrences($expr$, $arg$)
+
+
+## MutableClassToInstanceMap
+
+.create : com.google.common.collect.MutableClassToInstanceMap.create
+	java.util.Map [com.google.common.collect.MutableClassToInstanceMap]  →  MutableClassToInstanceMap.create($expr$)
+	java.lang.Object [com.google.common.collect.MutableClassToInstanceMap]  →  MutableClassToInstanceMap.create()
+
+
+## ObjectArrays
+
+.newArray : com.google.common.collect.ObjectArrays.newArray
+	scala.Array [com.google.common.collect.ObjectArrays]  →  ObjectArrays.newArray($expr$, $arg$)
+	java.lang.Class [com.google.common.collect.ObjectArrays]  →  ObjectArrays.newArray($expr$, $arg$)
+
+.concat : com.google.common.collect.ObjectArrays.concat
+	scala.Array [com.google.common.collect.ObjectArrays]  →  ObjectArrays.concat($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.ObjectArrays]  →  ObjectArrays.concat($expr$, $arg$)
+
+
+## Ordering
+
+.compound : com.google.common.collect.Ordering.compound
+	java.lang.Iterable [com.google.common.collect.Ordering]  →  Ordering.compound($expr$)
+
+.usingToString : com.google.common.collect.Ordering.usingToString
+	java.lang.Object [com.google.common.collect.Ordering]  →  Ordering.usingToString()
+
+.allEqual : com.google.common.collect.Ordering.allEqual
+	java.lang.Object [com.google.common.collect.Ordering]  →  Ordering.allEqual()
+
+.arbitrary : com.google.common.collect.Ordering.arbitrary
+	java.lang.Object [com.google.common.collect.Ordering]  →  Ordering.arbitrary()
+
+.from : com.google.common.collect.Ordering.from
+	java.util.Comparator [com.google.common.collect.Ordering]  →  Ordering.from($expr$)
+
+.natural : com.google.common.collect.Ordering.natural
+	java.lang.Object [com.google.common.collect.Ordering]  →  Ordering.natural()
+
+.explicit : com.google.common.collect.Ordering.explicit
+	java.util.List [com.google.common.collect.Ordering]  →  Ordering.explicit($expr$)
+	java.lang.Object [com.google.common.collect.Ordering]  →  Ordering.explicit($expr$, $arg$)
+
+
+## Queues
+
+.drainUninterruptibly : com.google.common.collect.Queues.drainUninterruptibly
+	java.util.concurrent.BlockingQueue [com.google.common.collect.Queues]  →  Queues.drainUninterruptibly($expr$, $arg$)
+
+.newArrayBlockingQueue : com.google.common.collect.Queues.newArrayBlockingQueue
+	INT [com.google.common.collect.Queues]  →  Queues.newArrayBlockingQueue($expr$)
+
+.drain : com.google.common.collect.Queues.drain
+	java.util.concurrent.BlockingQueue [com.google.common.collect.Queues]  →  Queues.drain($expr$, $arg$)
+
+.newPriorityBlockingQueue : com.google.common.collect.Queues.newPriorityBlockingQueue
+	java.lang.Iterable [com.google.common.collect.Queues]  →  Queues.newPriorityBlockingQueue($expr$)
+	java.lang.Object [com.google.common.collect.Queues]  →  Queues.newPriorityBlockingQueue()
+
+.newPriorityQueue : com.google.common.collect.Queues.newPriorityQueue
+	java.lang.Iterable [com.google.common.collect.Queues]  →  Queues.newPriorityQueue($expr$)
+	java.lang.Object [com.google.common.collect.Queues]  →  Queues.newPriorityQueue()
+
+.newLinkedBlockingDeque : com.google.common.collect.Queues.newLinkedBlockingDeque
+	java.lang.Iterable [com.google.common.collect.Queues]  →  Queues.newLinkedBlockingDeque($expr$)
+	INT [com.google.common.collect.Queues]  →  Queues.newLinkedBlockingDeque($expr$)
+	java.lang.Object [com.google.common.collect.Queues]  →  Queues.newLinkedBlockingDeque()
+
+.newLinkedBlockingQueue : com.google.common.collect.Queues.newLinkedBlockingQueue
+	java.lang.Iterable [com.google.common.collect.Queues]  →  Queues.newLinkedBlockingQueue($expr$)
+	INT [com.google.common.collect.Queues]  →  Queues.newLinkedBlockingQueue($expr$)
+	java.lang.Object [com.google.common.collect.Queues]  →  Queues.newLinkedBlockingQueue()
+
+.synchronizedDeque : com.google.common.collect.Queues.synchronizedDeque
+	java.util.Deque [com.google.common.collect.Queues]  →  Queues.synchronizedDeque($expr$)
+
+.newArrayDeque : com.google.common.collect.Queues.newArrayDeque
+	java.lang.Iterable [com.google.common.collect.Queues]  →  Queues.newArrayDeque($expr$)
+	java.lang.Object [com.google.common.collect.Queues]  →  Queues.newArrayDeque()
+
+.synchronizedQueue : com.google.common.collect.Queues.synchronizedQueue
+	java.util.Queue [com.google.common.collect.Queues]  →  Queues.synchronizedQueue($expr$)
+
+.newConcurrentLinkedQueue : com.google.common.collect.Queues.newConcurrentLinkedQueue
+	java.lang.Iterable [com.google.common.collect.Queues]  →  Queues.newConcurrentLinkedQueue($expr$)
+	java.lang.Object [com.google.common.collect.Queues]  →  Queues.newConcurrentLinkedQueue()
+
+.newSynchronousQueue : com.google.common.collect.Queues.newSynchronousQueue
+	java.lang.Object [com.google.common.collect.Queues]  →  Queues.newSynchronousQueue()
+
+
+## Range
+
+.atLeast : com.google.common.collect.Range.atLeast
+	java.lang.Comparable [com.google.common.collect.Range]  →  Range.atLeast($expr$)
+
+.closed : com.google.common.collect.Range.closed
+	java.lang.Comparable [com.google.common.collect.Range]  →  Range.closed($expr$, $arg$)
+
+.lessThan : com.google.common.collect.Range.lessThan
+	java.lang.Comparable [com.google.common.collect.Range]  →  Range.lessThan($expr$)
+
+.all : com.google.common.collect.Range.all
+	java.lang.Object [com.google.common.collect.Range]  →  Range.all()
+
+.greaterThan : com.google.common.collect.Range.greaterThan
+	java.lang.Comparable [com.google.common.collect.Range]  →  Range.greaterThan($expr$)
+
+.open : com.google.common.collect.Range.open
+	java.lang.Comparable [com.google.common.collect.Range]  →  Range.open($expr$, $arg$)
+
+.atMost : com.google.common.collect.Range.atMost
+	java.lang.Comparable [com.google.common.collect.Range]  →  Range.atMost($expr$)
+
+.upTo : com.google.common.collect.Range.upTo
+	java.lang.Comparable [com.google.common.collect.Range]  →  Range.upTo($expr$, $arg$)
+
+.closedOpen : com.google.common.collect.Range.closedOpen
+	java.lang.Comparable [com.google.common.collect.Range]  →  Range.closedOpen($expr$, $arg$)
+
+.range : com.google.common.collect.Range.range
+	java.lang.Comparable [com.google.common.collect.Range]  →  Range.range($expr$, $arg$)
+
+.encloseAll : com.google.common.collect.Range.encloseAll
+	java.lang.Iterable [com.google.common.collect.Range]  →  Range.encloseAll($expr$)
+
+.singleton : com.google.common.collect.Range.singleton
+	java.lang.Comparable [com.google.common.collect.Range]  →  Range.singleton($expr$)
+
+.downTo : com.google.common.collect.Range.downTo
+	java.lang.Comparable [com.google.common.collect.Range]  →  Range.downTo($expr$, $arg$)
+
+.openClosed : com.google.common.collect.Range.openClosed
+	java.lang.Comparable [com.google.common.collect.Range]  →  Range.openClosed($expr$, $arg$)
 
 
 ## Sets
@@ -362,111 +1894,2126 @@
 	java.util.Set [com.google.common.collect.Sets]  →  Sets.difference($expr$, $arg$)
 
 
-## Maps
+## Streams
 
-.toImmutableEnumMap : com.google.common.collect.Maps.toImmutableEnumMap
-	java.util.function.Function [com.google.common.collect.Maps]  →  Maps.toImmutableEnumMap($expr$, $arg$)
+.mapWithIndex : com.google.common.collect.Streams.mapWithIndex
+	java.util.stream.DoubleStream [com.google.common.collect.Streams]  →  Streams.mapWithIndex($expr$, $arg$)
+	java.util.stream.IntStream [com.google.common.collect.Streams]  →  Streams.mapWithIndex($expr$, $arg$)
+	java.util.stream.LongStream [com.google.common.collect.Streams]  →  Streams.mapWithIndex($expr$, $arg$)
+	java.util.stream.Stream [com.google.common.collect.Streams]  →  Streams.mapWithIndex($expr$, $arg$)
 
-.synchronizedBiMap : com.google.common.collect.Maps.synchronizedBiMap
-	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  Maps.synchronizedBiMap($expr$)
+.zip : com.google.common.collect.Streams.zip
+	java.util.stream.Stream [com.google.common.collect.Streams]  →  Streams.zip($expr$, $arg$)
 
-.asConverter : com.google.common.collect.Maps.asConverter
-	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  Maps.asConverter($expr$)
+.concat : com.google.common.collect.Streams.concat
+	scala.Array [com.google.common.collect.Streams]  →  Streams.concat($expr$)
 
-.synchronizedNavigableMap : com.google.common.collect.Maps.synchronizedNavigableMap
-	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.synchronizedNavigableMap($expr$)
+.forEachPair : com.google.common.collect.Streams.forEachPair
+	java.util.stream.Stream [com.google.common.collect.Streams]  →  Streams.forEachPair($expr$, $arg$)
 
-.toMap : com.google.common.collect.Maps.toMap
-	java.lang.Iterable [com.google.common.collect.Maps]  →  Maps.toMap($expr$, $arg$)
-	java.util.Iterator [com.google.common.collect.Maps]  →  Maps.toMap($expr$, $arg$)
+.findLast : com.google.common.collect.Streams.findLast
+	java.util.stream.DoubleStream [com.google.common.collect.Streams]  →  Streams.findLast($expr$)
+	java.util.stream.IntStream [com.google.common.collect.Streams]  →  Streams.findLast($expr$)
+	java.util.stream.LongStream [com.google.common.collect.Streams]  →  Streams.findLast($expr$)
+	java.util.stream.Stream [com.google.common.collect.Streams]  →  Streams.findLast($expr$)
 
-.newIdentityHashMap : com.google.common.collect.Maps.newIdentityHashMap
-	java.lang.Object [com.google.common.collect.Maps]  →  Maps.newIdentityHashMap()
+.stream : com.google.common.collect.Streams.stream
+	java.util.Optional [com.google.common.collect.Streams]  →  Streams.stream($expr$)
+	java.util.Iterator [com.google.common.collect.Streams]  →  Streams.stream($expr$)
+	com.google.common.base.Optional [com.google.common.collect.Streams]  →  Streams.stream($expr$)
+	java.lang.Iterable [com.google.common.collect.Streams]  →  Streams.stream($expr$)
+	java.util.OptionalInt [com.google.common.collect.Streams]  →  Streams.stream($expr$)
+	java.util.OptionalLong [com.google.common.collect.Streams]  →  Streams.stream($expr$)
+	java.util.OptionalDouble [com.google.common.collect.Streams]  →  Streams.stream($expr$)
 
-.newLinkedHashMap : com.google.common.collect.Maps.newLinkedHashMap
-	java.util.Map [com.google.common.collect.Maps]  →  Maps.newLinkedHashMap($expr$)
-	java.lang.Object [com.google.common.collect.Maps]  →  Maps.newLinkedHashMap()
 
-.filterKeys : com.google.common.collect.Maps.filterKeys
-	java.util.Map [com.google.common.collect.Maps]  →  Maps.filterKeys($expr$, $arg$)
-	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  Maps.filterKeys($expr$, $arg$)
-	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.filterKeys($expr$, $arg$)
-	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.filterKeys($expr$, $arg$)
+## Tables
 
-.filterEntries : com.google.common.collect.Maps.filterEntries
-	java.util.Map [com.google.common.collect.Maps]  →  Maps.filterEntries($expr$, $arg$)
-	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  Maps.filterEntries($expr$, $arg$)
-	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.filterEntries($expr$, $arg$)
-	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.filterEntries($expr$, $arg$)
+.unmodifiableRowSortedTable : com.google.common.collect.Tables.unmodifiableRowSortedTable
+	com.google.common.collect.RowSortedTable [com.google.common.collect.Tables]  →  Tables.unmodifiableRowSortedTable($expr$)
 
-.transformEntries : com.google.common.collect.Maps.transformEntries
-	java.util.Map [com.google.common.collect.Maps]  →  Maps.transformEntries($expr$, $arg$)
-	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.transformEntries($expr$, $arg$)
-	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.transformEntries($expr$, $arg$)
+.newCustomTable : com.google.common.collect.Tables.newCustomTable
+	java.util.Map [com.google.common.collect.Tables]  →  Tables.newCustomTable($expr$, $arg$)
 
-.newHashMapWithExpectedSize : com.google.common.collect.Maps.newHashMapWithExpectedSize
-	INT [com.google.common.collect.Maps]  →  Maps.newHashMapWithExpectedSize($expr$)
+.immutableCell : com.google.common.collect.Tables.immutableCell
+	java.lang.Object [com.google.common.collect.Tables]  →  Tables.immutableCell($expr$, $arg$)
 
-.uniqueIndex : com.google.common.collect.Maps.uniqueIndex
-	java.lang.Iterable [com.google.common.collect.Maps]  →  Maps.uniqueIndex($expr$, $arg$)
-	java.util.Iterator [com.google.common.collect.Maps]  →  Maps.uniqueIndex($expr$, $arg$)
+.toTable : com.google.common.collect.Tables.toTable
+	java.util.function.Function [com.google.common.collect.Tables]  →  Tables.toTable($expr$, $arg$)
 
-.immutableEnumMap : com.google.common.collect.Maps.immutableEnumMap
-	java.util.Map [com.google.common.collect.Maps]  →  Maps.immutableEnumMap($expr$)
+.transformValues : com.google.common.collect.Tables.transformValues
+	com.google.common.collect.Table [com.google.common.collect.Tables]  →  Tables.transformValues($expr$, $arg$)
 
-.newEnumMap : com.google.common.collect.Maps.newEnumMap
-	java.util.Map [com.google.common.collect.Maps]  →  Maps.newEnumMap($expr$)
-	java.lang.Class [com.google.common.collect.Maps]  →  Maps.newEnumMap($expr$)
+.unmodifiableTable : com.google.common.collect.Tables.unmodifiableTable
+	com.google.common.collect.Table [com.google.common.collect.Tables]  →  Tables.unmodifiableTable($expr$)
 
-.unmodifiableBiMap : com.google.common.collect.Maps.unmodifiableBiMap
-	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  Maps.unmodifiableBiMap($expr$)
+.transpose : com.google.common.collect.Tables.transpose
+	com.google.common.collect.Table [com.google.common.collect.Tables]  →  Tables.transpose($expr$)
 
-.fromProperties : com.google.common.collect.Maps.fromProperties
-	java.util.Properties [com.google.common.collect.Maps]  →  Maps.fromProperties($expr$)
+.synchronizedTable : com.google.common.collect.Tables.synchronizedTable
+	com.google.common.collect.Table [com.google.common.collect.Tables]  →  Tables.synchronizedTable($expr$)
 
-.asMap : com.google.common.collect.Maps.asMap
-	java.util.SortedSet [com.google.common.collect.Maps]  →  Maps.asMap($expr$, $arg$)
-	java.util.NavigableSet [com.google.common.collect.Maps]  →  Maps.asMap($expr$, $arg$)
-	java.util.Set [com.google.common.collect.Maps]  →  Maps.asMap($expr$, $arg$)
 
-.unmodifiableNavigableMap : com.google.common.collect.Maps.unmodifiableNavigableMap
-	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.unmodifiableNavigableMap($expr$)
+## TreeBasedTable
 
-.transformValues : com.google.common.collect.Maps.transformValues
-	java.util.Map [com.google.common.collect.Maps]  →  Maps.transformValues($expr$, $arg$)
-	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.transformValues($expr$, $arg$)
-	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.transformValues($expr$, $arg$)
+.create : com.google.common.collect.TreeBasedTable.create
+	com.google.common.collect.TreeBasedTable [com.google.common.collect.TreeBasedTable]  →  TreeBasedTable.create($expr$)
+	java.util.Comparator [com.google.common.collect.TreeBasedTable]  →  TreeBasedTable.create($expr$, $arg$)
+	java.lang.Object [com.google.common.collect.TreeBasedTable]  →  TreeBasedTable.create()
 
-.newConcurrentMap : com.google.common.collect.Maps.newConcurrentMap
-	java.lang.Object [com.google.common.collect.Maps]  →  Maps.newConcurrentMap()
 
-.filterValues : com.google.common.collect.Maps.filterValues
-	java.util.Map [com.google.common.collect.Maps]  →  Maps.filterValues($expr$, $arg$)
-	com.google.common.collect.BiMap [com.google.common.collect.Maps]  →  Maps.filterValues($expr$, $arg$)
-	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.filterValues($expr$, $arg$)
-	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.filterValues($expr$, $arg$)
+## TreeMultimap
 
-.subMap : com.google.common.collect.Maps.subMap
-	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.subMap($expr$, $arg$)
+.create : com.google.common.collect.TreeMultimap.create
+	java.util.Comparator [com.google.common.collect.TreeMultimap]  →  TreeMultimap.create($expr$, $arg$)
+	com.google.common.collect.Multimap [com.google.common.collect.TreeMultimap]  →  TreeMultimap.create($expr$)
+	java.lang.Object [com.google.common.collect.TreeMultimap]  →  TreeMultimap.create()
 
-.difference : com.google.common.collect.Maps.difference
-	java.util.Map [com.google.common.collect.Maps]  →  Maps.difference($expr$, $arg$)
-	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.difference($expr$, $arg$)
 
-.newHashMap : com.google.common.collect.Maps.newHashMap
-	java.util.Map [com.google.common.collect.Maps]  →  Maps.newHashMap($expr$)
-	java.lang.Object [com.google.common.collect.Maps]  →  Maps.newHashMap()
+## TreeMultiset
 
-.newLinkedHashMapWithExpectedSize : com.google.common.collect.Maps.newLinkedHashMapWithExpectedSize
-	INT [com.google.common.collect.Maps]  →  Maps.newLinkedHashMapWithExpectedSize($expr$)
+.create : com.google.common.collect.TreeMultiset.create
+	java.util.Comparator [com.google.common.collect.TreeMultiset]  →  TreeMultiset.create($expr$)
+	java.lang.Iterable [com.google.common.collect.TreeMultiset]  →  TreeMultiset.create($expr$)
+	java.lang.Object [com.google.common.collect.TreeMultiset]  →  TreeMultiset.create()
 
-.immutableEntry : com.google.common.collect.Maps.immutableEntry
-	java.lang.Object [com.google.common.collect.Maps]  →  Maps.immutableEntry($expr$, $arg$)
 
-.newTreeMap : com.google.common.collect.Maps.newTreeMap
-	java.util.Comparator [com.google.common.collect.Maps]  →  Maps.newTreeMap($expr$)
-	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.newTreeMap($expr$)
-	java.lang.Object [com.google.common.collect.Maps]  →  Maps.newTreeMap()
+## TreeRangeMap
+
+.create : com.google.common.collect.TreeRangeMap.create
+	java.lang.Object [com.google.common.collect.TreeRangeMap]  →  TreeRangeMap.create()
+
+
+## TreeRangeSet
+
+.create : com.google.common.collect.TreeRangeSet.create
+	com.google.common.collect.RangeSet [com.google.common.collect.TreeRangeSet]  →  TreeRangeSet.create($expr$)
+	java.lang.Iterable [com.google.common.collect.TreeRangeSet]  →  TreeRangeSet.create($expr$)
+	java.lang.Object [com.google.common.collect.TreeRangeSet]  →  TreeRangeSet.create()
+
+
+## ArrayBasedEscaperMap
+
+.create : com.google.common.escape.ArrayBasedEscaperMap.create
+	java.util.Map [com.google.common.escape.ArrayBasedEscaperMap]  →  ArrayBasedEscaperMap.create($expr$)
+
+
+## Escapers
+
+.builder : com.google.common.escape.Escapers.builder
+	java.lang.Object [com.google.common.escape.Escapers]  →  Escapers.builder()
+
+.nullEscaper : com.google.common.escape.Escapers.nullEscaper
+	java.lang.Object [com.google.common.escape.Escapers]  →  Escapers.nullEscaper()
+
+.computeReplacement : com.google.common.escape.Escapers.computeReplacement
+	com.google.common.escape.CharEscaper [com.google.common.escape.Escapers]  →  Escapers.computeReplacement($expr$, $arg$)
+	com.google.common.escape.UnicodeEscaper [com.google.common.escape.Escapers]  →  Escapers.computeReplacement($expr$, $arg$)
+
+
+## ElementOrder
+
+.sorted : com.google.common.graph.ElementOrder.sorted
+	java.util.Comparator [com.google.common.graph.ElementOrder]  →  ElementOrder.sorted($expr$)
+
+.unordered : com.google.common.graph.ElementOrder.unordered
+	java.lang.Object [com.google.common.graph.ElementOrder]  →  ElementOrder.unordered()
+
+.natural : com.google.common.graph.ElementOrder.natural
+	java.lang.Object [com.google.common.graph.ElementOrder]  →  ElementOrder.natural()
+
+.stable : com.google.common.graph.ElementOrder.stable
+	java.lang.Object [com.google.common.graph.ElementOrder]  →  ElementOrder.stable()
+
+.insertion : com.google.common.graph.ElementOrder.insertion
+	java.lang.Object [com.google.common.graph.ElementOrder]  →  ElementOrder.insertion()
+
+
+## EndpointPair
+
+.unordered : com.google.common.graph.EndpointPair.unordered
+	java.lang.Object [com.google.common.graph.EndpointPair]  →  EndpointPair.unordered($expr$, $arg$)
+
+.ordered : com.google.common.graph.EndpointPair.ordered
+	java.lang.Object [com.google.common.graph.EndpointPair]  →  EndpointPair.ordered($expr$, $arg$)
+
+
+## GraphBuilder
+
+.from : com.google.common.graph.GraphBuilder.from
+	com.google.common.graph.Graph [com.google.common.graph.GraphBuilder]  →  GraphBuilder.from($expr$)
+
+.directed : com.google.common.graph.GraphBuilder.directed
+	java.lang.Object [com.google.common.graph.GraphBuilder]  →  GraphBuilder.directed()
+
+.undirected : com.google.common.graph.GraphBuilder.undirected
+	java.lang.Object [com.google.common.graph.GraphBuilder]  →  GraphBuilder.undirected()
+
+
+## Graphs
+
+.inducedSubgraph : com.google.common.graph.Graphs.inducedSubgraph
+	com.google.common.graph.ValueGraph [com.google.common.graph.Graphs]  →  Graphs.inducedSubgraph($expr$, $arg$)
+	com.google.common.graph.Graph [com.google.common.graph.Graphs]  →  Graphs.inducedSubgraph($expr$, $arg$)
+	com.google.common.graph.Network [com.google.common.graph.Graphs]  →  Graphs.inducedSubgraph($expr$, $arg$)
+
+.hasCycle : com.google.common.graph.Graphs.hasCycle
+	com.google.common.graph.Graph [com.google.common.graph.Graphs]  →  Graphs.hasCycle($expr$)
+	com.google.common.graph.Network [com.google.common.graph.Graphs]  →  Graphs.hasCycle($expr$)
+
+.copyOf : com.google.common.graph.Graphs.copyOf
+	com.google.common.graph.ValueGraph [com.google.common.graph.Graphs]  →  Graphs.copyOf($expr$)
+	com.google.common.graph.Graph [com.google.common.graph.Graphs]  →  Graphs.copyOf($expr$)
+	com.google.common.graph.Network [com.google.common.graph.Graphs]  →  Graphs.copyOf($expr$)
+
+.transitiveClosure : com.google.common.graph.Graphs.transitiveClosure
+	com.google.common.graph.Graph [com.google.common.graph.Graphs]  →  Graphs.transitiveClosure($expr$)
+
+.transpose : com.google.common.graph.Graphs.transpose
+	com.google.common.graph.ValueGraph [com.google.common.graph.Graphs]  →  Graphs.transpose($expr$)
+	com.google.common.graph.Graph [com.google.common.graph.Graphs]  →  Graphs.transpose($expr$)
+	com.google.common.graph.Network [com.google.common.graph.Graphs]  →  Graphs.transpose($expr$)
+
+.reachableNodes : com.google.common.graph.Graphs.reachableNodes
+	com.google.common.graph.Graph [com.google.common.graph.Graphs]  →  Graphs.reachableNodes($expr$, $arg$)
+
+
+## ImmutableGraph
+
+.copyOf : com.google.common.graph.ImmutableGraph.copyOf
+	com.google.common.graph.Graph [com.google.common.graph.ImmutableGraph]  →  ImmutableGraph.copyOf($expr$)
+
+
+## ImmutableNetwork
+
+.copyOf : com.google.common.graph.ImmutableNetwork.copyOf
+	com.google.common.graph.Network [com.google.common.graph.ImmutableNetwork]  →  ImmutableNetwork.copyOf($expr$)
+
+
+## ImmutableValueGraph
+
+.copyOf : com.google.common.graph.ImmutableValueGraph.copyOf
+	com.google.common.graph.ValueGraph [com.google.common.graph.ImmutableValueGraph]  →  ImmutableValueGraph.copyOf($expr$)
+
+
+## NetworkBuilder
+
+.from : com.google.common.graph.NetworkBuilder.from
+	com.google.common.graph.Network [com.google.common.graph.NetworkBuilder]  →  NetworkBuilder.from($expr$)
+
+.directed : com.google.common.graph.NetworkBuilder.directed
+	java.lang.Object [com.google.common.graph.NetworkBuilder]  →  NetworkBuilder.directed()
+
+.undirected : com.google.common.graph.NetworkBuilder.undirected
+	java.lang.Object [com.google.common.graph.NetworkBuilder]  →  NetworkBuilder.undirected()
+
+
+## Traverser
+
+.forGraph : com.google.common.graph.Traverser.forGraph
+	com.google.common.graph.SuccessorsFunction [com.google.common.graph.Traverser]  →  Traverser.forGraph($expr$)
+
+.forTree : com.google.common.graph.Traverser.forTree
+	com.google.common.graph.SuccessorsFunction [com.google.common.graph.Traverser]  →  Traverser.forTree($expr$)
+
+
+## ValueGraphBuilder
+
+.from : com.google.common.graph.ValueGraphBuilder.from
+	com.google.common.graph.ValueGraph [com.google.common.graph.ValueGraphBuilder]  →  ValueGraphBuilder.from($expr$)
+
+.directed : com.google.common.graph.ValueGraphBuilder.directed
+	java.lang.Object [com.google.common.graph.ValueGraphBuilder]  →  ValueGraphBuilder.directed()
+
+.undirected : com.google.common.graph.ValueGraphBuilder.undirected
+	java.lang.Object [com.google.common.graph.ValueGraphBuilder]  →  ValueGraphBuilder.undirected()
+
+
+## BloomFilter
+
+.toBloomFilter : com.google.common.hash.BloomFilter.toBloomFilter
+	com.google.common.hash.Funnel [com.google.common.hash.BloomFilter]  →  BloomFilter.toBloomFilter($expr$, $arg$)
+
+.readFrom : com.google.common.hash.BloomFilter.readFrom
+	java.io.InputStream [com.google.common.hash.BloomFilter]  →  BloomFilter.readFrom($expr$, $arg$)
+
+.create : com.google.common.hash.BloomFilter.create
+	com.google.common.hash.Funnel [com.google.common.hash.BloomFilter]  →  BloomFilter.create($expr$, $arg$)
+
+
+## Funnels
+
+.longFunnel : com.google.common.hash.Funnels.longFunnel
+	java.lang.Object [com.google.common.hash.Funnels]  →  Funnels.longFunnel()
+
+.unencodedCharsFunnel : com.google.common.hash.Funnels.unencodedCharsFunnel
+	java.lang.Object [com.google.common.hash.Funnels]  →  Funnels.unencodedCharsFunnel()
+
+.asOutputStream : com.google.common.hash.Funnels.asOutputStream
+	com.google.common.hash.PrimitiveSink [com.google.common.hash.Funnels]  →  Funnels.asOutputStream($expr$)
+
+.integerFunnel : com.google.common.hash.Funnels.integerFunnel
+	java.lang.Object [com.google.common.hash.Funnels]  →  Funnels.integerFunnel()
+
+.stringFunnel : com.google.common.hash.Funnels.stringFunnel
+	java.nio.charset.Charset [com.google.common.hash.Funnels]  →  Funnels.stringFunnel($expr$)
+
+.sequentialFunnel : com.google.common.hash.Funnels.sequentialFunnel
+	com.google.common.hash.Funnel [com.google.common.hash.Funnels]  →  Funnels.sequentialFunnel($expr$)
+
+.byteArrayFunnel : com.google.common.hash.Funnels.byteArrayFunnel
+	java.lang.Object [com.google.common.hash.Funnels]  →  Funnels.byteArrayFunnel()
+
+
+## HashCode
+
+.fromBytes : com.google.common.hash.HashCode.fromBytes
+	scala.Array [com.google.common.hash.HashCode]  →  HashCode.fromBytes($expr$)
+
+.fromInt : com.google.common.hash.HashCode.fromInt
+	INT [com.google.common.hash.HashCode]  →  HashCode.fromInt($expr$)
+
+.fromString : com.google.common.hash.HashCode.fromString
+	java.lang.String [com.google.common.hash.HashCode]  →  HashCode.fromString($expr$)
+
+.fromLong : com.google.common.hash.HashCode.fromLong
+	LONG [com.google.common.hash.HashCode]  →  HashCode.fromLong($expr$)
+
+
+## Hashing
+
+.consistentHash : com.google.common.hash.Hashing.consistentHash
+	LONG [com.google.common.hash.Hashing]  →  Hashing.consistentHash($expr$, $arg$)
+	com.google.common.hash.HashCode [com.google.common.hash.Hashing]  →  Hashing.consistentHash($expr$, $arg$)
+
+.crc32 : com.google.common.hash.Hashing.crc32
+	java.lang.Object [com.google.common.hash.Hashing]  →  Hashing.crc32()
+
+.adler32 : com.google.common.hash.Hashing.adler32
+	java.lang.Object [com.google.common.hash.Hashing]  →  Hashing.adler32()
+
+.goodFastHash : com.google.common.hash.Hashing.goodFastHash
+	INT [com.google.common.hash.Hashing]  →  Hashing.goodFastHash($expr$)
+
+.crc32c : com.google.common.hash.Hashing.crc32c
+	java.lang.Object [com.google.common.hash.Hashing]  →  Hashing.crc32c()
+
+.hmacMd5 : com.google.common.hash.Hashing.hmacMd5
+	scala.Array [com.google.common.hash.Hashing]  →  Hashing.hmacMd5($expr$)
+	java.security.Key [com.google.common.hash.Hashing]  →  Hashing.hmacMd5($expr$)
+
+.combineOrdered : com.google.common.hash.Hashing.combineOrdered
+	java.lang.Iterable [com.google.common.hash.Hashing]  →  Hashing.combineOrdered($expr$)
+
+.sha256 : com.google.common.hash.Hashing.sha256
+	java.lang.Object [com.google.common.hash.Hashing]  →  Hashing.sha256()
+
+.combineUnordered : com.google.common.hash.Hashing.combineUnordered
+	java.lang.Iterable [com.google.common.hash.Hashing]  →  Hashing.combineUnordered($expr$)
+
+.hmacSha256 : com.google.common.hash.Hashing.hmacSha256
+	scala.Array [com.google.common.hash.Hashing]  →  Hashing.hmacSha256($expr$)
+	java.security.Key [com.google.common.hash.Hashing]  →  Hashing.hmacSha256($expr$)
+
+.hmacSha512 : com.google.common.hash.Hashing.hmacSha512
+	scala.Array [com.google.common.hash.Hashing]  →  Hashing.hmacSha512($expr$)
+	java.security.Key [com.google.common.hash.Hashing]  →  Hashing.hmacSha512($expr$)
+
+.sha384 : com.google.common.hash.Hashing.sha384
+	java.lang.Object [com.google.common.hash.Hashing]  →  Hashing.sha384()
+
+.farmHashFingerprint64 : com.google.common.hash.Hashing.farmHashFingerprint64
+	java.lang.Object [com.google.common.hash.Hashing]  →  Hashing.farmHashFingerprint64()
+
+.sha512 : com.google.common.hash.Hashing.sha512
+	java.lang.Object [com.google.common.hash.Hashing]  →  Hashing.sha512()
+
+.sipHash24 : com.google.common.hash.Hashing.sipHash24
+	LONG [com.google.common.hash.Hashing]  →  Hashing.sipHash24($expr$, $arg$)
+	java.lang.Object [com.google.common.hash.Hashing]  →  Hashing.sipHash24()
+
+.concatenating : com.google.common.hash.Hashing.concatenating
+	java.lang.Iterable [com.google.common.hash.Hashing]  →  Hashing.concatenating($expr$)
+	com.google.common.hash.HashFunction [com.google.common.hash.Hashing]  →  Hashing.concatenating($expr$, $arg$)
+
+.hmacSha1 : com.google.common.hash.Hashing.hmacSha1
+	scala.Array [com.google.common.hash.Hashing]  →  Hashing.hmacSha1($expr$)
+	java.security.Key [com.google.common.hash.Hashing]  →  Hashing.hmacSha1($expr$)
+
+
+## HashingInputStream
+
+.nullInputStream : com.google.common.hash.HashingInputStream.nullInputStream
+	java.lang.Object [com.google.common.hash.HashingInputStream]  →  HashingInputStream.nullInputStream()
+
+
+## HashingOutputStream
+
+.nullOutputStream : com.google.common.hash.HashingOutputStream.nullOutputStream
+	java.lang.Object [com.google.common.hash.HashingOutputStream]  →  HashingOutputStream.nullOutputStream()
+
+
+## HtmlEscapers
+
+.htmlEscaper : com.google.common.html.HtmlEscapers.htmlEscaper
+	java.lang.Object [com.google.common.html.HtmlEscapers]  →  HtmlEscapers.htmlEscaper()
+
+
+## BaseEncoding
+
+.base64 : com.google.common.io.BaseEncoding.base64
+	java.lang.Object [com.google.common.io.BaseEncoding]  →  BaseEncoding.base64()
+
+.base32Hex : com.google.common.io.BaseEncoding.base32Hex
+	java.lang.Object [com.google.common.io.BaseEncoding]  →  BaseEncoding.base32Hex()
+
+.base16 : com.google.common.io.BaseEncoding.base16
+	java.lang.Object [com.google.common.io.BaseEncoding]  →  BaseEncoding.base16()
+
+.base32 : com.google.common.io.BaseEncoding.base32
+	java.lang.Object [com.google.common.io.BaseEncoding]  →  BaseEncoding.base32()
+
+.base64Url : com.google.common.io.BaseEncoding.base64Url
+	java.lang.Object [com.google.common.io.BaseEncoding]  →  BaseEncoding.base64Url()
+
+
+## ByteSource
+
+.empty : com.google.common.io.ByteSource.empty
+	java.lang.Object [com.google.common.io.ByteSource]  →  ByteSource.empty()
+
+.concat : com.google.common.io.ByteSource.concat
+	scala.Array [com.google.common.io.ByteSource]  →  ByteSource.concat($expr$)
+	java.lang.Iterable [com.google.common.io.ByteSource]  →  ByteSource.concat($expr$)
+	java.util.Iterator [com.google.common.io.ByteSource]  →  ByteSource.concat($expr$)
+
+.wrap : com.google.common.io.ByteSource.wrap
+	scala.Array [com.google.common.io.ByteSource]  →  ByteSource.wrap($expr$)
+
+
+## ByteStreams
+
+.read : com.google.common.io.ByteStreams.read
+	java.io.InputStream [com.google.common.io.ByteStreams]  →  ByteStreams.read($expr$, $arg$)
+
+.newDataInput : com.google.common.io.ByteStreams.newDataInput
+	scala.Array [com.google.common.io.ByteStreams]  →  ByteStreams.newDataInput($expr$, $arg$)
+	java.io.ByteArrayInputStream [com.google.common.io.ByteStreams]  →  ByteStreams.newDataInput($expr$)
+
+.newDataOutput : com.google.common.io.ByteStreams.newDataOutput
+	java.io.ByteArrayOutputStream [com.google.common.io.ByteStreams]  →  ByteStreams.newDataOutput($expr$)
+	INT [com.google.common.io.ByteStreams]  →  ByteStreams.newDataOutput($expr$)
+	java.lang.Object [com.google.common.io.ByteStreams]  →  ByteStreams.newDataOutput()
+
+.skipFully : com.google.common.io.ByteStreams.skipFully
+	java.io.InputStream [com.google.common.io.ByteStreams]  →  ByteStreams.skipFully($expr$, $arg$)
+
+.exhaust : com.google.common.io.ByteStreams.exhaust
+	java.io.InputStream [com.google.common.io.ByteStreams]  →  ByteStreams.exhaust($expr$)
+
+.readBytes : com.google.common.io.ByteStreams.readBytes
+	java.io.InputStream [com.google.common.io.ByteStreams]  →  ByteStreams.readBytes($expr$, $arg$)
+
+.nullOutputStream : com.google.common.io.ByteStreams.nullOutputStream
+	java.lang.Object [com.google.common.io.ByteStreams]  →  ByteStreams.nullOutputStream()
+
+.copy : com.google.common.io.ByteStreams.copy
+	java.nio.channels.ReadableByteChannel [com.google.common.io.ByteStreams]  →  ByteStreams.copy($expr$, $arg$)
+	java.io.InputStream [com.google.common.io.ByteStreams]  →  ByteStreams.copy($expr$, $arg$)
+
+.readFully : com.google.common.io.ByteStreams.readFully
+	java.io.InputStream [com.google.common.io.ByteStreams]  →  ByteStreams.readFully($expr$, $arg$)
+
+.toByteArray : com.google.common.io.ByteStreams.toByteArray
+	java.io.InputStream [com.google.common.io.ByteStreams]  →  ByteStreams.toByteArray($expr$)
+
+.limit : com.google.common.io.ByteStreams.limit
+	java.io.InputStream [com.google.common.io.ByteStreams]  →  ByteStreams.limit($expr$, $arg$)
+
+
+## CharSource
+
+.empty : com.google.common.io.CharSource.empty
+	java.lang.Object [com.google.common.io.CharSource]  →  CharSource.empty()
+
+.concat : com.google.common.io.CharSource.concat
+	scala.Array [com.google.common.io.CharSource]  →  CharSource.concat($expr$)
+	java.lang.Iterable [com.google.common.io.CharSource]  →  CharSource.concat($expr$)
+	java.util.Iterator [com.google.common.io.CharSource]  →  CharSource.concat($expr$)
+
+.wrap : com.google.common.io.CharSource.wrap
+	java.lang.CharSequence [com.google.common.io.CharSource]  →  CharSource.wrap($expr$)
+
+
+## CharStreams
+
+.skipFully : com.google.common.io.CharStreams.skipFully
+	java.io.Reader [com.google.common.io.CharStreams]  →  CharStreams.skipFully($expr$, $arg$)
+
+.exhaust : com.google.common.io.CharStreams.exhaust
+	java.lang.Readable [com.google.common.io.CharStreams]  →  CharStreams.exhaust($expr$)
+
+.readLines : com.google.common.io.CharStreams.readLines
+	java.lang.Readable [com.google.common.io.CharStreams]  →  CharStreams.readLines($expr$, $arg$)
+
+.asWriter : com.google.common.io.CharStreams.asWriter
+	java.lang.Appendable [com.google.common.io.CharStreams]  →  CharStreams.asWriter($expr$)
+
+.nullWriter : com.google.common.io.CharStreams.nullWriter
+	java.lang.Object [com.google.common.io.CharStreams]  →  CharStreams.nullWriter()
+
+.copy : com.google.common.io.CharStreams.copy
+	java.lang.Readable [com.google.common.io.CharStreams]  →  CharStreams.copy($expr$, $arg$)
+
+.toString : com.google.common.io.CharStreams.toString
+	java.lang.Readable [com.google.common.io.CharStreams]  →  CharStreams.toString($expr$)
+
+
+## Closeables
+
+.closeQuietly : com.google.common.io.Closeables.closeQuietly
+	java.io.Reader [com.google.common.io.Closeables]  →  Closeables.closeQuietly($expr$)
+	java.io.InputStream [com.google.common.io.Closeables]  →  Closeables.closeQuietly($expr$)
+
+.close : com.google.common.io.Closeables.close
+	java.io.Closeable [com.google.common.io.Closeables]  →  Closeables.close($expr$, $arg$)
+
+
+## Closer
+
+.create : com.google.common.io.Closer.create
+	java.lang.Object [com.google.common.io.Closer]  →  Closer.create()
+
+
+## CountingInputStream
+
+.nullInputStream : com.google.common.io.CountingInputStream.nullInputStream
+	java.lang.Object [com.google.common.io.CountingInputStream]  →  CountingInputStream.nullInputStream()
+
+
+## CountingOutputStream
+
+.nullOutputStream : com.google.common.io.CountingOutputStream.nullOutputStream
+	java.lang.Object [com.google.common.io.CountingOutputStream]  →  CountingOutputStream.nullOutputStream()
+
+
+## FileBackedOutputStream
+
+.nullOutputStream : com.google.common.io.FileBackedOutputStream.nullOutputStream
+	java.lang.Object [com.google.common.io.FileBackedOutputStream]  →  FileBackedOutputStream.nullOutputStream()
+
+
+## Files
+
+.move : com.google.common.io.Files.move
+	java.io.File [com.google.common.io.Files]  →  Files.move($expr$, $arg$)
+
+.asByteSource : com.google.common.io.Files.asByteSource
+	java.io.File [com.google.common.io.Files]  →  Files.asByteSource($expr$)
+
+.map : com.google.common.io.Files.map
+	java.io.File [com.google.common.io.Files]  →  Files.map($expr$, $arg$)
+
+.touch : com.google.common.io.Files.touch
+	java.io.File [com.google.common.io.Files]  →  Files.touch($expr$)
+
+.getFileExtension : com.google.common.io.Files.getFileExtension
+	java.lang.String [com.google.common.io.Files]  →  Files.getFileExtension($expr$)
+
+.isDirectory : com.google.common.io.Files.isDirectory
+	java.lang.Object [com.google.common.io.Files]  →  Files.isDirectory()
+
+.readLines : com.google.common.io.Files.readLines
+	java.io.File [com.google.common.io.Files]  →  Files.readLines($expr$, $arg$)
+
+.newReader : com.google.common.io.Files.newReader
+	java.io.File [com.google.common.io.Files]  →  Files.newReader($expr$, $arg$)
+
+.createParentDirs : com.google.common.io.Files.createParentDirs
+	java.io.File [com.google.common.io.Files]  →  Files.createParentDirs($expr$)
+
+.getNameWithoutExtension : com.google.common.io.Files.getNameWithoutExtension
+	java.lang.String [com.google.common.io.Files]  →  Files.getNameWithoutExtension($expr$)
+
+.equal : com.google.common.io.Files.equal
+	java.io.File [com.google.common.io.Files]  →  Files.equal($expr$, $arg$)
+
+.isFile : com.google.common.io.Files.isFile
+	java.lang.Object [com.google.common.io.Files]  →  Files.isFile()
+
+.fileTraverser : com.google.common.io.Files.fileTraverser
+	java.lang.Object [com.google.common.io.Files]  →  Files.fileTraverser()
+
+.copy : com.google.common.io.Files.copy
+	java.io.File [com.google.common.io.Files]  →  Files.copy($expr$, $arg$)
+
+.toByteArray : com.google.common.io.Files.toByteArray
+	java.io.File [com.google.common.io.Files]  →  Files.toByteArray($expr$)
+
+.asCharSink : com.google.common.io.Files.asCharSink
+	java.io.File [com.google.common.io.Files]  →  Files.asCharSink($expr$, $arg$)
+
+.asByteSink : com.google.common.io.Files.asByteSink
+	java.io.File [com.google.common.io.Files]  →  Files.asByteSink($expr$, $arg$)
+
+.asCharSource : com.google.common.io.Files.asCharSource
+	java.io.File [com.google.common.io.Files]  →  Files.asCharSource($expr$, $arg$)
+
+.write : com.google.common.io.Files.write
+	scala.Array [com.google.common.io.Files]  →  Files.write($expr$, $arg$)
+
+.newWriter : com.google.common.io.Files.newWriter
+	java.io.File [com.google.common.io.Files]  →  Files.newWriter($expr$, $arg$)
+
+.simplifyPath : com.google.common.io.Files.simplifyPath
+	java.lang.String [com.google.common.io.Files]  →  Files.simplifyPath($expr$)
+
+
+## Flushables
+
+.flush : com.google.common.io.Flushables.flush
+	java.io.Flushable [com.google.common.io.Flushables]  →  Flushables.flush($expr$, $arg$)
+
+.flushQuietly : com.google.common.io.Flushables.flushQuietly
+	java.io.Flushable [com.google.common.io.Flushables]  →  Flushables.flushQuietly($expr$)
+
+
+## LittleEndianDataInputStream
+
+.nullInputStream : com.google.common.io.LittleEndianDataInputStream.nullInputStream
+	java.lang.Object [com.google.common.io.LittleEndianDataInputStream]  →  LittleEndianDataInputStream.nullInputStream()
+
+
+## LittleEndianDataOutputStream
+
+.nullOutputStream : com.google.common.io.LittleEndianDataOutputStream.nullOutputStream
+	java.lang.Object [com.google.common.io.LittleEndianDataOutputStream]  →  LittleEndianDataOutputStream.nullOutputStream()
+
+
+## MoreFiles
+
+.listFiles : com.google.common.io.MoreFiles.listFiles
+	java.nio.file.Path [com.google.common.io.MoreFiles]  →  MoreFiles.listFiles($expr$)
+
+.asByteSource : com.google.common.io.MoreFiles.asByteSource
+	java.nio.file.Path [com.google.common.io.MoreFiles]  →  MoreFiles.asByteSource($expr$, $arg$)
+
+.touch : com.google.common.io.MoreFiles.touch
+	java.nio.file.Path [com.google.common.io.MoreFiles]  →  MoreFiles.touch($expr$)
+
+.deleteDirectoryContents : com.google.common.io.MoreFiles.deleteDirectoryContents
+	java.nio.file.Path [com.google.common.io.MoreFiles]  →  MoreFiles.deleteDirectoryContents($expr$, $arg$)
+
+.isRegularFile : com.google.common.io.MoreFiles.isRegularFile
+	scala.Array [com.google.common.io.MoreFiles]  →  MoreFiles.isRegularFile($expr$)
+
+.getFileExtension : com.google.common.io.MoreFiles.getFileExtension
+	java.nio.file.Path [com.google.common.io.MoreFiles]  →  MoreFiles.getFileExtension($expr$)
+
+.isDirectory : com.google.common.io.MoreFiles.isDirectory
+	scala.Array [com.google.common.io.MoreFiles]  →  MoreFiles.isDirectory($expr$)
+
+.createParentDirectories : com.google.common.io.MoreFiles.createParentDirectories
+	java.nio.file.Path [com.google.common.io.MoreFiles]  →  MoreFiles.createParentDirectories($expr$, $arg$)
+
+.getNameWithoutExtension : com.google.common.io.MoreFiles.getNameWithoutExtension
+	java.nio.file.Path [com.google.common.io.MoreFiles]  →  MoreFiles.getNameWithoutExtension($expr$)
+
+.equal : com.google.common.io.MoreFiles.equal
+	java.nio.file.Path [com.google.common.io.MoreFiles]  →  MoreFiles.equal($expr$, $arg$)
+
+.fileTraverser : com.google.common.io.MoreFiles.fileTraverser
+	java.lang.Object [com.google.common.io.MoreFiles]  →  MoreFiles.fileTraverser()
+
+.asCharSink : com.google.common.io.MoreFiles.asCharSink
+	java.nio.file.Path [com.google.common.io.MoreFiles]  →  MoreFiles.asCharSink($expr$, $arg$)
+
+.asByteSink : com.google.common.io.MoreFiles.asByteSink
+	java.nio.file.Path [com.google.common.io.MoreFiles]  →  MoreFiles.asByteSink($expr$, $arg$)
+
+.asCharSource : com.google.common.io.MoreFiles.asCharSource
+	java.nio.file.Path [com.google.common.io.MoreFiles]  →  MoreFiles.asCharSource($expr$, $arg$)
+
+.deleteRecursively : com.google.common.io.MoreFiles.deleteRecursively
+	java.nio.file.Path [com.google.common.io.MoreFiles]  →  MoreFiles.deleteRecursively($expr$, $arg$)
+
+
+## Resources
+
+.asByteSource : com.google.common.io.Resources.asByteSource
+	java.net.URL [com.google.common.io.Resources]  →  Resources.asByteSource($expr$)
+
+.getResource : com.google.common.io.Resources.getResource
+	java.lang.String [com.google.common.io.Resources]  →  Resources.getResource($expr$)
+	java.lang.Class [com.google.common.io.Resources]  →  Resources.getResource($expr$, $arg$)
+
+.readLines : com.google.common.io.Resources.readLines
+	java.net.URL [com.google.common.io.Resources]  →  Resources.readLines($expr$, $arg$)
+
+.copy : com.google.common.io.Resources.copy
+	java.net.URL [com.google.common.io.Resources]  →  Resources.copy($expr$, $arg$)
+
+.toString : com.google.common.io.Resources.toString
+	java.net.URL [com.google.common.io.Resources]  →  Resources.toString($expr$, $arg$)
+
+.toByteArray : com.google.common.io.Resources.toByteArray
+	java.net.URL [com.google.common.io.Resources]  →  Resources.toByteArray($expr$)
+
+.asCharSource : com.google.common.io.Resources.asCharSource
+	java.net.URL [com.google.common.io.Resources]  →  Resources.asCharSource($expr$, $arg$)
+
+
+## BigDecimalMath
+
+.roundToDouble : com.google.common.math.BigDecimalMath.roundToDouble
+	java.math.BigDecimal [com.google.common.math.BigDecimalMath]  →  BigDecimalMath.roundToDouble($expr$, $arg$)
+
+
+## BigIntegerMath
+
+.log2 : com.google.common.math.BigIntegerMath.log2
+	java.math.BigInteger [com.google.common.math.BigIntegerMath]  →  BigIntegerMath.log2($expr$, $arg$)
+
+.factorial : com.google.common.math.BigIntegerMath.factorial
+	INT [com.google.common.math.BigIntegerMath]  →  BigIntegerMath.factorial($expr$)
+
+.roundToDouble : com.google.common.math.BigIntegerMath.roundToDouble
+	java.math.BigInteger [com.google.common.math.BigIntegerMath]  →  BigIntegerMath.roundToDouble($expr$, $arg$)
+
+.log10 : com.google.common.math.BigIntegerMath.log10
+	java.math.BigInteger [com.google.common.math.BigIntegerMath]  →  BigIntegerMath.log10($expr$, $arg$)
+
+.divide : com.google.common.math.BigIntegerMath.divide
+	java.math.BigInteger [com.google.common.math.BigIntegerMath]  →  BigIntegerMath.divide($expr$, $arg$)
+
+.sqrt : com.google.common.math.BigIntegerMath.sqrt
+	java.math.BigInteger [com.google.common.math.BigIntegerMath]  →  BigIntegerMath.sqrt($expr$, $arg$)
+
+.floorPowerOfTwo : com.google.common.math.BigIntegerMath.floorPowerOfTwo
+	java.math.BigInteger [com.google.common.math.BigIntegerMath]  →  BigIntegerMath.floorPowerOfTwo($expr$)
+
+.binomial : com.google.common.math.BigIntegerMath.binomial
+	INT [com.google.common.math.BigIntegerMath]  →  BigIntegerMath.binomial($expr$, $arg$)
+
+.isPowerOfTwo : com.google.common.math.BigIntegerMath.isPowerOfTwo
+	java.math.BigInteger [com.google.common.math.BigIntegerMath]  →  BigIntegerMath.isPowerOfTwo($expr$)
+
+.ceilingPowerOfTwo : com.google.common.math.BigIntegerMath.ceilingPowerOfTwo
+	java.math.BigInteger [com.google.common.math.BigIntegerMath]  →  BigIntegerMath.ceilingPowerOfTwo($expr$)
+
+
+## DoubleMath
+
+.log2 : com.google.common.math.DoubleMath.log2
+	DOUBLE [com.google.common.math.DoubleMath]  →  DoubleMath.log2($expr$, $arg$)
+
+.factorial : com.google.common.math.DoubleMath.factorial
+	INT [com.google.common.math.DoubleMath]  →  DoubleMath.factorial($expr$)
+
+.fuzzyEquals : com.google.common.math.DoubleMath.fuzzyEquals
+	DOUBLE [com.google.common.math.DoubleMath]  →  DoubleMath.fuzzyEquals($expr$, $arg$)
+
+.roundToInt : com.google.common.math.DoubleMath.roundToInt
+	DOUBLE [com.google.common.math.DoubleMath]  →  DoubleMath.roundToInt($expr$, $arg$)
+
+.fuzzyCompare : com.google.common.math.DoubleMath.fuzzyCompare
+	DOUBLE [com.google.common.math.DoubleMath]  →  DoubleMath.fuzzyCompare($expr$, $arg$)
+
+.isPowerOfTwo : com.google.common.math.DoubleMath.isPowerOfTwo
+	DOUBLE [com.google.common.math.DoubleMath]  →  DoubleMath.isPowerOfTwo($expr$)
+
+.isMathematicalInteger : com.google.common.math.DoubleMath.isMathematicalInteger
+	DOUBLE [com.google.common.math.DoubleMath]  →  DoubleMath.isMathematicalInteger($expr$)
+
+.roundToLong : com.google.common.math.DoubleMath.roundToLong
+	DOUBLE [com.google.common.math.DoubleMath]  →  DoubleMath.roundToLong($expr$, $arg$)
+
+.roundToBigInteger : com.google.common.math.DoubleMath.roundToBigInteger
+	DOUBLE [com.google.common.math.DoubleMath]  →  DoubleMath.roundToBigInteger($expr$, $arg$)
+
+
+## IntMath
+
+.log2 : com.google.common.math.IntMath.log2
+	INT [com.google.common.math.IntMath]  →  IntMath.log2($expr$, $arg$)
+
+.factorial : com.google.common.math.IntMath.factorial
+	INT [com.google.common.math.IntMath]  →  IntMath.factorial($expr$)
+
+.saturatedPow : com.google.common.math.IntMath.saturatedPow
+	INT [com.google.common.math.IntMath]  →  IntMath.saturatedPow($expr$, $arg$)
+
+.saturatedMultiply : com.google.common.math.IntMath.saturatedMultiply
+	INT [com.google.common.math.IntMath]  →  IntMath.saturatedMultiply($expr$, $arg$)
+
+.mod : com.google.common.math.IntMath.mod
+	INT [com.google.common.math.IntMath]  →  IntMath.mod($expr$, $arg$)
+
+.log10 : com.google.common.math.IntMath.log10
+	INT [com.google.common.math.IntMath]  →  IntMath.log10($expr$, $arg$)
+
+.mean : com.google.common.math.IntMath.mean
+	INT [com.google.common.math.IntMath]  →  IntMath.mean($expr$, $arg$)
+
+.divide : com.google.common.math.IntMath.divide
+	INT [com.google.common.math.IntMath]  →  IntMath.divide($expr$, $arg$)
+
+.saturatedSubtract : com.google.common.math.IntMath.saturatedSubtract
+	INT [com.google.common.math.IntMath]  →  IntMath.saturatedSubtract($expr$, $arg$)
+
+.pow : com.google.common.math.IntMath.pow
+	INT [com.google.common.math.IntMath]  →  IntMath.pow($expr$, $arg$)
+
+.sqrt : com.google.common.math.IntMath.sqrt
+	INT [com.google.common.math.IntMath]  →  IntMath.sqrt($expr$, $arg$)
+
+.floorPowerOfTwo : com.google.common.math.IntMath.floorPowerOfTwo
+	INT [com.google.common.math.IntMath]  →  IntMath.floorPowerOfTwo($expr$)
+
+.isPrime : com.google.common.math.IntMath.isPrime
+	INT [com.google.common.math.IntMath]  →  IntMath.isPrime($expr$)
+
+.binomial : com.google.common.math.IntMath.binomial
+	INT [com.google.common.math.IntMath]  →  IntMath.binomial($expr$, $arg$)
+
+.checkedPow : com.google.common.math.IntMath.checkedPow
+	INT [com.google.common.math.IntMath]  →  IntMath.checkedPow($expr$, $arg$)
+
+.isPowerOfTwo : com.google.common.math.IntMath.isPowerOfTwo
+	INT [com.google.common.math.IntMath]  →  IntMath.isPowerOfTwo($expr$)
+
+.checkedSubtract : com.google.common.math.IntMath.checkedSubtract
+	INT [com.google.common.math.IntMath]  →  IntMath.checkedSubtract($expr$, $arg$)
+
+.checkedAdd : com.google.common.math.IntMath.checkedAdd
+	INT [com.google.common.math.IntMath]  →  IntMath.checkedAdd($expr$, $arg$)
+
+.saturatedAdd : com.google.common.math.IntMath.saturatedAdd
+	INT [com.google.common.math.IntMath]  →  IntMath.saturatedAdd($expr$, $arg$)
+
+.ceilingPowerOfTwo : com.google.common.math.IntMath.ceilingPowerOfTwo
+	INT [com.google.common.math.IntMath]  →  IntMath.ceilingPowerOfTwo($expr$)
+
+.checkedMultiply : com.google.common.math.IntMath.checkedMultiply
+	INT [com.google.common.math.IntMath]  →  IntMath.checkedMultiply($expr$, $arg$)
+
+.gcd : com.google.common.math.IntMath.gcd
+	INT [com.google.common.math.IntMath]  →  IntMath.gcd($expr$, $arg$)
+
+
+## LinearTransformation
+
+.forNaN : com.google.common.math.LinearTransformation.forNaN
+	java.lang.Object [com.google.common.math.LinearTransformation]  →  LinearTransformation.forNaN()
+
+.horizontal : com.google.common.math.LinearTransformation.horizontal
+	DOUBLE [com.google.common.math.LinearTransformation]  →  LinearTransformation.horizontal($expr$)
+
+.mapping : com.google.common.math.LinearTransformation.mapping
+	DOUBLE [com.google.common.math.LinearTransformation]  →  LinearTransformation.mapping($expr$, $arg$)
+
+.vertical : com.google.common.math.LinearTransformation.vertical
+	DOUBLE [com.google.common.math.LinearTransformation]  →  LinearTransformation.vertical($expr$)
+
+
+## LongMath
+
+.log2 : com.google.common.math.LongMath.log2
+	LONG [com.google.common.math.LongMath]  →  LongMath.log2($expr$, $arg$)
+
+.factorial : com.google.common.math.LongMath.factorial
+	INT [com.google.common.math.LongMath]  →  LongMath.factorial($expr$)
+
+.saturatedPow : com.google.common.math.LongMath.saturatedPow
+	LONG [com.google.common.math.LongMath]  →  LongMath.saturatedPow($expr$, $arg$)
+
+.saturatedMultiply : com.google.common.math.LongMath.saturatedMultiply
+	LONG [com.google.common.math.LongMath]  →  LongMath.saturatedMultiply($expr$, $arg$)
+
+.mod : com.google.common.math.LongMath.mod
+	LONG [com.google.common.math.LongMath]  →  LongMath.mod($expr$, $arg$)
+
+.roundToDouble : com.google.common.math.LongMath.roundToDouble
+	LONG [com.google.common.math.LongMath]  →  LongMath.roundToDouble($expr$, $arg$)
+
+.log10 : com.google.common.math.LongMath.log10
+	LONG [com.google.common.math.LongMath]  →  LongMath.log10($expr$, $arg$)
+
+.mean : com.google.common.math.LongMath.mean
+	LONG [com.google.common.math.LongMath]  →  LongMath.mean($expr$, $arg$)
+
+.divide : com.google.common.math.LongMath.divide
+	LONG [com.google.common.math.LongMath]  →  LongMath.divide($expr$, $arg$)
+
+.saturatedSubtract : com.google.common.math.LongMath.saturatedSubtract
+	LONG [com.google.common.math.LongMath]  →  LongMath.saturatedSubtract($expr$, $arg$)
+
+.pow : com.google.common.math.LongMath.pow
+	LONG [com.google.common.math.LongMath]  →  LongMath.pow($expr$, $arg$)
+
+.sqrt : com.google.common.math.LongMath.sqrt
+	LONG [com.google.common.math.LongMath]  →  LongMath.sqrt($expr$, $arg$)
+
+.floorPowerOfTwo : com.google.common.math.LongMath.floorPowerOfTwo
+	LONG [com.google.common.math.LongMath]  →  LongMath.floorPowerOfTwo($expr$)
+
+.isPrime : com.google.common.math.LongMath.isPrime
+	LONG [com.google.common.math.LongMath]  →  LongMath.isPrime($expr$)
+
+.binomial : com.google.common.math.LongMath.binomial
+	INT [com.google.common.math.LongMath]  →  LongMath.binomial($expr$, $arg$)
+
+.checkedPow : com.google.common.math.LongMath.checkedPow
+	LONG [com.google.common.math.LongMath]  →  LongMath.checkedPow($expr$, $arg$)
+
+.isPowerOfTwo : com.google.common.math.LongMath.isPowerOfTwo
+	LONG [com.google.common.math.LongMath]  →  LongMath.isPowerOfTwo($expr$)
+
+.checkedSubtract : com.google.common.math.LongMath.checkedSubtract
+	LONG [com.google.common.math.LongMath]  →  LongMath.checkedSubtract($expr$, $arg$)
+
+.checkedAdd : com.google.common.math.LongMath.checkedAdd
+	LONG [com.google.common.math.LongMath]  →  LongMath.checkedAdd($expr$, $arg$)
+
+.saturatedAdd : com.google.common.math.LongMath.saturatedAdd
+	LONG [com.google.common.math.LongMath]  →  LongMath.saturatedAdd($expr$, $arg$)
+
+.ceilingPowerOfTwo : com.google.common.math.LongMath.ceilingPowerOfTwo
+	LONG [com.google.common.math.LongMath]  →  LongMath.ceilingPowerOfTwo($expr$)
+
+.checkedMultiply : com.google.common.math.LongMath.checkedMultiply
+	LONG [com.google.common.math.LongMath]  →  LongMath.checkedMultiply($expr$, $arg$)
+
+.gcd : com.google.common.math.LongMath.gcd
+	LONG [com.google.common.math.LongMath]  →  LongMath.gcd($expr$, $arg$)
+
+
+## PairedStats
+
+.fromByteArray : com.google.common.math.PairedStats.fromByteArray
+	scala.Array [com.google.common.math.PairedStats]  →  PairedStats.fromByteArray($expr$)
+
+
+## Quantiles
+
+.median : com.google.common.math.Quantiles.median
+	java.lang.Object [com.google.common.math.Quantiles]  →  Quantiles.median()
+
+.percentiles : com.google.common.math.Quantiles.percentiles
+	java.lang.Object [com.google.common.math.Quantiles]  →  Quantiles.percentiles()
+
+.quartiles : com.google.common.math.Quantiles.quartiles
+	java.lang.Object [com.google.common.math.Quantiles]  →  Quantiles.quartiles()
+
+.scale : com.google.common.math.Quantiles.scale
+	INT [com.google.common.math.Quantiles]  →  Quantiles.scale($expr$)
+
+
+## Stats
+
+.meanOf : com.google.common.math.Stats.meanOf
+	scala.Array [com.google.common.math.Stats]  →  Stats.meanOf($expr$)
+	java.lang.Iterable [com.google.common.math.Stats]  →  Stats.meanOf($expr$)
+	java.util.Iterator [com.google.common.math.Stats]  →  Stats.meanOf($expr$)
+
+.of : com.google.common.math.Stats.of
+	java.util.Iterator [com.google.common.math.Stats]  →  Stats.of($expr$)
+	java.util.stream.IntStream [com.google.common.math.Stats]  →  Stats.of($expr$)
+	java.lang.Iterable [com.google.common.math.Stats]  →  Stats.of($expr$)
+	scala.Array [com.google.common.math.Stats]  →  Stats.of($expr$)
+	java.util.stream.LongStream [com.google.common.math.Stats]  →  Stats.of($expr$)
+	java.util.stream.DoubleStream [com.google.common.math.Stats]  →  Stats.of($expr$)
+
+.fromByteArray : com.google.common.math.Stats.fromByteArray
+	scala.Array [com.google.common.math.Stats]  →  Stats.fromByteArray($expr$)
+
+.toStats : com.google.common.math.Stats.toStats
+	java.lang.Object [com.google.common.math.Stats]  →  Stats.toStats()
+
+
+## HostAndPort
+
+.fromParts : com.google.common.net.HostAndPort.fromParts
+	java.lang.String [com.google.common.net.HostAndPort]  →  HostAndPort.fromParts($expr$, $arg$)
+
+.fromString : com.google.common.net.HostAndPort.fromString
+	java.lang.String [com.google.common.net.HostAndPort]  →  HostAndPort.fromString($expr$)
+
+.fromHost : com.google.common.net.HostAndPort.fromHost
+	java.lang.String [com.google.common.net.HostAndPort]  →  HostAndPort.fromHost($expr$)
+
+
+## HostSpecifier
+
+.fromValid : com.google.common.net.HostSpecifier.fromValid
+	java.lang.String [com.google.common.net.HostSpecifier]  →  HostSpecifier.fromValid($expr$)
+
+.from : com.google.common.net.HostSpecifier.from
+	java.lang.String [com.google.common.net.HostSpecifier]  →  HostSpecifier.from($expr$)
+
+.isValid : com.google.common.net.HostSpecifier.isValid
+	java.lang.String [com.google.common.net.HostSpecifier]  →  HostSpecifier.isValid($expr$)
+
+
+## InetAddresses
+
+.toAddrString : com.google.common.net.InetAddresses.toAddrString
+	java.net.InetAddress [com.google.common.net.InetAddresses]  →  InetAddresses.toAddrString($expr$)
+
+.getEmbeddedIPv4ClientAddress : com.google.common.net.InetAddresses.getEmbeddedIPv4ClientAddress
+	java.net.Inet6Address [com.google.common.net.InetAddresses]  →  InetAddresses.getEmbeddedIPv4ClientAddress($expr$)
+
+.getCoercedIPv4Address : com.google.common.net.InetAddresses.getCoercedIPv4Address
+	java.net.InetAddress [com.google.common.net.InetAddresses]  →  InetAddresses.getCoercedIPv4Address($expr$)
+
+.isMaximum : com.google.common.net.InetAddresses.isMaximum
+	java.net.InetAddress [com.google.common.net.InetAddresses]  →  InetAddresses.isMaximum($expr$)
+
+.fromLittleEndianByteArray : com.google.common.net.InetAddresses.fromLittleEndianByteArray
+	scala.Array [com.google.common.net.InetAddresses]  →  InetAddresses.fromLittleEndianByteArray($expr$)
+
+.fromIPv4BigInteger : com.google.common.net.InetAddresses.fromIPv4BigInteger
+	java.math.BigInteger [com.google.common.net.InetAddresses]  →  InetAddresses.fromIPv4BigInteger($expr$)
+
+.get6to4IPv4Address : com.google.common.net.InetAddresses.get6to4IPv4Address
+	java.net.Inet6Address [com.google.common.net.InetAddresses]  →  InetAddresses.get6to4IPv4Address($expr$)
+
+.toUriString : com.google.common.net.InetAddresses.toUriString
+	java.net.InetAddress [com.google.common.net.InetAddresses]  →  InetAddresses.toUriString($expr$)
+
+.fromIPv6BigInteger : com.google.common.net.InetAddresses.fromIPv6BigInteger
+	java.math.BigInteger [com.google.common.net.InetAddresses]  →  InetAddresses.fromIPv6BigInteger($expr$)
+
+.isTeredoAddress : com.google.common.net.InetAddresses.isTeredoAddress
+	java.net.Inet6Address [com.google.common.net.InetAddresses]  →  InetAddresses.isTeredoAddress($expr$)
+
+.coerceToInteger : com.google.common.net.InetAddresses.coerceToInteger
+	java.net.InetAddress [com.google.common.net.InetAddresses]  →  InetAddresses.coerceToInteger($expr$)
+
+.is6to4Address : com.google.common.net.InetAddresses.is6to4Address
+	java.net.Inet6Address [com.google.common.net.InetAddresses]  →  InetAddresses.is6to4Address($expr$)
+
+.isMappedIPv4Address : com.google.common.net.InetAddresses.isMappedIPv4Address
+	java.lang.String [com.google.common.net.InetAddresses]  →  InetAddresses.isMappedIPv4Address($expr$)
+
+.isInetAddress : com.google.common.net.InetAddresses.isInetAddress
+	java.lang.String [com.google.common.net.InetAddresses]  →  InetAddresses.isInetAddress($expr$)
+
+.getTeredoInfo : com.google.common.net.InetAddresses.getTeredoInfo
+	java.net.Inet6Address [com.google.common.net.InetAddresses]  →  InetAddresses.getTeredoInfo($expr$)
+
+.getIsatapIPv4Address : com.google.common.net.InetAddresses.getIsatapIPv4Address
+	java.net.Inet6Address [com.google.common.net.InetAddresses]  →  InetAddresses.getIsatapIPv4Address($expr$)
+
+.decrement : com.google.common.net.InetAddresses.decrement
+	java.net.InetAddress [com.google.common.net.InetAddresses]  →  InetAddresses.decrement($expr$)
+
+.forString : com.google.common.net.InetAddresses.forString
+	java.lang.String [com.google.common.net.InetAddresses]  →  InetAddresses.forString($expr$)
+
+.isCompatIPv4Address : com.google.common.net.InetAddresses.isCompatIPv4Address
+	java.net.Inet6Address [com.google.common.net.InetAddresses]  →  InetAddresses.isCompatIPv4Address($expr$)
+
+.fromInteger : com.google.common.net.InetAddresses.fromInteger
+	INT [com.google.common.net.InetAddresses]  →  InetAddresses.fromInteger($expr$)
+
+.getCompatIPv4Address : com.google.common.net.InetAddresses.getCompatIPv4Address
+	java.net.Inet6Address [com.google.common.net.InetAddresses]  →  InetAddresses.getCompatIPv4Address($expr$)
+
+.increment : com.google.common.net.InetAddresses.increment
+	java.net.InetAddress [com.google.common.net.InetAddresses]  →  InetAddresses.increment($expr$)
+
+.hasEmbeddedIPv4ClientAddress : com.google.common.net.InetAddresses.hasEmbeddedIPv4ClientAddress
+	java.net.Inet6Address [com.google.common.net.InetAddresses]  →  InetAddresses.hasEmbeddedIPv4ClientAddress($expr$)
+
+.isUriInetAddress : com.google.common.net.InetAddresses.isUriInetAddress
+	java.lang.String [com.google.common.net.InetAddresses]  →  InetAddresses.isUriInetAddress($expr$)
+
+.forUriString : com.google.common.net.InetAddresses.forUriString
+	java.lang.String [com.google.common.net.InetAddresses]  →  InetAddresses.forUriString($expr$)
+
+.toBigInteger : com.google.common.net.InetAddresses.toBigInteger
+	java.net.InetAddress [com.google.common.net.InetAddresses]  →  InetAddresses.toBigInteger($expr$)
+
+.isIsatapAddress : com.google.common.net.InetAddresses.isIsatapAddress
+	java.net.Inet6Address [com.google.common.net.InetAddresses]  →  InetAddresses.isIsatapAddress($expr$)
+
+
+## InternetDomainName
+
+.from : com.google.common.net.InternetDomainName.from
+	java.lang.String [com.google.common.net.InternetDomainName]  →  InternetDomainName.from($expr$)
+
+.isValid : com.google.common.net.InternetDomainName.isValid
+	java.lang.String [com.google.common.net.InternetDomainName]  →  InternetDomainName.isValid($expr$)
+
+
+## MediaType
+
+.parse : com.google.common.net.MediaType.parse
+	java.lang.String [com.google.common.net.MediaType]  →  MediaType.parse($expr$)
+
+.create : com.google.common.net.MediaType.create
+	java.lang.String [com.google.common.net.MediaType]  →  MediaType.create($expr$, $arg$)
+
+
+## UrlEscapers
+
+.urlFragmentEscaper : com.google.common.net.UrlEscapers.urlFragmentEscaper
+	java.lang.Object [com.google.common.net.UrlEscapers]  →  UrlEscapers.urlFragmentEscaper()
+
+.urlPathSegmentEscaper : com.google.common.net.UrlEscapers.urlPathSegmentEscaper
+	java.lang.Object [com.google.common.net.UrlEscapers]  →  UrlEscapers.urlPathSegmentEscaper()
+
+.urlFormParameterEscaper : com.google.common.net.UrlEscapers.urlFormParameterEscaper
+	java.lang.Object [com.google.common.net.UrlEscapers]  →  UrlEscapers.urlFormParameterEscaper()
+
+
+## Booleans
+
+.trueFirst : com.google.common.primitives.Booleans.trueFirst
+	java.lang.Object [com.google.common.primitives.Booleans]  →  Booleans.trueFirst()
+
+.asList : com.google.common.primitives.Booleans.asList
+	scala.Array [com.google.common.primitives.Booleans]  →  Booleans.asList($expr$)
+
+.join : com.google.common.primitives.Booleans.join
+	java.lang.String [com.google.common.primitives.Booleans]  →  Booleans.join($expr$, $arg$)
+
+.lastIndexOf : com.google.common.primitives.Booleans.lastIndexOf
+	scala.Array [com.google.common.primitives.Booleans]  →  Booleans.lastIndexOf($expr$, $arg$)
+
+.lexicographicalComparator : com.google.common.primitives.Booleans.lexicographicalComparator
+	java.lang.Object [com.google.common.primitives.Booleans]  →  Booleans.lexicographicalComparator()
+
+.concat : com.google.common.primitives.Booleans.concat
+	scala.Array [com.google.common.primitives.Booleans]  →  Booleans.concat($expr$)
+
+.ensureCapacity : com.google.common.primitives.Booleans.ensureCapacity
+	scala.Array [com.google.common.primitives.Booleans]  →  Booleans.ensureCapacity($expr$, $arg$)
+
+.reverse : com.google.common.primitives.Booleans.reverse
+	scala.Array [com.google.common.primitives.Booleans]  →  Booleans.reverse($expr$, $arg$)
+
+.toArray : com.google.common.primitives.Booleans.toArray
+	java.util.Collection [com.google.common.primitives.Booleans]  →  Booleans.toArray($expr$)
+
+.countTrue : com.google.common.primitives.Booleans.countTrue
+	scala.Array [com.google.common.primitives.Booleans]  →  Booleans.countTrue($expr$)
+
+.falseFirst : com.google.common.primitives.Booleans.falseFirst
+	java.lang.Object [com.google.common.primitives.Booleans]  →  Booleans.falseFirst()
+
+.contains : com.google.common.primitives.Booleans.contains
+	scala.Array [com.google.common.primitives.Booleans]  →  Booleans.contains($expr$, $arg$)
+
+.indexOf : com.google.common.primitives.Booleans.indexOf
+	scala.Array [com.google.common.primitives.Booleans]  →  Booleans.indexOf($expr$, $arg$)
+
+.compare : com.google.common.primitives.Booleans.compare
+	BOOLEAN [com.google.common.primitives.Booleans]  →  Booleans.compare($expr$, $arg$)
+
+.hashCode : com.google.common.primitives.Booleans.hashCode
+	BOOLEAN [com.google.common.primitives.Booleans]  →  Booleans.hashCode($expr$)
+
+
+## Bytes
+
+.asList : com.google.common.primitives.Bytes.asList
+	scala.Array [com.google.common.primitives.Bytes]  →  Bytes.asList($expr$)
+
+.lastIndexOf : com.google.common.primitives.Bytes.lastIndexOf
+	scala.Array [com.google.common.primitives.Bytes]  →  Bytes.lastIndexOf($expr$, $arg$)
+
+.concat : com.google.common.primitives.Bytes.concat
+	scala.Array [com.google.common.primitives.Bytes]  →  Bytes.concat($expr$)
+
+.ensureCapacity : com.google.common.primitives.Bytes.ensureCapacity
+	scala.Array [com.google.common.primitives.Bytes]  →  Bytes.ensureCapacity($expr$, $arg$)
+
+.reverse : com.google.common.primitives.Bytes.reverse
+	scala.Array [com.google.common.primitives.Bytes]  →  Bytes.reverse($expr$, $arg$)
+
+.toArray : com.google.common.primitives.Bytes.toArray
+	java.util.Collection [com.google.common.primitives.Bytes]  →  Bytes.toArray($expr$)
+
+.contains : com.google.common.primitives.Bytes.contains
+	scala.Array [com.google.common.primitives.Bytes]  →  Bytes.contains($expr$, $arg$)
+
+.indexOf : com.google.common.primitives.Bytes.indexOf
+	scala.Array [com.google.common.primitives.Bytes]  →  Bytes.indexOf($expr$, $arg$)
+
+.hashCode : com.google.common.primitives.Bytes.hashCode
+	BYTE [com.google.common.primitives.Bytes]  →  Bytes.hashCode($expr$)
+
+
+## Chars
+
+.asList : com.google.common.primitives.Chars.asList
+	scala.Array [com.google.common.primitives.Chars]  →  Chars.asList($expr$)
+
+.join : com.google.common.primitives.Chars.join
+	java.lang.String [com.google.common.primitives.Chars]  →  Chars.join($expr$, $arg$)
+
+.lastIndexOf : com.google.common.primitives.Chars.lastIndexOf
+	scala.Array [com.google.common.primitives.Chars]  →  Chars.lastIndexOf($expr$, $arg$)
+
+.constrainToRange : com.google.common.primitives.Chars.constrainToRange
+	CHAR [com.google.common.primitives.Chars]  →  Chars.constrainToRange($expr$, $arg$)
+
+.lexicographicalComparator : com.google.common.primitives.Chars.lexicographicalComparator
+	java.lang.Object [com.google.common.primitives.Chars]  →  Chars.lexicographicalComparator()
+
+.concat : com.google.common.primitives.Chars.concat
+	scala.Array [com.google.common.primitives.Chars]  →  Chars.concat($expr$)
+
+.min : com.google.common.primitives.Chars.min
+	scala.Array [com.google.common.primitives.Chars]  →  Chars.min($expr$)
+
+.fromByteArray : com.google.common.primitives.Chars.fromByteArray
+	scala.Array [com.google.common.primitives.Chars]  →  Chars.fromByteArray($expr$)
+
+.ensureCapacity : com.google.common.primitives.Chars.ensureCapacity
+	scala.Array [com.google.common.primitives.Chars]  →  Chars.ensureCapacity($expr$, $arg$)
+
+.reverse : com.google.common.primitives.Chars.reverse
+	scala.Array [com.google.common.primitives.Chars]  →  Chars.reverse($expr$, $arg$)
+
+.max : com.google.common.primitives.Chars.max
+	scala.Array [com.google.common.primitives.Chars]  →  Chars.max($expr$)
+
+.saturatedCast : com.google.common.primitives.Chars.saturatedCast
+	LONG [com.google.common.primitives.Chars]  →  Chars.saturatedCast($expr$)
+
+.toArray : com.google.common.primitives.Chars.toArray
+	java.util.Collection [com.google.common.primitives.Chars]  →  Chars.toArray($expr$)
+
+.checkedCast : com.google.common.primitives.Chars.checkedCast
+	LONG [com.google.common.primitives.Chars]  →  Chars.checkedCast($expr$)
+
+.fromBytes : com.google.common.primitives.Chars.fromBytes
+	BYTE [com.google.common.primitives.Chars]  →  Chars.fromBytes($expr$, $arg$)
+
+.toByteArray : com.google.common.primitives.Chars.toByteArray
+	CHAR [com.google.common.primitives.Chars]  →  Chars.toByteArray($expr$)
+
+.sortDescending : com.google.common.primitives.Chars.sortDescending
+	scala.Array [com.google.common.primitives.Chars]  →  Chars.sortDescending($expr$, $arg$)
+
+.contains : com.google.common.primitives.Chars.contains
+	scala.Array [com.google.common.primitives.Chars]  →  Chars.contains($expr$, $arg$)
+
+.indexOf : com.google.common.primitives.Chars.indexOf
+	scala.Array [com.google.common.primitives.Chars]  →  Chars.indexOf($expr$, $arg$)
+
+.compare : com.google.common.primitives.Chars.compare
+	CHAR [com.google.common.primitives.Chars]  →  Chars.compare($expr$, $arg$)
+
+.hashCode : com.google.common.primitives.Chars.hashCode
+	CHAR [com.google.common.primitives.Chars]  →  Chars.hashCode($expr$)
+
+
+## Doubles
+
+.asList : com.google.common.primitives.Doubles.asList
+	scala.Array [com.google.common.primitives.Doubles]  →  Doubles.asList($expr$)
+
+.join : com.google.common.primitives.Doubles.join
+	java.lang.String [com.google.common.primitives.Doubles]  →  Doubles.join($expr$, $arg$)
+
+.lastIndexOf : com.google.common.primitives.Doubles.lastIndexOf
+	scala.Array [com.google.common.primitives.Doubles]  →  Doubles.lastIndexOf($expr$, $arg$)
+
+.constrainToRange : com.google.common.primitives.Doubles.constrainToRange
+	DOUBLE [com.google.common.primitives.Doubles]  →  Doubles.constrainToRange($expr$, $arg$)
+
+.lexicographicalComparator : com.google.common.primitives.Doubles.lexicographicalComparator
+	java.lang.Object [com.google.common.primitives.Doubles]  →  Doubles.lexicographicalComparator()
+
+.concat : com.google.common.primitives.Doubles.concat
+	scala.Array [com.google.common.primitives.Doubles]  →  Doubles.concat($expr$)
+
+.min : com.google.common.primitives.Doubles.min
+	scala.Array [com.google.common.primitives.Doubles]  →  Doubles.min($expr$)
+
+.stringConverter : com.google.common.primitives.Doubles.stringConverter
+	java.lang.Object [com.google.common.primitives.Doubles]  →  Doubles.stringConverter()
+
+.ensureCapacity : com.google.common.primitives.Doubles.ensureCapacity
+	scala.Array [com.google.common.primitives.Doubles]  →  Doubles.ensureCapacity($expr$, $arg$)
+
+.reverse : com.google.common.primitives.Doubles.reverse
+	scala.Array [com.google.common.primitives.Doubles]  →  Doubles.reverse($expr$, $arg$)
+
+.isFinite : com.google.common.primitives.Doubles.isFinite
+	DOUBLE [com.google.common.primitives.Doubles]  →  Doubles.isFinite($expr$)
+
+.max : com.google.common.primitives.Doubles.max
+	scala.Array [com.google.common.primitives.Doubles]  →  Doubles.max($expr$)
+
+.toArray : com.google.common.primitives.Doubles.toArray
+	java.util.Collection [com.google.common.primitives.Doubles]  →  Doubles.toArray($expr$)
+
+.tryParse : com.google.common.primitives.Doubles.tryParse
+	java.lang.String [com.google.common.primitives.Doubles]  →  Doubles.tryParse($expr$)
+
+.sortDescending : com.google.common.primitives.Doubles.sortDescending
+	scala.Array [com.google.common.primitives.Doubles]  →  Doubles.sortDescending($expr$, $arg$)
+
+.contains : com.google.common.primitives.Doubles.contains
+	scala.Array [com.google.common.primitives.Doubles]  →  Doubles.contains($expr$, $arg$)
+
+.indexOf : com.google.common.primitives.Doubles.indexOf
+	scala.Array [com.google.common.primitives.Doubles]  →  Doubles.indexOf($expr$, $arg$)
+
+.compare : com.google.common.primitives.Doubles.compare
+	DOUBLE [com.google.common.primitives.Doubles]  →  Doubles.compare($expr$, $arg$)
+
+.hashCode : com.google.common.primitives.Doubles.hashCode
+	DOUBLE [com.google.common.primitives.Doubles]  →  Doubles.hashCode($expr$)
+
+
+## Floats
+
+.asList : com.google.common.primitives.Floats.asList
+	scala.Array [com.google.common.primitives.Floats]  →  Floats.asList($expr$)
+
+.join : com.google.common.primitives.Floats.join
+	java.lang.String [com.google.common.primitives.Floats]  →  Floats.join($expr$, $arg$)
+
+.lastIndexOf : com.google.common.primitives.Floats.lastIndexOf
+	scala.Array [com.google.common.primitives.Floats]  →  Floats.lastIndexOf($expr$, $arg$)
+
+.constrainToRange : com.google.common.primitives.Floats.constrainToRange
+	FLOAT [com.google.common.primitives.Floats]  →  Floats.constrainToRange($expr$, $arg$)
+
+.lexicographicalComparator : com.google.common.primitives.Floats.lexicographicalComparator
+	java.lang.Object [com.google.common.primitives.Floats]  →  Floats.lexicographicalComparator()
+
+.concat : com.google.common.primitives.Floats.concat
+	scala.Array [com.google.common.primitives.Floats]  →  Floats.concat($expr$)
+
+.min : com.google.common.primitives.Floats.min
+	scala.Array [com.google.common.primitives.Floats]  →  Floats.min($expr$)
+
+.stringConverter : com.google.common.primitives.Floats.stringConverter
+	java.lang.Object [com.google.common.primitives.Floats]  →  Floats.stringConverter()
+
+.ensureCapacity : com.google.common.primitives.Floats.ensureCapacity
+	scala.Array [com.google.common.primitives.Floats]  →  Floats.ensureCapacity($expr$, $arg$)
+
+.reverse : com.google.common.primitives.Floats.reverse
+	scala.Array [com.google.common.primitives.Floats]  →  Floats.reverse($expr$, $arg$)
+
+.isFinite : com.google.common.primitives.Floats.isFinite
+	FLOAT [com.google.common.primitives.Floats]  →  Floats.isFinite($expr$)
+
+.max : com.google.common.primitives.Floats.max
+	scala.Array [com.google.common.primitives.Floats]  →  Floats.max($expr$)
+
+.toArray : com.google.common.primitives.Floats.toArray
+	java.util.Collection [com.google.common.primitives.Floats]  →  Floats.toArray($expr$)
+
+.tryParse : com.google.common.primitives.Floats.tryParse
+	java.lang.String [com.google.common.primitives.Floats]  →  Floats.tryParse($expr$)
+
+.sortDescending : com.google.common.primitives.Floats.sortDescending
+	scala.Array [com.google.common.primitives.Floats]  →  Floats.sortDescending($expr$, $arg$)
+
+.contains : com.google.common.primitives.Floats.contains
+	scala.Array [com.google.common.primitives.Floats]  →  Floats.contains($expr$, $arg$)
+
+.indexOf : com.google.common.primitives.Floats.indexOf
+	scala.Array [com.google.common.primitives.Floats]  →  Floats.indexOf($expr$, $arg$)
+
+.compare : com.google.common.primitives.Floats.compare
+	FLOAT [com.google.common.primitives.Floats]  →  Floats.compare($expr$, $arg$)
+
+.hashCode : com.google.common.primitives.Floats.hashCode
+	FLOAT [com.google.common.primitives.Floats]  →  Floats.hashCode($expr$)
+
+
+## ImmutableDoubleArray
+
+.builder : com.google.common.primitives.ImmutableDoubleArray.builder
+	INT [com.google.common.primitives.ImmutableDoubleArray]  →  ImmutableDoubleArray.builder($expr$)
+	java.lang.Object [com.google.common.primitives.ImmutableDoubleArray]  →  ImmutableDoubleArray.builder()
+
+.of : com.google.common.primitives.ImmutableDoubleArray.of
+	DOUBLE [com.google.common.primitives.ImmutableDoubleArray]  →  ImmutableDoubleArray.of($expr$, $arg$)
+	java.lang.Object [com.google.common.primitives.ImmutableDoubleArray]  →  ImmutableDoubleArray.of()
+
+.copyOf : com.google.common.primitives.ImmutableDoubleArray.copyOf
+	scala.Array [com.google.common.primitives.ImmutableDoubleArray]  →  ImmutableDoubleArray.copyOf($expr$)
+	java.util.Collection [com.google.common.primitives.ImmutableDoubleArray]  →  ImmutableDoubleArray.copyOf($expr$)
+	java.util.stream.DoubleStream [com.google.common.primitives.ImmutableDoubleArray]  →  ImmutableDoubleArray.copyOf($expr$)
+	java.lang.Iterable [com.google.common.primitives.ImmutableDoubleArray]  →  ImmutableDoubleArray.copyOf($expr$)
+
+
+## ImmutableIntArray
+
+.builder : com.google.common.primitives.ImmutableIntArray.builder
+	INT [com.google.common.primitives.ImmutableIntArray]  →  ImmutableIntArray.builder($expr$)
+	java.lang.Object [com.google.common.primitives.ImmutableIntArray]  →  ImmutableIntArray.builder()
+
+.of : com.google.common.primitives.ImmutableIntArray.of
+	INT [com.google.common.primitives.ImmutableIntArray]  →  ImmutableIntArray.of($expr$, $arg$)
+	java.lang.Object [com.google.common.primitives.ImmutableIntArray]  →  ImmutableIntArray.of()
+
+.copyOf : com.google.common.primitives.ImmutableIntArray.copyOf
+	scala.Array [com.google.common.primitives.ImmutableIntArray]  →  ImmutableIntArray.copyOf($expr$)
+	java.util.Collection [com.google.common.primitives.ImmutableIntArray]  →  ImmutableIntArray.copyOf($expr$)
+	java.util.stream.IntStream [com.google.common.primitives.ImmutableIntArray]  →  ImmutableIntArray.copyOf($expr$)
+	java.lang.Iterable [com.google.common.primitives.ImmutableIntArray]  →  ImmutableIntArray.copyOf($expr$)
+
+
+## ImmutableLongArray
+
+.builder : com.google.common.primitives.ImmutableLongArray.builder
+	INT [com.google.common.primitives.ImmutableLongArray]  →  ImmutableLongArray.builder($expr$)
+	java.lang.Object [com.google.common.primitives.ImmutableLongArray]  →  ImmutableLongArray.builder()
+
+.of : com.google.common.primitives.ImmutableLongArray.of
+	LONG [com.google.common.primitives.ImmutableLongArray]  →  ImmutableLongArray.of($expr$, $arg$)
+	java.lang.Object [com.google.common.primitives.ImmutableLongArray]  →  ImmutableLongArray.of()
+
+.copyOf : com.google.common.primitives.ImmutableLongArray.copyOf
+	scala.Array [com.google.common.primitives.ImmutableLongArray]  →  ImmutableLongArray.copyOf($expr$)
+	java.util.Collection [com.google.common.primitives.ImmutableLongArray]  →  ImmutableLongArray.copyOf($expr$)
+	java.lang.Iterable [com.google.common.primitives.ImmutableLongArray]  →  ImmutableLongArray.copyOf($expr$)
+	java.util.stream.LongStream [com.google.common.primitives.ImmutableLongArray]  →  ImmutableLongArray.copyOf($expr$)
+
+
+## Ints
+
+.asList : com.google.common.primitives.Ints.asList
+	scala.Array [com.google.common.primitives.Ints]  →  Ints.asList($expr$)
+
+.join : com.google.common.primitives.Ints.join
+	java.lang.String [com.google.common.primitives.Ints]  →  Ints.join($expr$, $arg$)
+
+.lastIndexOf : com.google.common.primitives.Ints.lastIndexOf
+	scala.Array [com.google.common.primitives.Ints]  →  Ints.lastIndexOf($expr$, $arg$)
+
+.constrainToRange : com.google.common.primitives.Ints.constrainToRange
+	INT [com.google.common.primitives.Ints]  →  Ints.constrainToRange($expr$, $arg$)
+
+.lexicographicalComparator : com.google.common.primitives.Ints.lexicographicalComparator
+	java.lang.Object [com.google.common.primitives.Ints]  →  Ints.lexicographicalComparator()
+
+.concat : com.google.common.primitives.Ints.concat
+	scala.Array [com.google.common.primitives.Ints]  →  Ints.concat($expr$)
+
+.min : com.google.common.primitives.Ints.min
+	scala.Array [com.google.common.primitives.Ints]  →  Ints.min($expr$)
+
+.stringConverter : com.google.common.primitives.Ints.stringConverter
+	java.lang.Object [com.google.common.primitives.Ints]  →  Ints.stringConverter()
+
+.fromByteArray : com.google.common.primitives.Ints.fromByteArray
+	scala.Array [com.google.common.primitives.Ints]  →  Ints.fromByteArray($expr$)
+
+.ensureCapacity : com.google.common.primitives.Ints.ensureCapacity
+	scala.Array [com.google.common.primitives.Ints]  →  Ints.ensureCapacity($expr$, $arg$)
+
+.reverse : com.google.common.primitives.Ints.reverse
+	scala.Array [com.google.common.primitives.Ints]  →  Ints.reverse($expr$, $arg$)
+
+.max : com.google.common.primitives.Ints.max
+	scala.Array [com.google.common.primitives.Ints]  →  Ints.max($expr$)
+
+.saturatedCast : com.google.common.primitives.Ints.saturatedCast
+	LONG [com.google.common.primitives.Ints]  →  Ints.saturatedCast($expr$)
+
+.toArray : com.google.common.primitives.Ints.toArray
+	java.util.Collection [com.google.common.primitives.Ints]  →  Ints.toArray($expr$)
+
+.tryParse : com.google.common.primitives.Ints.tryParse
+	java.lang.String [com.google.common.primitives.Ints]  →  Ints.tryParse($expr$, $arg$)
+
+.checkedCast : com.google.common.primitives.Ints.checkedCast
+	LONG [com.google.common.primitives.Ints]  →  Ints.checkedCast($expr$)
+
+.fromBytes : com.google.common.primitives.Ints.fromBytes
+	BYTE [com.google.common.primitives.Ints]  →  Ints.fromBytes($expr$, $arg$)
+
+.toByteArray : com.google.common.primitives.Ints.toByteArray
+	INT [com.google.common.primitives.Ints]  →  Ints.toByteArray($expr$)
+
+.sortDescending : com.google.common.primitives.Ints.sortDescending
+	scala.Array [com.google.common.primitives.Ints]  →  Ints.sortDescending($expr$, $arg$)
+
+.contains : com.google.common.primitives.Ints.contains
+	scala.Array [com.google.common.primitives.Ints]  →  Ints.contains($expr$, $arg$)
+
+.indexOf : com.google.common.primitives.Ints.indexOf
+	scala.Array [com.google.common.primitives.Ints]  →  Ints.indexOf($expr$, $arg$)
+
+.compare : com.google.common.primitives.Ints.compare
+	INT [com.google.common.primitives.Ints]  →  Ints.compare($expr$, $arg$)
+
+.hashCode : com.google.common.primitives.Ints.hashCode
+	INT [com.google.common.primitives.Ints]  →  Ints.hashCode($expr$)
+
+
+## Longs
+
+.asList : com.google.common.primitives.Longs.asList
+	scala.Array [com.google.common.primitives.Longs]  →  Longs.asList($expr$)
+
+.join : com.google.common.primitives.Longs.join
+	java.lang.String [com.google.common.primitives.Longs]  →  Longs.join($expr$, $arg$)
+
+.lastIndexOf : com.google.common.primitives.Longs.lastIndexOf
+	scala.Array [com.google.common.primitives.Longs]  →  Longs.lastIndexOf($expr$, $arg$)
+
+.constrainToRange : com.google.common.primitives.Longs.constrainToRange
+	LONG [com.google.common.primitives.Longs]  →  Longs.constrainToRange($expr$, $arg$)
+
+.lexicographicalComparator : com.google.common.primitives.Longs.lexicographicalComparator
+	java.lang.Object [com.google.common.primitives.Longs]  →  Longs.lexicographicalComparator()
+
+.concat : com.google.common.primitives.Longs.concat
+	scala.Array [com.google.common.primitives.Longs]  →  Longs.concat($expr$)
+
+.min : com.google.common.primitives.Longs.min
+	scala.Array [com.google.common.primitives.Longs]  →  Longs.min($expr$)
+
+.stringConverter : com.google.common.primitives.Longs.stringConverter
+	java.lang.Object [com.google.common.primitives.Longs]  →  Longs.stringConverter()
+
+.fromByteArray : com.google.common.primitives.Longs.fromByteArray
+	scala.Array [com.google.common.primitives.Longs]  →  Longs.fromByteArray($expr$)
+
+.ensureCapacity : com.google.common.primitives.Longs.ensureCapacity
+	scala.Array [com.google.common.primitives.Longs]  →  Longs.ensureCapacity($expr$, $arg$)
+
+.reverse : com.google.common.primitives.Longs.reverse
+	scala.Array [com.google.common.primitives.Longs]  →  Longs.reverse($expr$, $arg$)
+
+.max : com.google.common.primitives.Longs.max
+	scala.Array [com.google.common.primitives.Longs]  →  Longs.max($expr$)
+
+.toArray : com.google.common.primitives.Longs.toArray
+	java.util.Collection [com.google.common.primitives.Longs]  →  Longs.toArray($expr$)
+
+.tryParse : com.google.common.primitives.Longs.tryParse
+	java.lang.String [com.google.common.primitives.Longs]  →  Longs.tryParse($expr$, $arg$)
+
+.fromBytes : com.google.common.primitives.Longs.fromBytes
+	BYTE [com.google.common.primitives.Longs]  →  Longs.fromBytes($expr$, $arg$)
+
+.toByteArray : com.google.common.primitives.Longs.toByteArray
+	LONG [com.google.common.primitives.Longs]  →  Longs.toByteArray($expr$)
+
+.sortDescending : com.google.common.primitives.Longs.sortDescending
+	scala.Array [com.google.common.primitives.Longs]  →  Longs.sortDescending($expr$, $arg$)
+
+.contains : com.google.common.primitives.Longs.contains
+	scala.Array [com.google.common.primitives.Longs]  →  Longs.contains($expr$, $arg$)
+
+.indexOf : com.google.common.primitives.Longs.indexOf
+	scala.Array [com.google.common.primitives.Longs]  →  Longs.indexOf($expr$, $arg$)
+
+.compare : com.google.common.primitives.Longs.compare
+	LONG [com.google.common.primitives.Longs]  →  Longs.compare($expr$, $arg$)
+
+.hashCode : com.google.common.primitives.Longs.hashCode
+	LONG [com.google.common.primitives.Longs]  →  Longs.hashCode($expr$)
+
+
+## Primitives
+
+.allPrimitiveTypes : com.google.common.primitives.Primitives.allPrimitiveTypes
+	java.lang.Object [com.google.common.primitives.Primitives]  →  Primitives.allPrimitiveTypes()
+
+.isWrapperType : com.google.common.primitives.Primitives.isWrapperType
+	java.lang.Class [com.google.common.primitives.Primitives]  →  Primitives.isWrapperType($expr$)
+
+.unwrap : com.google.common.primitives.Primitives.unwrap
+	java.lang.Class [com.google.common.primitives.Primitives]  →  Primitives.unwrap($expr$)
+
+.wrap : com.google.common.primitives.Primitives.wrap
+	java.lang.Class [com.google.common.primitives.Primitives]  →  Primitives.wrap($expr$)
+
+.allWrapperTypes : com.google.common.primitives.Primitives.allWrapperTypes
+	java.lang.Object [com.google.common.primitives.Primitives]  →  Primitives.allWrapperTypes()
+
+
+## Shorts
+
+.asList : com.google.common.primitives.Shorts.asList
+	scala.Array [com.google.common.primitives.Shorts]  →  Shorts.asList($expr$)
+
+.join : com.google.common.primitives.Shorts.join
+	java.lang.String [com.google.common.primitives.Shorts]  →  Shorts.join($expr$, $arg$)
+
+.lastIndexOf : com.google.common.primitives.Shorts.lastIndexOf
+	scala.Array [com.google.common.primitives.Shorts]  →  Shorts.lastIndexOf($expr$, $arg$)
+
+.constrainToRange : com.google.common.primitives.Shorts.constrainToRange
+	SHORT [com.google.common.primitives.Shorts]  →  Shorts.constrainToRange($expr$, $arg$)
+
+.lexicographicalComparator : com.google.common.primitives.Shorts.lexicographicalComparator
+	java.lang.Object [com.google.common.primitives.Shorts]  →  Shorts.lexicographicalComparator()
+
+.concat : com.google.common.primitives.Shorts.concat
+	scala.Array [com.google.common.primitives.Shorts]  →  Shorts.concat($expr$)
+
+.min : com.google.common.primitives.Shorts.min
+	scala.Array [com.google.common.primitives.Shorts]  →  Shorts.min($expr$)
+
+.stringConverter : com.google.common.primitives.Shorts.stringConverter
+	java.lang.Object [com.google.common.primitives.Shorts]  →  Shorts.stringConverter()
+
+.fromByteArray : com.google.common.primitives.Shorts.fromByteArray
+	scala.Array [com.google.common.primitives.Shorts]  →  Shorts.fromByteArray($expr$)
+
+.ensureCapacity : com.google.common.primitives.Shorts.ensureCapacity
+	scala.Array [com.google.common.primitives.Shorts]  →  Shorts.ensureCapacity($expr$, $arg$)
+
+.reverse : com.google.common.primitives.Shorts.reverse
+	scala.Array [com.google.common.primitives.Shorts]  →  Shorts.reverse($expr$, $arg$)
+
+.max : com.google.common.primitives.Shorts.max
+	scala.Array [com.google.common.primitives.Shorts]  →  Shorts.max($expr$)
+
+.saturatedCast : com.google.common.primitives.Shorts.saturatedCast
+	LONG [com.google.common.primitives.Shorts]  →  Shorts.saturatedCast($expr$)
+
+.toArray : com.google.common.primitives.Shorts.toArray
+	java.util.Collection [com.google.common.primitives.Shorts]  →  Shorts.toArray($expr$)
+
+.checkedCast : com.google.common.primitives.Shorts.checkedCast
+	LONG [com.google.common.primitives.Shorts]  →  Shorts.checkedCast($expr$)
+
+.fromBytes : com.google.common.primitives.Shorts.fromBytes
+	BYTE [com.google.common.primitives.Shorts]  →  Shorts.fromBytes($expr$, $arg$)
+
+.toByteArray : com.google.common.primitives.Shorts.toByteArray
+	SHORT [com.google.common.primitives.Shorts]  →  Shorts.toByteArray($expr$)
+
+.sortDescending : com.google.common.primitives.Shorts.sortDescending
+	scala.Array [com.google.common.primitives.Shorts]  →  Shorts.sortDescending($expr$, $arg$)
+
+.contains : com.google.common.primitives.Shorts.contains
+	scala.Array [com.google.common.primitives.Shorts]  →  Shorts.contains($expr$, $arg$)
+
+.indexOf : com.google.common.primitives.Shorts.indexOf
+	scala.Array [com.google.common.primitives.Shorts]  →  Shorts.indexOf($expr$, $arg$)
+
+.compare : com.google.common.primitives.Shorts.compare
+	SHORT [com.google.common.primitives.Shorts]  →  Shorts.compare($expr$, $arg$)
+
+.hashCode : com.google.common.primitives.Shorts.hashCode
+	SHORT [com.google.common.primitives.Shorts]  →  Shorts.hashCode($expr$)
+
+
+## SignedBytes
+
+.join : com.google.common.primitives.SignedBytes.join
+	java.lang.String [com.google.common.primitives.SignedBytes]  →  SignedBytes.join($expr$, $arg$)
+
+.lexicographicalComparator : com.google.common.primitives.SignedBytes.lexicographicalComparator
+	java.lang.Object [com.google.common.primitives.SignedBytes]  →  SignedBytes.lexicographicalComparator()
+
+.min : com.google.common.primitives.SignedBytes.min
+	scala.Array [com.google.common.primitives.SignedBytes]  →  SignedBytes.min($expr$)
+
+.max : com.google.common.primitives.SignedBytes.max
+	scala.Array [com.google.common.primitives.SignedBytes]  →  SignedBytes.max($expr$)
+
+.saturatedCast : com.google.common.primitives.SignedBytes.saturatedCast
+	LONG [com.google.common.primitives.SignedBytes]  →  SignedBytes.saturatedCast($expr$)
+
+.checkedCast : com.google.common.primitives.SignedBytes.checkedCast
+	LONG [com.google.common.primitives.SignedBytes]  →  SignedBytes.checkedCast($expr$)
+
+.sortDescending : com.google.common.primitives.SignedBytes.sortDescending
+	scala.Array [com.google.common.primitives.SignedBytes]  →  SignedBytes.sortDescending($expr$, $arg$)
+
+.compare : com.google.common.primitives.SignedBytes.compare
+	BYTE [com.google.common.primitives.SignedBytes]  →  SignedBytes.compare($expr$, $arg$)
+
+
+## UnsignedBytes
+
+.parseUnsignedByte : com.google.common.primitives.UnsignedBytes.parseUnsignedByte
+	java.lang.String [com.google.common.primitives.UnsignedBytes]  →  UnsignedBytes.parseUnsignedByte($expr$, $arg$)
+
+.join : com.google.common.primitives.UnsignedBytes.join
+	java.lang.String [com.google.common.primitives.UnsignedBytes]  →  UnsignedBytes.join($expr$, $arg$)
+
+.lexicographicalComparator : com.google.common.primitives.UnsignedBytes.lexicographicalComparator
+	java.lang.Object [com.google.common.primitives.UnsignedBytes]  →  UnsignedBytes.lexicographicalComparator()
+
+.min : com.google.common.primitives.UnsignedBytes.min
+	scala.Array [com.google.common.primitives.UnsignedBytes]  →  UnsignedBytes.min($expr$)
+
+.max : com.google.common.primitives.UnsignedBytes.max
+	scala.Array [com.google.common.primitives.UnsignedBytes]  →  UnsignedBytes.max($expr$)
+
+.saturatedCast : com.google.common.primitives.UnsignedBytes.saturatedCast
+	LONG [com.google.common.primitives.UnsignedBytes]  →  UnsignedBytes.saturatedCast($expr$)
+
+.toInt : com.google.common.primitives.UnsignedBytes.toInt
+	BYTE [com.google.common.primitives.UnsignedBytes]  →  UnsignedBytes.toInt($expr$)
+
+.checkedCast : com.google.common.primitives.UnsignedBytes.checkedCast
+	LONG [com.google.common.primitives.UnsignedBytes]  →  UnsignedBytes.checkedCast($expr$)
+
+.toString : com.google.common.primitives.UnsignedBytes.toString
+	BYTE [com.google.common.primitives.UnsignedBytes]  →  UnsignedBytes.toString($expr$, $arg$)
+
+.sort : com.google.common.primitives.UnsignedBytes.sort
+	scala.Array [com.google.common.primitives.UnsignedBytes]  →  UnsignedBytes.sort($expr$, $arg$)
+
+.sortDescending : com.google.common.primitives.UnsignedBytes.sortDescending
+	scala.Array [com.google.common.primitives.UnsignedBytes]  →  UnsignedBytes.sortDescending($expr$, $arg$)
+
+.compare : com.google.common.primitives.UnsignedBytes.compare
+	BYTE [com.google.common.primitives.UnsignedBytes]  →  UnsignedBytes.compare($expr$, $arg$)
+
+
+## UnsignedInteger
+
+.valueOf : com.google.common.primitives.UnsignedInteger.valueOf
+	java.lang.String [com.google.common.primitives.UnsignedInteger]  →  UnsignedInteger.valueOf($expr$, $arg$)
+	LONG [com.google.common.primitives.UnsignedInteger]  →  UnsignedInteger.valueOf($expr$)
+	java.math.BigInteger [com.google.common.primitives.UnsignedInteger]  →  UnsignedInteger.valueOf($expr$)
+
+.fromIntBits : com.google.common.primitives.UnsignedInteger.fromIntBits
+	INT [com.google.common.primitives.UnsignedInteger]  →  UnsignedInteger.fromIntBits($expr$)
+
+
+## UnsignedInts
+
+.remainder : com.google.common.primitives.UnsignedInts.remainder
+	INT [com.google.common.primitives.UnsignedInts]  →  UnsignedInts.remainder($expr$, $arg$)
+
+.join : com.google.common.primitives.UnsignedInts.join
+	java.lang.String [com.google.common.primitives.UnsignedInts]  →  UnsignedInts.join($expr$, $arg$)
+
+.lexicographicalComparator : com.google.common.primitives.UnsignedInts.lexicographicalComparator
+	java.lang.Object [com.google.common.primitives.UnsignedInts]  →  UnsignedInts.lexicographicalComparator()
+
+.min : com.google.common.primitives.UnsignedInts.min
+	scala.Array [com.google.common.primitives.UnsignedInts]  →  UnsignedInts.min($expr$)
+
+.divide : com.google.common.primitives.UnsignedInts.divide
+	INT [com.google.common.primitives.UnsignedInts]  →  UnsignedInts.divide($expr$, $arg$)
+
+.decode : com.google.common.primitives.UnsignedInts.decode
+	java.lang.String [com.google.common.primitives.UnsignedInts]  →  UnsignedInts.decode($expr$)
+
+.toLong : com.google.common.primitives.UnsignedInts.toLong
+	INT [com.google.common.primitives.UnsignedInts]  →  UnsignedInts.toLong($expr$)
+
+.max : com.google.common.primitives.UnsignedInts.max
+	scala.Array [com.google.common.primitives.UnsignedInts]  →  UnsignedInts.max($expr$)
+
+.saturatedCast : com.google.common.primitives.UnsignedInts.saturatedCast
+	LONG [com.google.common.primitives.UnsignedInts]  →  UnsignedInts.saturatedCast($expr$)
+
+.parseUnsignedInt : com.google.common.primitives.UnsignedInts.parseUnsignedInt
+	java.lang.String [com.google.common.primitives.UnsignedInts]  →  UnsignedInts.parseUnsignedInt($expr$, $arg$)
+
+.checkedCast : com.google.common.primitives.UnsignedInts.checkedCast
+	LONG [com.google.common.primitives.UnsignedInts]  →  UnsignedInts.checkedCast($expr$)
+
+.toString : com.google.common.primitives.UnsignedInts.toString
+	INT [com.google.common.primitives.UnsignedInts]  →  UnsignedInts.toString($expr$, $arg$)
+
+.sort : com.google.common.primitives.UnsignedInts.sort
+	scala.Array [com.google.common.primitives.UnsignedInts]  →  UnsignedInts.sort($expr$, $arg$)
+
+.sortDescending : com.google.common.primitives.UnsignedInts.sortDescending
+	scala.Array [com.google.common.primitives.UnsignedInts]  →  UnsignedInts.sortDescending($expr$, $arg$)
+
+.compare : com.google.common.primitives.UnsignedInts.compare
+	INT [com.google.common.primitives.UnsignedInts]  →  UnsignedInts.compare($expr$, $arg$)
+
+
+## UnsignedLong
+
+.fromLongBits : com.google.common.primitives.UnsignedLong.fromLongBits
+	LONG [com.google.common.primitives.UnsignedLong]  →  UnsignedLong.fromLongBits($expr$)
+
+.valueOf : com.google.common.primitives.UnsignedLong.valueOf
+	java.lang.String [com.google.common.primitives.UnsignedLong]  →  UnsignedLong.valueOf($expr$, $arg$)
+	LONG [com.google.common.primitives.UnsignedLong]  →  UnsignedLong.valueOf($expr$)
+	java.math.BigInteger [com.google.common.primitives.UnsignedLong]  →  UnsignedLong.valueOf($expr$)
+
+
+## UnsignedLongs
+
+.remainder : com.google.common.primitives.UnsignedLongs.remainder
+	LONG [com.google.common.primitives.UnsignedLongs]  →  UnsignedLongs.remainder($expr$, $arg$)
+
+.join : com.google.common.primitives.UnsignedLongs.join
+	java.lang.String [com.google.common.primitives.UnsignedLongs]  →  UnsignedLongs.join($expr$, $arg$)
+
+.lexicographicalComparator : com.google.common.primitives.UnsignedLongs.lexicographicalComparator
+	java.lang.Object [com.google.common.primitives.UnsignedLongs]  →  UnsignedLongs.lexicographicalComparator()
+
+.min : com.google.common.primitives.UnsignedLongs.min
+	scala.Array [com.google.common.primitives.UnsignedLongs]  →  UnsignedLongs.min($expr$)
+
+.divide : com.google.common.primitives.UnsignedLongs.divide
+	LONG [com.google.common.primitives.UnsignedLongs]  →  UnsignedLongs.divide($expr$, $arg$)
+
+.decode : com.google.common.primitives.UnsignedLongs.decode
+	java.lang.String [com.google.common.primitives.UnsignedLongs]  →  UnsignedLongs.decode($expr$)
+
+.parseUnsignedLong : com.google.common.primitives.UnsignedLongs.parseUnsignedLong
+	java.lang.String [com.google.common.primitives.UnsignedLongs]  →  UnsignedLongs.parseUnsignedLong($expr$, $arg$)
+
+.max : com.google.common.primitives.UnsignedLongs.max
+	scala.Array [com.google.common.primitives.UnsignedLongs]  →  UnsignedLongs.max($expr$)
+
+.toString : com.google.common.primitives.UnsignedLongs.toString
+	LONG [com.google.common.primitives.UnsignedLongs]  →  UnsignedLongs.toString($expr$, $arg$)
+
+.sort : com.google.common.primitives.UnsignedLongs.sort
+	scala.Array [com.google.common.primitives.UnsignedLongs]  →  UnsignedLongs.sort($expr$, $arg$)
+
+.sortDescending : com.google.common.primitives.UnsignedLongs.sortDescending
+	scala.Array [com.google.common.primitives.UnsignedLongs]  →  UnsignedLongs.sortDescending($expr$, $arg$)
+
+.compare : com.google.common.primitives.UnsignedLongs.compare
+	LONG [com.google.common.primitives.UnsignedLongs]  →  UnsignedLongs.compare($expr$, $arg$)
+
+
+## ClassPath
+
+.from : com.google.common.reflect.ClassPath.from
+	java.lang.ClassLoader [com.google.common.reflect.ClassPath]  →  ClassPath.from($expr$)
+
+
+## ImmutableTypeToInstanceMap
+
+.builder : com.google.common.reflect.ImmutableTypeToInstanceMap.builder
+	java.lang.Object [com.google.common.reflect.ImmutableTypeToInstanceMap]  →  ImmutableTypeToInstanceMap.builder()
+
+.of : com.google.common.reflect.ImmutableTypeToInstanceMap.of
+	java.lang.Object [com.google.common.reflect.ImmutableTypeToInstanceMap]  →  ImmutableTypeToInstanceMap.of()
+
+
+## Invokable
+
+.from : com.google.common.reflect.Invokable.from
+	java.lang.reflect.Constructor [com.google.common.reflect.Invokable]  →  Invokable.from($expr$)
+	java.lang.reflect.Method [com.google.common.reflect.Invokable]  →  Invokable.from($expr$)
+
+
+## Reflection
+
+.initialize : com.google.common.reflect.Reflection.initialize
+	scala.Array [com.google.common.reflect.Reflection]  →  Reflection.initialize($expr$)
+
+.getPackageName : com.google.common.reflect.Reflection.getPackageName
+	java.lang.String [com.google.common.reflect.Reflection]  →  Reflection.getPackageName($expr$)
+	java.lang.Class [com.google.common.reflect.Reflection]  →  Reflection.getPackageName($expr$)
+
+.newProxy : com.google.common.reflect.Reflection.newProxy
+	java.lang.Class [com.google.common.reflect.Reflection]  →  Reflection.newProxy($expr$, $arg$)
+
+
+## TypeToken
+
+.of : com.google.common.reflect.TypeToken.of
+	java.lang.reflect.Type [com.google.common.reflect.TypeToken]  →  TypeToken.of($expr$)
+	java.lang.Class [com.google.common.reflect.TypeToken]  →  TypeToken.of($expr$)
+
+
+## AtomicLongMap
+
+.create : com.google.common.util.concurrent.AtomicLongMap.create
+	java.util.Map [com.google.common.util.concurrent.AtomicLongMap]  →  AtomicLongMap.create($expr$)
+	java.lang.Object [com.google.common.util.concurrent.AtomicLongMap]  →  AtomicLongMap.create()
+
+
+## Atomics
+
+.newReferenceArray : com.google.common.util.concurrent.Atomics.newReferenceArray
+	scala.Array [com.google.common.util.concurrent.Atomics]  →  Atomics.newReferenceArray($expr$)
+	INT [com.google.common.util.concurrent.Atomics]  →  Atomics.newReferenceArray($expr$)
+
+.newReference : com.google.common.util.concurrent.Atomics.newReference
+	java.lang.Object [com.google.common.util.concurrent.Atomics]  →  Atomics.newReference($expr$)
+	java.lang.Object [com.google.common.util.concurrent.Atomics]  →  Atomics.newReference()
+
+
+## Callables
+
+.asAsyncCallable : com.google.common.util.concurrent.Callables.asAsyncCallable
+	java.util.concurrent.Callable [com.google.common.util.concurrent.Callables]  →  Callables.asAsyncCallable($expr$, $arg$)
+
+.returning : com.google.common.util.concurrent.Callables.returning
+	java.lang.Object [com.google.common.util.concurrent.Callables]  →  Callables.returning($expr$)
+
+
+## ClosingFuture
+
+.whenAllSucceed : com.google.common.util.concurrent.ClosingFuture.whenAllSucceed
+	java.lang.Iterable [com.google.common.util.concurrent.ClosingFuture]  →  ClosingFuture.whenAllSucceed($expr$)
+	com.google.common.util.concurrent.ClosingFuture [com.google.common.util.concurrent.ClosingFuture]  →  ClosingFuture.whenAllSucceed($expr$, $arg$)
+
+.withoutCloser : com.google.common.util.concurrent.ClosingFuture.withoutCloser
+	com.google.common.util.concurrent.AsyncFunction [com.google.common.util.concurrent.ClosingFuture]  →  ClosingFuture.withoutCloser($expr$)
+
+.whenAllComplete : com.google.common.util.concurrent.ClosingFuture.whenAllComplete
+	java.lang.Iterable [com.google.common.util.concurrent.ClosingFuture]  →  ClosingFuture.whenAllComplete($expr$)
+	com.google.common.util.concurrent.ClosingFuture [com.google.common.util.concurrent.ClosingFuture]  →  ClosingFuture.whenAllComplete($expr$, $arg$)
+
+.submit : com.google.common.util.concurrent.ClosingFuture.submit
+	com.google.common.util.concurrent.ClosingFuture.ClosingCallable [com.google.common.util.concurrent.ClosingFuture]  →  ClosingFuture.submit($expr$, $arg$)
+
+.submitAsync : com.google.common.util.concurrent.ClosingFuture.submitAsync
+	com.google.common.util.concurrent.ClosingFuture.AsyncClosingCallable [com.google.common.util.concurrent.ClosingFuture]  →  ClosingFuture.submitAsync($expr$, $arg$)
+
+.from : com.google.common.util.concurrent.ClosingFuture.from
+	com.google.common.util.concurrent.ListenableFuture [com.google.common.util.concurrent.ClosingFuture]  →  ClosingFuture.from($expr$)
+
+
+## CycleDetectingLockFactory
+
+.newInstance : com.google.common.util.concurrent.CycleDetectingLockFactory.newInstance
+	com.google.common.util.concurrent.CycleDetectingLockFactory.Policy [com.google.common.util.concurrent.CycleDetectingLockFactory]  →  CycleDetectingLockFactory.newInstance($expr$)
+
+.newInstanceWithExplicitOrdering : com.google.common.util.concurrent.CycleDetectingLockFactory.newInstanceWithExplicitOrdering
+	java.lang.Class [com.google.common.util.concurrent.CycleDetectingLockFactory]  →  CycleDetectingLockFactory.newInstanceWithExplicitOrdering($expr$, $arg$)
+
+
+## ExecutionSequencer
+
+.create : com.google.common.util.concurrent.ExecutionSequencer.create
+	java.lang.Object [com.google.common.util.concurrent.ExecutionSequencer]  →  ExecutionSequencer.create()
+
+
+## FluentFuture
+
+.from : com.google.common.util.concurrent.FluentFuture.from
+	com.google.common.util.concurrent.ListenableFuture [com.google.common.util.concurrent.FluentFuture]  →  FluentFuture.from($expr$)
+
+
+## Futures
+
+.withTimeout : com.google.common.util.concurrent.Futures.withTimeout
+	com.google.common.util.concurrent.ListenableFuture [com.google.common.util.concurrent.Futures]  →  Futures.withTimeout($expr$, $arg$)
+
+.successfulAsList : com.google.common.util.concurrent.Futures.successfulAsList
+	scala.Array [com.google.common.util.concurrent.Futures]  →  Futures.successfulAsList($expr$)
+	java.lang.Iterable [com.google.common.util.concurrent.Futures]  →  Futures.successfulAsList($expr$)
+
+.whenAllSucceed : com.google.common.util.concurrent.Futures.whenAllSucceed
+	scala.Array [com.google.common.util.concurrent.Futures]  →  Futures.whenAllSucceed($expr$)
+	java.lang.Iterable [com.google.common.util.concurrent.Futures]  →  Futures.whenAllSucceed($expr$)
+
+.getUnchecked : com.google.common.util.concurrent.Futures.getUnchecked
+	java.util.concurrent.Future [com.google.common.util.concurrent.Futures]  →  Futures.getUnchecked($expr$)
+
+.immediateFailedFuture : com.google.common.util.concurrent.Futures.immediateFailedFuture
+	java.lang.Throwable [com.google.common.util.concurrent.Futures]  →  Futures.immediateFailedFuture($expr$)
+
+.whenAllComplete : com.google.common.util.concurrent.Futures.whenAllComplete
+	scala.Array [com.google.common.util.concurrent.Futures]  →  Futures.whenAllComplete($expr$)
+	java.lang.Iterable [com.google.common.util.concurrent.Futures]  →  Futures.whenAllComplete($expr$)
+
+.submit : com.google.common.util.concurrent.Futures.submit
+	java.util.concurrent.Callable [com.google.common.util.concurrent.Futures]  →  Futures.submit($expr$, $arg$)
+	java.lang.Runnable [com.google.common.util.concurrent.Futures]  →  Futures.submit($expr$, $arg$)
+
+.allAsList : com.google.common.util.concurrent.Futures.allAsList
+	scala.Array [com.google.common.util.concurrent.Futures]  →  Futures.allAsList($expr$)
+	java.lang.Iterable [com.google.common.util.concurrent.Futures]  →  Futures.allAsList($expr$)
+
+.immediateCancelledFuture : com.google.common.util.concurrent.Futures.immediateCancelledFuture
+	java.lang.Object [com.google.common.util.concurrent.Futures]  →  Futures.immediateCancelledFuture()
+
+.catching : com.google.common.util.concurrent.Futures.catching
+	com.google.common.util.concurrent.ListenableFuture [com.google.common.util.concurrent.Futures]  →  Futures.catching($expr$, $arg$)
+
+.submitAsync : com.google.common.util.concurrent.Futures.submitAsync
+	com.google.common.util.concurrent.AsyncCallable [com.google.common.util.concurrent.Futures]  →  Futures.submitAsync($expr$, $arg$)
+
+.getChecked : com.google.common.util.concurrent.Futures.getChecked
+	java.util.concurrent.Future [com.google.common.util.concurrent.Futures]  →  Futures.getChecked($expr$, $arg$)
+
+.transformAsync : com.google.common.util.concurrent.Futures.transformAsync
+	com.google.common.util.concurrent.ListenableFuture [com.google.common.util.concurrent.Futures]  →  Futures.transformAsync($expr$, $arg$)
+
+.catchingAsync : com.google.common.util.concurrent.Futures.catchingAsync
+	com.google.common.util.concurrent.ListenableFuture [com.google.common.util.concurrent.Futures]  →  Futures.catchingAsync($expr$, $arg$)
+
+.nonCancellationPropagating : com.google.common.util.concurrent.Futures.nonCancellationPropagating
+	com.google.common.util.concurrent.ListenableFuture [com.google.common.util.concurrent.Futures]  →  Futures.nonCancellationPropagating($expr$)
+
+.lazyTransform : com.google.common.util.concurrent.Futures.lazyTransform
+	java.util.concurrent.Future [com.google.common.util.concurrent.Futures]  →  Futures.lazyTransform($expr$, $arg$)
+
+.inCompletionOrder : com.google.common.util.concurrent.Futures.inCompletionOrder
+	java.lang.Iterable [com.google.common.util.concurrent.Futures]  →  Futures.inCompletionOrder($expr$)
+
+.scheduleAsync : com.google.common.util.concurrent.Futures.scheduleAsync
+	com.google.common.util.concurrent.AsyncCallable [com.google.common.util.concurrent.Futures]  →  Futures.scheduleAsync($expr$, $arg$)
+
+.addCallback : com.google.common.util.concurrent.Futures.addCallback
+	com.google.common.util.concurrent.ListenableFuture [com.google.common.util.concurrent.Futures]  →  Futures.addCallback($expr$, $arg$)
+
+.immediateFuture : com.google.common.util.concurrent.Futures.immediateFuture
+	java.lang.Object [com.google.common.util.concurrent.Futures]  →  Futures.immediateFuture($expr$)
+
+.immediateVoidFuture : com.google.common.util.concurrent.Futures.immediateVoidFuture
+	java.lang.Object [com.google.common.util.concurrent.Futures]  →  Futures.immediateVoidFuture()
+
+.transform : com.google.common.util.concurrent.Futures.transform
+	com.google.common.util.concurrent.ListenableFuture [com.google.common.util.concurrent.Futures]  →  Futures.transform($expr$, $arg$)
+
+.getDone : com.google.common.util.concurrent.Futures.getDone
+	java.util.concurrent.Future [com.google.common.util.concurrent.Futures]  →  Futures.getDone($expr$)
+
+
+## JdkFutureAdapters
+
+.listenInPoolThread : com.google.common.util.concurrent.JdkFutureAdapters.listenInPoolThread
+	java.util.concurrent.Future [com.google.common.util.concurrent.JdkFutureAdapters]  →  JdkFutureAdapters.listenInPoolThread($expr$, $arg$)
+
+
+## ListenableFutureTask
+
+.create : com.google.common.util.concurrent.ListenableFutureTask.create
+	java.util.concurrent.Callable [com.google.common.util.concurrent.ListenableFutureTask]  →  ListenableFutureTask.create($expr$)
+	java.lang.Runnable [com.google.common.util.concurrent.ListenableFutureTask]  →  ListenableFutureTask.create($expr$, $arg$)
+
+
+## MoreExecutors
+
+.addDelayedShutdownHook : com.google.common.util.concurrent.MoreExecutors.addDelayedShutdownHook
+	java.util.concurrent.ExecutorService [com.google.common.util.concurrent.MoreExecutors]  →  MoreExecutors.addDelayedShutdownHook($expr$, $arg$)
+
+.listeningDecorator : com.google.common.util.concurrent.MoreExecutors.listeningDecorator
+	java.util.concurrent.ScheduledExecutorService [com.google.common.util.concurrent.MoreExecutors]  →  MoreExecutors.listeningDecorator($expr$)
+	java.util.concurrent.ExecutorService [com.google.common.util.concurrent.MoreExecutors]  →  MoreExecutors.listeningDecorator($expr$)
+
+.getExitingExecutorService : com.google.common.util.concurrent.MoreExecutors.getExitingExecutorService
+	java.util.concurrent.ThreadPoolExecutor [com.google.common.util.concurrent.MoreExecutors]  →  MoreExecutors.getExitingExecutorService($expr$, $arg$)
+
+.newSequentialExecutor : com.google.common.util.concurrent.MoreExecutors.newSequentialExecutor
+	java.util.concurrent.Executor [com.google.common.util.concurrent.MoreExecutors]  →  MoreExecutors.newSequentialExecutor($expr$)
+
+.platformThreadFactory : com.google.common.util.concurrent.MoreExecutors.platformThreadFactory
+	java.lang.Object [com.google.common.util.concurrent.MoreExecutors]  →  MoreExecutors.platformThreadFactory()
+
+.shutdownAndAwaitTermination : com.google.common.util.concurrent.MoreExecutors.shutdownAndAwaitTermination
+	java.util.concurrent.ExecutorService [com.google.common.util.concurrent.MoreExecutors]  →  MoreExecutors.shutdownAndAwaitTermination($expr$, $arg$)
+
+.newDirectExecutorService : com.google.common.util.concurrent.MoreExecutors.newDirectExecutorService
+	java.lang.Object [com.google.common.util.concurrent.MoreExecutors]  →  MoreExecutors.newDirectExecutorService()
+
+.directExecutor : com.google.common.util.concurrent.MoreExecutors.directExecutor
+	java.lang.Object [com.google.common.util.concurrent.MoreExecutors]  →  MoreExecutors.directExecutor()
+
+.getExitingScheduledExecutorService : com.google.common.util.concurrent.MoreExecutors.getExitingScheduledExecutorService
+	java.util.concurrent.ScheduledThreadPoolExecutor [com.google.common.util.concurrent.MoreExecutors]  →  MoreExecutors.getExitingScheduledExecutorService($expr$, $arg$)
+
+
+## RateLimiter
+
+.create : com.google.common.util.concurrent.RateLimiter.create
+	DOUBLE [com.google.common.util.concurrent.RateLimiter]  →  RateLimiter.create($expr$, $arg$)
+
+
+## Runnables
+
+.doNothing : com.google.common.util.concurrent.Runnables.doNothing
+	java.lang.Object [com.google.common.util.concurrent.Runnables]  →  Runnables.doNothing()
+
+
+## SettableFuture
+
+.create : com.google.common.util.concurrent.SettableFuture.create
+	java.lang.Object [com.google.common.util.concurrent.SettableFuture]  →  SettableFuture.create()
+
+
+## SimpleTimeLimiter
+
+.create : com.google.common.util.concurrent.SimpleTimeLimiter.create
+	java.util.concurrent.ExecutorService [com.google.common.util.concurrent.SimpleTimeLimiter]  →  SimpleTimeLimiter.create($expr$)
+
+
+## Striped
+
+.lazyWeakSemaphore : com.google.common.util.concurrent.Striped.lazyWeakSemaphore
+	INT [com.google.common.util.concurrent.Striped]  →  Striped.lazyWeakSemaphore($expr$, $arg$)
+
+.lazyWeakLock : com.google.common.util.concurrent.Striped.lazyWeakLock
+	INT [com.google.common.util.concurrent.Striped]  →  Striped.lazyWeakLock($expr$)
+
+.lock : com.google.common.util.concurrent.Striped.lock
+	INT [com.google.common.util.concurrent.Striped]  →  Striped.lock($expr$)
+
+.lazyWeakReadWriteLock : com.google.common.util.concurrent.Striped.lazyWeakReadWriteLock
+	INT [com.google.common.util.concurrent.Striped]  →  Striped.lazyWeakReadWriteLock($expr$)
+
+.readWriteLock : com.google.common.util.concurrent.Striped.readWriteLock
+	INT [com.google.common.util.concurrent.Striped]  →  Striped.readWriteLock($expr$)
+
+.semaphore : com.google.common.util.concurrent.Striped.semaphore
+	INT [com.google.common.util.concurrent.Striped]  →  Striped.semaphore($expr$, $arg$)
+
+
+## UncaughtExceptionHandlers
+
+.systemExit : com.google.common.util.concurrent.UncaughtExceptionHandlers.systemExit
+	java.lang.Object [com.google.common.util.concurrent.UncaughtExceptionHandlers]  →  UncaughtExceptionHandlers.systemExit()
+
+
+## Uninterruptibles
+
+.awaitUninterruptibly : com.google.common.util.concurrent.Uninterruptibles.awaitUninterruptibly
+	java.util.concurrent.locks.Condition [com.google.common.util.concurrent.Uninterruptibles]  →  Uninterruptibles.awaitUninterruptibly($expr$, $arg$)
+	java.util.concurrent.CountDownLatch [com.google.common.util.concurrent.Uninterruptibles]  →  Uninterruptibles.awaitUninterruptibly($expr$, $arg$)
+
+.tryLockUninterruptibly : com.google.common.util.concurrent.Uninterruptibles.tryLockUninterruptibly
+	java.util.concurrent.locks.Lock [com.google.common.util.concurrent.Uninterruptibles]  →  Uninterruptibles.tryLockUninterruptibly($expr$, $arg$)
+
+.sleepUninterruptibly : com.google.common.util.concurrent.Uninterruptibles.sleepUninterruptibly
+	java.time.Duration [com.google.common.util.concurrent.Uninterruptibles]  →  Uninterruptibles.sleepUninterruptibly($expr$)
+	LONG [com.google.common.util.concurrent.Uninterruptibles]  →  Uninterruptibles.sleepUninterruptibly($expr$, $arg$)
+
+.awaitTerminationUninterruptibly : com.google.common.util.concurrent.Uninterruptibles.awaitTerminationUninterruptibly
+	java.util.concurrent.ExecutorService [com.google.common.util.concurrent.Uninterruptibles]  →  Uninterruptibles.awaitTerminationUninterruptibly($expr$, $arg$)
+
+.joinUninterruptibly : com.google.common.util.concurrent.Uninterruptibles.joinUninterruptibly
+	java.lang.Thread [com.google.common.util.concurrent.Uninterruptibles]  →  Uninterruptibles.joinUninterruptibly($expr$, $arg$)
+
+.putUninterruptibly : com.google.common.util.concurrent.Uninterruptibles.putUninterruptibly
+	java.util.concurrent.BlockingQueue [com.google.common.util.concurrent.Uninterruptibles]  →  Uninterruptibles.putUninterruptibly($expr$, $arg$)
+
+.getUninterruptibly : com.google.common.util.concurrent.Uninterruptibles.getUninterruptibly
+	java.util.concurrent.Future [com.google.common.util.concurrent.Uninterruptibles]  →  Uninterruptibles.getUninterruptibly($expr$, $arg$)
+
+.takeUninterruptibly : com.google.common.util.concurrent.Uninterruptibles.takeUninterruptibly
+	java.util.concurrent.BlockingQueue [com.google.common.util.concurrent.Uninterruptibles]  →  Uninterruptibles.takeUninterruptibly($expr$)
+
+.tryAcquireUninterruptibly : com.google.common.util.concurrent.Uninterruptibles.tryAcquireUninterruptibly
+	java.util.concurrent.Semaphore [com.google.common.util.concurrent.Uninterruptibles]  →  Uninterruptibles.tryAcquireUninterruptibly($expr$, $arg$)
+
+
+## InternalFutures
+
+.tryInternalFastPathGetFailure : com.google.common.util.concurrent.internal.InternalFutures.tryInternalFastPathGetFailure
+	com.google.common.util.concurrent.internal.InternalFutureFailureAccess [com.google.common.util.concurrent.internal.InternalFutures]  →  InternalFutures.tryInternalFastPathGetFailure($expr$)
+
+
+## XmlEscapers
+
+.xmlAttributeEscaper : com.google.common.xml.XmlEscapers.xmlAttributeEscaper
+	java.lang.Object [com.google.common.xml.XmlEscapers]  →  XmlEscapers.xmlAttributeEscaper()
+
+.xmlContentEscaper : com.google.common.xml.XmlEscapers.xmlContentEscaper
+	java.lang.Object [com.google.common.xml.XmlEscapers]  →  XmlEscapers.xmlContentEscaper()
 
 
 ## Optional
