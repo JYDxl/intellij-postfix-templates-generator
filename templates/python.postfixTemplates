@@ -11,4 +11,4 @@
     ANY   →   next($expr$)
 
 .with : With obj
-    ANY   →   with $expr$ as $END$
+    ANY   →   with $expr$ as$END$
