@@ -6,3 +6,9 @@
 
 .del : Del obj
     ANY   →   del $expr$
+
+.next : Next item
+    ANY   →   next($expr$)
+
+.with : With obj
+    ANY   →   with $expr$ as $END$

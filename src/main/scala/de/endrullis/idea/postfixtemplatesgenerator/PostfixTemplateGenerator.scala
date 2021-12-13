@@ -1,12 +1,7 @@
 package de.endrullis.idea.postfixtemplatesgenerator
 
-import cn.hutool.aop.ProxyUtil
-import cn.hutool.bloomfilter.BloomFilterUtil
-import cn.hutool.cache.CacheUtil
-import cn.hutool.captcha.CaptchaUtil
-import cn.hutool.core.annotation.AnnotationUtil
 import org.github.util.tree.TreeUtil
-import org.github.util.{BitUtil, FuncUtil}
+import org.github.util.{BitUtil, BufUtil, FuncUtil, ObjUtil}
 import resource._
 
 import java.io.{File, PrintStream}
@@ -28,14 +23,10 @@ object PostfixTemplateGenerator {
 	val utilsCollections = List(
 		UtilsCollection("jydxl", "JYD_XL Custom Postfix Templates",
 			classOf[BitUtil],
+			classOf[BufUtil],
 			classOf[FuncUtil],
+			classOf[ObjUtil],
 			classOf[TreeUtil],
-
-			classOf[ProxyUtil],
-			classOf[BloomFilterUtil],
-			classOf[CacheUtil],
-			classOf[CaptchaUtil],
-			classOf[AnnotationUtil],
 
 			classOf[com.google.common.base.Ascii],
 			classOf[com.google.common.base.CharMatcher],
