@@ -25,7 +25,7 @@
 		<scala.main.version>2.12</scala.main.version>
 
 		<guava.version>31.0.1-jre</guava.version>
-		<hutool.version>5.7.17</hutool.version>
+		<hutool.version>5.7.21</hutool.version>
 	</properties>
 
 	<dependencies>
@@ -357,6 +357,21 @@
 			<groupId>org.ofdrw</groupId>
 			<artifactId>ofdrw-full</artifactId>
 			<version>1.16.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.hierynomus</groupId>
+			<artifactId>sshj</artifactId>
+			<version>0.32.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.subchen</groupId>
+			<artifactId>jetbrick-template</artifactId>
+			<version>2.1.10</version>
+		</dependency>
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>4.1.74.Final</version>
 		</dependency>
 	</dependencies>
 
