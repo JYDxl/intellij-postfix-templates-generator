@@ -12,7 +12,7 @@ import static java.util.stream.Stream.*;
 
 public class Main {
   public static void main(String[] args) {
-    scan("com.google.common", "cn.hutool");
+    scan("cn.hutool","com.google.common");
   }
 
   private static void scan(String... packages) {
