@@ -1,5 +1,6 @@
 package de.endrullis.idea.postfixtemplatesgenerator;
 
+import java.util.Comparator;
 import lombok.*;
 import static cn.hutool.core.util.ClassUtil.*;
 import static com.google.common.collect.ImmutableSortedSet.*;
@@ -17,8 +18,11 @@ public class Main {
 
   private static void scan(String... packages) {
     for (String pack : packages) {
-      val classes = scanPackage(pack, Main::filter);
-      val result  = copyOf(comparing(Class::getTypeName), classes);
+      val                  classes   = scanPackage(pack, Main::filter);
+      Comparator<Class<?>> comparator1 = comparing(v -> v.getTypeName().contains(".util."));
+      Comparator<Class<?>> comparator2 = comparing(v -> v.getTypeName().contains("Util"));
+      Comparator<Class<?>> comparator3 = comparing(Class::getTypeName);
+      val                  result    = copyOf(comparator1.thenComparing(comparator2).thenComparing(comparator3).reversed(), classes);
       result.forEach(Main::println);
       out.println();
     }
