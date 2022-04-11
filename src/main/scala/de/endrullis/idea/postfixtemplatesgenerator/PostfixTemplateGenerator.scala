@@ -232,6 +232,7 @@ object PostfixTemplateGenerator {
 			classOf[cn.hutool.core.builder.HashCodeBuilder],
 			classOf[cn.hutool.core.codec.BCD],
 			classOf[cn.hutool.core.codec.Base32],
+			classOf[cn.hutool.core.codec.Base58],
 			classOf[cn.hutool.core.codec.Base62],
 			classOf[cn.hutool.core.codec.Base62Codec],
 			classOf[cn.hutool.core.codec.Base64],
@@ -644,7 +645,7 @@ object PostfixTemplateGenerator {
 
 	def generateTemplateFile(dir: File, utilsCollection: UtilsCollection, lang: Lang): Unit = {
 		dir.mkdirs()
-		
+
 		val file = new File(dir, lang.name + ".postfixTemplates")
 		val out = new PrintStream(file)
 		out.println(s"## Templates for ${utilsCollection.description} ##")

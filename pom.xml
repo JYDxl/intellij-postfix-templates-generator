@@ -24,8 +24,8 @@
 		<scala.version>2.12.8</scala.version>
 		<scala.main.version>2.12</scala.main.version>
 
-		<guava.version>31.0.1-jre</guava.version>
-		<hutool.version>5.7.21</hutool.version>
+		<guava.version>31.1-jre</guava.version>
+		<hutool.version>5.7.22</hutool.version>
 	</properties>
 
 	<dependencies>
@@ -34,7 +34,7 @@
 			<artifactId>scala-library</artifactId>
 			<version>${scala.version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.jsuereth</groupId>
 			<artifactId>scala-arm_${scala.main.version}</artifactId>
