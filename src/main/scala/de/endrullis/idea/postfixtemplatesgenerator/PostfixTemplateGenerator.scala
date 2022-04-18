@@ -20,7 +20,7 @@ object PostfixTemplateGenerator {
 
 	val templateDir = new File("templates")
 
-	val utilsCollections = List(
+	private val utilsCollections = List(
 		UtilsCollection("jydxl", "JYD_XL Custom Postfix Templates",
 			classOf[BitUtil],
 			classOf[BufUtil],
@@ -628,10 +628,10 @@ object PostfixTemplateGenerator {
 			classOf[com.google.common.base.Defaults],
 			classOf[com.google.common.base.Converter[_,_]],
 			classOf[com.google.common.base.CharMatcher],
-			classOf[com.google.common.base.Ascii],
-		),
+			classOf[com.google.common.base.Ascii]
+		)
 	)
-	val langs = List(
+	private val langs            = List(
 		Lang("java", "ARRAY", _.getCanonicalName),
 //		Lang("kotlin", "ARRAY", _.getCanonicalName),TODO
 		Lang("scala", "scala.Array", _.getCanonicalName.replaceFirst(".*\\.", ""))
@@ -687,7 +687,9 @@ object PostfixTemplateGenerator {
 					s"$utilClassName.$name($$expr$$, $$arg$$)"
 				}
 
-				out.println(s"\t$leftSide  →  $rightSide")
+				if (!(params.isEmpty && matchingType == "java.lang.Object")) {
+					out.println(s"\t$leftSide  →  $rightSide")
+				}
 			}
 			methods.filter(_.getParameterCount == 0).groupBy(_ ⇒ lang.mapType(classOf[Object])).foreach { case (matchingType, _) ⇒
 				val className     = utilClass.getCanonicalName
