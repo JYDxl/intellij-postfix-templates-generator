@@ -873,6 +873,9 @@
 .join : cn.hutool.core.util.StrUtil.join
 	java.lang.CharSequence [cn.hutool.core.util.StrUtil]  →  StrUtil.join($expr$, $arg$)
 
+.replaceFirst : cn.hutool.core.util.StrUtil.replaceFirst
+	java.lang.CharSequence [cn.hutool.core.util.StrUtil]  →  StrUtil.replaceFirst($expr$, $arg$)
+
 .startWithAnyIgnoreCase : cn.hutool.core.util.StrUtil.startWithAnyIgnoreCase
 	java.lang.CharSequence [cn.hutool.core.util.StrUtil]  →  StrUtil.startWithAnyIgnoreCase($expr$, $arg$)
 
@@ -950,6 +953,9 @@
 .trimEnd : cn.hutool.core.util.StrUtil.trimEnd
 	java.lang.CharSequence [cn.hutool.core.util.StrUtil]  →  StrUtil.trimEnd($expr$)
 
+.hasLetter : cn.hutool.core.util.StrUtil.hasLetter
+	java.lang.CharSequence [cn.hutool.core.util.StrUtil]  →  StrUtil.hasLetter($expr$)
+
 .totalLength : cn.hutool.core.util.StrUtil.totalLength
 	scala.Array [cn.hutool.core.util.StrUtil]  →  StrUtil.totalLength($expr$)
 
@@ -1017,6 +1023,9 @@
 
 .removeAllLineBreaks : cn.hutool.core.util.StrUtil.removeAllLineBreaks
 	java.lang.CharSequence [cn.hutool.core.util.StrUtil]  →  StrUtil.removeAllLineBreaks($expr$)
+
+.replaceLast : cn.hutool.core.util.StrUtil.replaceLast
+	java.lang.CharSequence [cn.hutool.core.util.StrUtil]  →  StrUtil.replaceLast($expr$, $arg$)
 
 .reverse : cn.hutool.core.util.StrUtil.reverse
 	java.lang.String [cn.hutool.core.util.StrUtil]  →  StrUtil.reverse($expr$)
@@ -1403,6 +1412,9 @@
 
 .invokeWithCheck : cn.hutool.core.util.ReflectUtil.invokeWithCheck
 	java.lang.Object [cn.hutool.core.util.ReflectUtil]  →  ReflectUtil.invokeWithCheck($expr$, $arg$)
+
+.removeFinalModify : cn.hutool.core.util.ReflectUtil.removeFinalModify
+	java.lang.reflect.Field [cn.hutool.core.util.ReflectUtil]  →  ReflectUtil.removeFinalModify($expr$)
 
 .getPublicMethods : cn.hutool.core.util.ReflectUtil.getPublicMethods
 	java.lang.Class [cn.hutool.core.util.ReflectUtil]  →  ReflectUtil.getPublicMethods($expr$, $arg$)
@@ -1903,6 +1915,79 @@
 	java.lang.Comparable [cn.hutool.core.util.ObjectUtil]  →  ObjectUtil.compare($expr$, $arg$)
 
 
+## ObjUtil
+
+.cloneByStream : cn.hutool.core.util.ObjUtil.cloneByStream
+
+.hasEmpty : cn.hutool.core.util.ObjUtil.hasEmpty
+	scala.Array [cn.hutool.core.util.ObjUtil]  →  ObjUtil.hasEmpty($expr$)
+
+.isValidIfNumber : cn.hutool.core.util.ObjUtil.isValidIfNumber
+
+.isBasicType : cn.hutool.core.util.ObjUtil.isBasicType
+
+.equals : cn.hutool.core.util.ObjUtil.equals
+	java.lang.Object [cn.hutool.core.util.ObjUtil]  →  ObjUtil.equals($expr$, $arg$)
+
+.isNull : cn.hutool.core.util.ObjUtil.isNull
+
+.hasNull : cn.hutool.core.util.ObjUtil.hasNull
+	scala.Array [cn.hutool.core.util.ObjUtil]  →  ObjUtil.hasNull($expr$)
+
+.getTypeArgument : cn.hutool.core.util.ObjUtil.getTypeArgument
+	java.lang.Object [cn.hutool.core.util.ObjUtil]  →  ObjUtil.getTypeArgument($expr$, $arg$)
+
+.defaultIfEmpty : cn.hutool.core.util.ObjUtil.defaultIfEmpty
+	java.lang.String [cn.hutool.core.util.ObjUtil]  →  ObjUtil.defaultIfEmpty($expr$, $arg$)
+	java.lang.CharSequence [cn.hutool.core.util.ObjUtil]  →  ObjUtil.defaultIfEmpty($expr$, $arg$)
+
+.isAllNotEmpty : cn.hutool.core.util.ObjUtil.isAllNotEmpty
+	scala.Array [cn.hutool.core.util.ObjUtil]  →  ObjUtil.isAllNotEmpty($expr$)
+
+.isNotEmpty : cn.hutool.core.util.ObjUtil.isNotEmpty
+
+.deserialize : cn.hutool.core.util.ObjUtil.deserialize
+	scala.Array [cn.hutool.core.util.ObjUtil]  →  ObjUtil.deserialize($expr$)
+
+.defaultIfNull : cn.hutool.core.util.ObjUtil.defaultIfNull
+	java.lang.Object [cn.hutool.core.util.ObjUtil]  →  ObjUtil.defaultIfNull($expr$, $arg$)
+
+.equal : cn.hutool.core.util.ObjUtil.equal
+	java.lang.Object [cn.hutool.core.util.ObjUtil]  →  ObjUtil.equal($expr$, $arg$)
+
+.clone : cn.hutool.core.util.ObjUtil.clone
+
+.defaultIfBlank : cn.hutool.core.util.ObjUtil.defaultIfBlank
+	java.lang.CharSequence [cn.hutool.core.util.ObjUtil]  →  ObjUtil.defaultIfBlank($expr$, $arg$)
+
+.emptyCount : cn.hutool.core.util.ObjUtil.emptyCount
+	scala.Array [cn.hutool.core.util.ObjUtil]  →  ObjUtil.emptyCount($expr$)
+
+.toString : cn.hutool.core.util.ObjUtil.toString
+
+.length : cn.hutool.core.util.ObjUtil.length
+
+.cloneIfPossible : cn.hutool.core.util.ObjUtil.cloneIfPossible
+
+.isNotNull : cn.hutool.core.util.ObjUtil.isNotNull
+
+.notEqual : cn.hutool.core.util.ObjUtil.notEqual
+	java.lang.Object [cn.hutool.core.util.ObjUtil]  →  ObjUtil.notEqual($expr$, $arg$)
+
+.contains : cn.hutool.core.util.ObjUtil.contains
+	java.lang.Object [cn.hutool.core.util.ObjUtil]  →  ObjUtil.contains($expr$, $arg$)
+
+.isEmpty : cn.hutool.core.util.ObjUtil.isEmpty
+
+.serialize : cn.hutool.core.util.ObjUtil.serialize
+
+.isAllEmpty : cn.hutool.core.util.ObjUtil.isAllEmpty
+	scala.Array [cn.hutool.core.util.ObjUtil]  →  ObjUtil.isAllEmpty($expr$)
+
+.compare : cn.hutool.core.util.ObjUtil.compare
+	java.lang.Comparable [cn.hutool.core.util.ObjUtil]  →  ObjUtil.compare($expr$, $arg$)
+
+
 ## NumberUtil
 
 .decimalFormatMoney : cn.hutool.core.util.NumberUtil.decimalFormatMoney
@@ -2140,6 +2225,9 @@
 
 ## ModifierUtil
 
+.removeFinalModify : cn.hutool.core.util.ModifierUtil.removeFinalModify
+	java.lang.reflect.Field [cn.hutool.core.util.ModifierUtil]  →  ModifierUtil.removeFinalModify($expr$)
+
 .isPublic : cn.hutool.core.util.ModifierUtil.isPublic
 	java.lang.reflect.Field [cn.hutool.core.util.ModifierUtil]  →  ModifierUtil.isPublic($expr$)
 	java.lang.reflect.Constructor [cn.hutool.core.util.ModifierUtil]  →  ModifierUtil.isPublic($expr$)
@@ -2241,6 +2329,9 @@
 
 .isValidTWCard : cn.hutool.core.util.IdcardUtil.isValidTWCard
 	java.lang.String [cn.hutool.core.util.IdcardUtil]  →  IdcardUtil.isValidTWCard($expr$)
+
+.convert18To15 : cn.hutool.core.util.IdcardUtil.convert18To15
+	java.lang.String [cn.hutool.core.util.IdcardUtil]  →  IdcardUtil.convert18To15($expr$)
 
 .getCityCodeByIdCard : cn.hutool.core.util.IdcardUtil.getCityCodeByIdCard
 	java.lang.String [cn.hutool.core.util.IdcardUtil]  →  IdcardUtil.getCityCodeByIdCard($expr$)
@@ -3732,8 +3823,20 @@
 
 ## JWTSignerUtil
 
+.rmd2 : cn.hutool.jwt.signers.JWTSignerUtil.rmd2
+	java.security.Key [cn.hutool.jwt.signers.JWTSignerUtil]  →  JWTSignerUtil.rmd2($expr$)
+
 .es256 : cn.hutool.jwt.signers.JWTSignerUtil.es256
 	java.security.Key [cn.hutool.jwt.signers.JWTSignerUtil]  →  JWTSignerUtil.es256($expr$)
+
+.dsha1 : cn.hutool.jwt.signers.JWTSignerUtil.dsha1
+	java.security.Key [cn.hutool.jwt.signers.JWTSignerUtil]  →  JWTSignerUtil.dsha1($expr$)
+
+.hmd5 : cn.hutool.jwt.signers.JWTSignerUtil.hmd5
+	java.security.Key [cn.hutool.jwt.signers.JWTSignerUtil]  →  JWTSignerUtil.hmd5($expr$)
+
+.rsha1 : cn.hutool.jwt.signers.JWTSignerUtil.rsha1
+	java.security.Key [cn.hutool.jwt.signers.JWTSignerUtil]  →  JWTSignerUtil.rsha1($expr$)
 
 .es512 : cn.hutool.jwt.signers.JWTSignerUtil.es512
 	java.security.Key [cn.hutool.jwt.signers.JWTSignerUtil]  →  JWTSignerUtil.es512($expr$)
@@ -3744,11 +3847,23 @@
 .hs384 : cn.hutool.jwt.signers.JWTSignerUtil.hs384
 	scala.Array [cn.hutool.jwt.signers.JWTSignerUtil]  →  JWTSignerUtil.hs384($expr$)
 
+.esha1 : cn.hutool.jwt.signers.JWTSignerUtil.esha1
+	java.security.Key [cn.hutool.jwt.signers.JWTSignerUtil]  →  JWTSignerUtil.esha1($expr$)
+
 .createSigner : cn.hutool.jwt.signers.JWTSignerUtil.createSigner
 	java.lang.String [cn.hutool.jwt.signers.JWTSignerUtil]  →  JWTSignerUtil.createSigner($expr$, $arg$)
 
+.sm4cmac : cn.hutool.jwt.signers.JWTSignerUtil.sm4cmac
+	java.security.Key [cn.hutool.jwt.signers.JWTSignerUtil]  →  JWTSignerUtil.sm4cmac($expr$)
+
 .rs384 : cn.hutool.jwt.signers.JWTSignerUtil.rs384
 	java.security.Key [cn.hutool.jwt.signers.JWTSignerUtil]  →  JWTSignerUtil.rs384($expr$)
+
+.dnone : cn.hutool.jwt.signers.JWTSignerUtil.dnone
+	java.security.Key [cn.hutool.jwt.signers.JWTSignerUtil]  →  JWTSignerUtil.dnone($expr$)
+
+.rmd5 : cn.hutool.jwt.signers.JWTSignerUtil.rmd5
+	java.security.Key [cn.hutool.jwt.signers.JWTSignerUtil]  →  JWTSignerUtil.rmd5($expr$)
 
 .es384 : cn.hutool.jwt.signers.JWTSignerUtil.es384
 	java.security.Key [cn.hutool.jwt.signers.JWTSignerUtil]  →  JWTSignerUtil.es384($expr$)
@@ -3761,6 +3876,12 @@
 
 .hs256 : cn.hutool.jwt.signers.JWTSignerUtil.hs256
 	scala.Array [cn.hutool.jwt.signers.JWTSignerUtil]  →  JWTSignerUtil.hs256($expr$)
+
+.hsha1 : cn.hutool.jwt.signers.JWTSignerUtil.hsha1
+	java.security.Key [cn.hutool.jwt.signers.JWTSignerUtil]  →  JWTSignerUtil.hsha1($expr$)
+
+.enone : cn.hutool.jwt.signers.JWTSignerUtil.enone
+	java.security.Key [cn.hutool.jwt.signers.JWTSignerUtil]  →  JWTSignerUtil.enone($expr$)
 
 .hs512 : cn.hutool.jwt.signers.JWTSignerUtil.hs512
 	scala.Array [cn.hutool.jwt.signers.JWTSignerUtil]  →  JWTSignerUtil.hs512($expr$)
@@ -3864,9 +3985,9 @@
 	java.lang.String [cn.hutool.json.JSONUtil]  →  JSONUtil.isTypeJSON($expr$)
 
 .toBean : cn.hutool.json.JSONUtil.toBean
-	cn.hutool.json.JSON [cn.hutool.json.JSONUtil]  →  JSONUtil.toBean($expr$, $arg$)
-	java.lang.String [cn.hutool.json.JSONUtil]  →  JSONUtil.toBean($expr$, $arg$)
 	cn.hutool.json.JSONObject [cn.hutool.json.JSONUtil]  →  JSONUtil.toBean($expr$, $arg$)
+	java.lang.String [cn.hutool.json.JSONUtil]  →  JSONUtil.toBean($expr$, $arg$)
+	cn.hutool.json.JSON [cn.hutool.json.JSONUtil]  →  JSONUtil.toBean($expr$, $arg$)
 
 .parseFromXml : cn.hutool.json.JSONUtil.parseFromXml
 	java.lang.String [cn.hutool.json.JSONUtil]  →  JSONUtil.parseFromXml($expr$)
@@ -4256,6 +4377,9 @@
 .encode : cn.hutool.extra.qrcode.QrCodeUtil.encode
 	java.lang.String [cn.hutool.extra.qrcode.QrCodeUtil]  →  QrCodeUtil.encode($expr$, $arg$)
 
+.generateAsAsciiArt : cn.hutool.extra.qrcode.QrCodeUtil.generateAsAsciiArt
+	java.lang.String [cn.hutool.extra.qrcode.QrCodeUtil]  →  QrCodeUtil.generateAsAsciiArt($expr$, $arg$)
+
 .generate : cn.hutool.extra.qrcode.QrCodeUtil.generate
 	java.lang.String [cn.hutool.extra.qrcode.QrCodeUtil]  →  QrCodeUtil.generate($expr$, $arg$)
 
@@ -4263,9 +4387,18 @@
 	com.google.zxing.common.BitMatrix [cn.hutool.extra.qrcode.QrCodeUtil]  →  QrCodeUtil.toImage($expr$, $arg$)
 
 .decode : cn.hutool.extra.qrcode.QrCodeUtil.decode
-	java.io.File [cn.hutool.extra.qrcode.QrCodeUtil]  →  QrCodeUtil.decode($expr$)
 	java.awt.Image [cn.hutool.extra.qrcode.QrCodeUtil]  →  QrCodeUtil.decode($expr$, $arg$)
+	java.io.File [cn.hutool.extra.qrcode.QrCodeUtil]  →  QrCodeUtil.decode($expr$)
 	java.io.InputStream [cn.hutool.extra.qrcode.QrCodeUtil]  →  QrCodeUtil.decode($expr$)
+
+.toSVG : cn.hutool.extra.qrcode.QrCodeUtil.toSVG
+	com.google.zxing.common.BitMatrix [cn.hutool.extra.qrcode.QrCodeUtil]  →  QrCodeUtil.toSVG($expr$, $arg$)
+
+.toAsciiArt : cn.hutool.extra.qrcode.QrCodeUtil.toAsciiArt
+	com.google.zxing.common.BitMatrix [cn.hutool.extra.qrcode.QrCodeUtil]  →  QrCodeUtil.toAsciiArt($expr$, $arg$)
+
+.generateAsSvg : cn.hutool.extra.qrcode.QrCodeUtil.generateAsSvg
+	java.lang.String [cn.hutool.extra.qrcode.QrCodeUtil]  →  QrCodeUtil.generateAsSvg($expr$, $arg$)
 
 .generateAsBase64 : cn.hutool.extra.qrcode.QrCodeUtil.generateAsBase64
 	java.lang.String [cn.hutool.extra.qrcode.QrCodeUtil]  →  QrCodeUtil.generateAsBase64($expr$, $arg$)
@@ -4886,8 +5019,8 @@
 	org.bouncycastle.asn1.pkcs.PrivateKeyInfo [cn.hutool.crypto.OpensslKeyUtil]  →  OpensslKeyUtil.getPrivateKey($expr$)
 
 .decrypt : cn.hutool.crypto.OpensslKeyUtil.decrypt
-	org.bouncycastle.openssl.PEMEncryptedKeyPair [cn.hutool.crypto.OpensslKeyUtil]  →  OpensslKeyUtil.decrypt($expr$, $arg$)
 	org.bouncycastle.pkcs.PKCS8EncryptedPrivateKeyInfo [cn.hutool.crypto.OpensslKeyUtil]  →  OpensslKeyUtil.decrypt($expr$, $arg$)
+	org.bouncycastle.openssl.PEMEncryptedKeyPair [cn.hutool.crypto.OpensslKeyUtil]  →  OpensslKeyUtil.decrypt($expr$, $arg$)
 
 
 ## KeyUtil
@@ -5339,6 +5472,9 @@
 .join : cn.hutool.core.text.CharSequenceUtil.join
 	java.lang.CharSequence [cn.hutool.core.text.CharSequenceUtil]  →  CharSequenceUtil.join($expr$, $arg$)
 
+.replaceFirst : cn.hutool.core.text.CharSequenceUtil.replaceFirst
+	java.lang.CharSequence [cn.hutool.core.text.CharSequenceUtil]  →  CharSequenceUtil.replaceFirst($expr$, $arg$)
+
 .startWithAnyIgnoreCase : cn.hutool.core.text.CharSequenceUtil.startWithAnyIgnoreCase
 	java.lang.CharSequence [cn.hutool.core.text.CharSequenceUtil]  →  CharSequenceUtil.startWithAnyIgnoreCase($expr$, $arg$)
 
@@ -5408,6 +5544,9 @@
 .trimEnd : cn.hutool.core.text.CharSequenceUtil.trimEnd
 	java.lang.CharSequence [cn.hutool.core.text.CharSequenceUtil]  →  CharSequenceUtil.trimEnd($expr$)
 
+.hasLetter : cn.hutool.core.text.CharSequenceUtil.hasLetter
+	java.lang.CharSequence [cn.hutool.core.text.CharSequenceUtil]  →  CharSequenceUtil.hasLetter($expr$)
+
 .totalLength : cn.hutool.core.text.CharSequenceUtil.totalLength
 	scala.Array [cn.hutool.core.text.CharSequenceUtil]  →  CharSequenceUtil.totalLength($expr$)
 
@@ -5467,6 +5606,9 @@
 
 .removeAllLineBreaks : cn.hutool.core.text.CharSequenceUtil.removeAllLineBreaks
 	java.lang.CharSequence [cn.hutool.core.text.CharSequenceUtil]  →  CharSequenceUtil.removeAllLineBreaks($expr$)
+
+.replaceLast : cn.hutool.core.text.CharSequenceUtil.replaceLast
+	java.lang.CharSequence [cn.hutool.core.text.CharSequenceUtil]  →  CharSequenceUtil.replaceLast($expr$, $arg$)
 
 .wrapIfMissing : cn.hutool.core.text.CharSequenceUtil.wrapIfMissing
 	java.lang.CharSequence [cn.hutool.core.text.CharSequenceUtil]  →  CharSequenceUtil.wrapIfMissing($expr$, $arg$)
@@ -5836,6 +5978,7 @@
 ## StreamUtil
 
 .of : cn.hutool.core.stream.StreamUtil.of
+	java.util.Iterator [cn.hutool.core.stream.StreamUtil]  →  StreamUtil.of($expr$, $arg$)
 	java.io.File [cn.hutool.core.stream.StreamUtil]  →  StreamUtil.of($expr$, $arg$)
 	java.lang.Iterable [cn.hutool.core.stream.StreamUtil]  →  StreamUtil.of($expr$, $arg$)
 	scala.Array [cn.hutool.core.stream.StreamUtil]  →  StreamUtil.of($expr$)
@@ -6107,6 +6250,9 @@
 .getStr : cn.hutool.core.map.MapUtil.getStr
 	java.util.Map [cn.hutool.core.map.MapUtil]  →  MapUtil.getStr($expr$, $arg$)
 
+.computeIfAbsent : cn.hutool.core.map.MapUtil.computeIfAbsent
+	java.util.Map [cn.hutool.core.map.MapUtil]  →  MapUtil.computeIfAbsent($expr$, $arg$)
+
 .getBool : cn.hutool.core.map.MapUtil.getBool
 	java.util.Map [cn.hutool.core.map.MapUtil]  →  MapUtil.getBool($expr$, $arg$)
 
@@ -6140,6 +6286,9 @@
 
 .toMapList : cn.hutool.core.map.MapUtil.toMapList
 	java.util.Map [cn.hutool.core.map.MapUtil]  →  MapUtil.toMapList($expr$)
+
+.grouping : cn.hutool.core.map.MapUtil.grouping
+	java.lang.Iterable [cn.hutool.core.map.MapUtil]  →  MapUtil.grouping($expr$)
 
 .entry : cn.hutool.core.map.MapUtil.entry
 	java.lang.Object [cn.hutool.core.map.MapUtil]  →  MapUtil.entry($expr$, $arg$)
@@ -6582,8 +6731,8 @@
 
 .toBuffered : cn.hutool.core.io.IoUtil.toBuffered
 	java.io.OutputStream [cn.hutool.core.io.IoUtil]  →  IoUtil.toBuffered($expr$, $arg$)
-	java.io.Reader [cn.hutool.core.io.IoUtil]  →  IoUtil.toBuffered($expr$, $arg$)
 	java.io.Writer [cn.hutool.core.io.IoUtil]  →  IoUtil.toBuffered($expr$, $arg$)
+	java.io.Reader [cn.hutool.core.io.IoUtil]  →  IoUtil.toBuffered($expr$, $arg$)
 	java.io.InputStream [cn.hutool.core.io.IoUtil]  →  IoUtil.toBuffered($expr$, $arg$)
 
 .read : cn.hutool.core.io.IoUtil.read
@@ -7170,10 +7319,10 @@
 	java.io.InputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.createFont($expr$)
 
 .binary : cn.hutool.core.img.ImgUtil.binary
-	java.awt.Image [cn.hutool.core.img.ImgUtil]  →  ImgUtil.binary($expr$, $arg$)
 	java.io.File [cn.hutool.core.img.ImgUtil]  →  ImgUtil.binary($expr$, $arg$)
-	java.io.InputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.binary($expr$, $arg$)
+	java.awt.Image [cn.hutool.core.img.ImgUtil]  →  ImgUtil.binary($expr$, $arg$)
 	javax.imageio.stream.ImageInputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.binary($expr$, $arg$)
+	java.io.InputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.binary($expr$, $arg$)
 
 .hexToColor : cn.hutool.core.img.ImgUtil.hexToColor
 	java.lang.String [cn.hutool.core.img.ImgUtil]  →  ImgUtil.hexToColor($expr$)
@@ -7191,10 +7340,10 @@
 	javax.imageio.stream.ImageInputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.scale($expr$, $arg$)
 
 .cut : cn.hutool.core.img.ImgUtil.cut
-	java.awt.Image [cn.hutool.core.img.ImgUtil]  →  ImgUtil.cut($expr$, $arg$)
 	java.io.File [cn.hutool.core.img.ImgUtil]  →  ImgUtil.cut($expr$, $arg$)
-	java.io.InputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.cut($expr$, $arg$)
+	java.awt.Image [cn.hutool.core.img.ImgUtil]  →  ImgUtil.cut($expr$, $arg$)
 	javax.imageio.stream.ImageInputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.cut($expr$, $arg$)
+	java.io.InputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.cut($expr$, $arg$)
 
 .getImageInputStream : cn.hutool.core.img.ImgUtil.getImageInputStream
 	java.io.InputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.getImageInputStream($expr$)
@@ -7220,8 +7369,8 @@
 	java.awt.image.ImageFilter [cn.hutool.core.img.ImgUtil]  →  ImgUtil.filter($expr$, $arg$)
 
 .rotate : cn.hutool.core.img.ImgUtil.rotate
-	java.io.File [cn.hutool.core.img.ImgUtil]  →  ImgUtil.rotate($expr$, $arg$)
 	java.awt.Image [cn.hutool.core.img.ImgUtil]  →  ImgUtil.rotate($expr$, $arg$)
+	java.io.File [cn.hutool.core.img.ImgUtil]  →  ImgUtil.rotate($expr$, $arg$)
 
 .getImageOutputStream : cn.hutool.core.img.ImgUtil.getImageOutputStream
 	java.io.File [cn.hutool.core.img.ImgUtil]  →  ImgUtil.getImageOutputStream($expr$)
@@ -7273,16 +7422,16 @@
 	java.awt.Image [cn.hutool.core.img.ImgUtil]  →  ImgUtil.getWriter($expr$, $arg$)
 
 .pressImage : cn.hutool.core.img.ImgUtil.pressImage
-	java.io.File [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressImage($expr$, $arg$)
 	java.awt.Image [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressImage($expr$, $arg$)
-	javax.imageio.stream.ImageInputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressImage($expr$, $arg$)
+	java.io.File [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressImage($expr$, $arg$)
 	java.io.InputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressImage($expr$, $arg$)
+	javax.imageio.stream.ImageInputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressImage($expr$, $arg$)
 
 .pressText : cn.hutool.core.img.ImgUtil.pressText
 	java.io.File [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressText($expr$, $arg$)
 	java.awt.Image [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressText($expr$, $arg$)
-	java.io.InputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressText($expr$, $arg$)
 	javax.imageio.stream.ImageInputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressText($expr$, $arg$)
+	java.io.InputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressText($expr$, $arg$)
 
 .sliceByRowsAndCols : cn.hutool.core.img.ImgUtil.sliceByRowsAndCols
 	java.awt.Image [cn.hutool.core.img.ImgUtil]  →  ImgUtil.sliceByRowsAndCols($expr$, $arg$)
@@ -7355,6 +7504,30 @@
 
 .createSansSerifFont : cn.hutool.core.img.FontUtil.createSansSerifFont
 	INT [cn.hutool.core.img.FontUtil]  →  FontUtil.createSansSerifFont($expr$)
+
+
+## ColorUtil
+
+.getColor : cn.hutool.core.img.ColorUtil.getColor
+	java.lang.String [cn.hutool.core.img.ColorUtil]  →  ColorUtil.getColor($expr$)
+	INT [cn.hutool.core.img.ColorUtil]  →  ColorUtil.getColor($expr$)
+
+.hexToColor : cn.hutool.core.img.ColorUtil.hexToColor
+	java.lang.String [cn.hutool.core.img.ColorUtil]  →  ColorUtil.hexToColor($expr$)
+
+.randomColor : cn.hutool.core.img.ColorUtil.randomColor
+	java.util.Random [cn.hutool.core.img.ColorUtil]  →  ColorUtil.randomColor($expr$)
+	java.lang.Object [cn.hutool.core.img.ColorUtil]  →  ColorUtil.randomColor()
+
+.toHex : cn.hutool.core.img.ColorUtil.toHex
+	java.awt.Color [cn.hutool.core.img.ColorUtil]  →  ColorUtil.toHex($expr$)
+	INT [cn.hutool.core.img.ColorUtil]  →  ColorUtil.toHex($expr$, $arg$)
+
+.add : cn.hutool.core.img.ColorUtil.add
+	java.awt.Color [cn.hutool.core.img.ColorUtil]  →  ColorUtil.add($expr$, $arg$)
+
+.getMainColor : cn.hutool.core.img.ColorUtil.getMainColor
+	java.awt.image.BufferedImage [cn.hutool.core.img.ColorUtil]  →  ColorUtil.getMainColor($expr$, $arg$)
 
 
 ## ExceptionUtil
@@ -8620,6 +8793,9 @@
 	java.util.Collection [cn.hutool.core.collection.CollectionUtil]  →  CollectionUtil.sub($expr$, $arg$)
 	java.util.List [cn.hutool.core.collection.CollectionUtil]  →  CollectionUtil.sub($expr$, $arg$)
 
+.addIfAbsent : cn.hutool.core.collection.CollectionUtil.addIfAbsent
+	java.util.Collection [cn.hutool.core.collection.CollectionUtil]  →  CollectionUtil.addIfAbsent($expr$, $arg$)
+
 .get : cn.hutool.core.collection.CollectionUtil.get
 	java.util.Collection [cn.hutool.core.collection.CollectionUtil]  →  CollectionUtil.get($expr$, $arg$)
 
@@ -8933,6 +9109,9 @@
 .sub : cn.hutool.core.collection.CollUtil.sub
 	java.util.Collection [cn.hutool.core.collection.CollUtil]  →  CollUtil.sub($expr$, $arg$)
 	java.util.List [cn.hutool.core.collection.CollUtil]  →  CollUtil.sub($expr$, $arg$)
+
+.addIfAbsent : cn.hutool.core.collection.CollUtil.addIfAbsent
+	java.util.Collection [cn.hutool.core.collection.CollUtil]  →  CollUtil.addIfAbsent($expr$, $arg$)
 
 .get : cn.hutool.core.collection.CollUtil.get
 	java.util.Collection [cn.hutool.core.collection.CollUtil]  →  CollUtil.get($expr$, $arg$)
@@ -10182,13 +10361,13 @@
 
 ## HandleHelper
 
-.handleRsToBeanList : cn.hutool.db.handler.HandleHelper.handleRsToBeanList
-	java.sql.ResultSet [cn.hutool.db.handler.HandleHelper]  →  HandleHelper.handleRsToBeanList($expr$, $arg$)
-
 .handleRow : cn.hutool.db.handler.HandleHelper.handleRow
 	cn.hutool.db.Entity [cn.hutool.db.handler.HandleHelper]  →  HandleHelper.handleRow($expr$, $arg$)
 	INT [cn.hutool.db.handler.HandleHelper]  →  HandleHelper.handleRow($expr$, $arg$)
 	java.sql.ResultSet [cn.hutool.db.handler.HandleHelper]  →  HandleHelper.handleRow($expr$)
+
+.handleRsToBeanList : cn.hutool.db.handler.HandleHelper.handleRsToBeanList
+	java.sql.ResultSet [cn.hutool.db.handler.HandleHelper]  →  HandleHelper.handleRsToBeanList($expr$, $arg$)
 
 .handleRs : cn.hutool.db.handler.HandleHelper.handleRs
 	java.sql.ResultSet [cn.hutool.db.handler.HandleHelper]  →  HandleHelper.handleRs($expr$, $arg$)
@@ -10810,12 +10989,10 @@
 	java.lang.String [cn.hutool.core.net.url.UrlBuilder]  →  UrlBuilder.of($expr$, $arg$)
 	java.net.URI [cn.hutool.core.net.url.UrlBuilder]  →  UrlBuilder.of($expr$, $arg$)
 	java.net.URL [cn.hutool.core.net.url.UrlBuilder]  →  UrlBuilder.of($expr$, $arg$)
+	java.lang.Object [cn.hutool.core.net.url.UrlBuilder]  →  UrlBuilder.of()
 
 .ofHttp : cn.hutool.core.net.url.UrlBuilder.ofHttp
 	java.lang.String [cn.hutool.core.net.url.UrlBuilder]  →  UrlBuilder.ofHttp($expr$, $arg$)
-
-.create : cn.hutool.core.net.url.UrlBuilder.create
-	java.lang.Object [cn.hutool.core.net.url.UrlBuilder]  →  UrlBuilder.create()
 
 
 ## MultipartRequestInputStream
@@ -10908,6 +11085,13 @@
 
 .of : cn.hutool.core.map.TolerantMap.of
 	java.util.Map [cn.hutool.core.map.TolerantMap]  →  TolerantMap.of($expr$, $arg$)
+
+
+## SafeConcurrentHashMap
+
+.newKeySet : cn.hutool.core.map.SafeConcurrentHashMap.newKeySet
+	INT [cn.hutool.core.map.SafeConcurrentHashMap]  →  SafeConcurrentHashMap.newKeySet($expr$)
+	java.lang.Object [cn.hutool.core.map.SafeConcurrentHashMap]  →  SafeConcurrentHashMap.newKeySet()
 
 
 ## MapProxy
@@ -11730,8 +11914,8 @@
 
 .backgroundRemoval : cn.hutool.core.img.BackgroundRemoval.backgroundRemoval
 	java.io.ByteArrayOutputStream [cn.hutool.core.img.BackgroundRemoval]  →  BackgroundRemoval.backgroundRemoval($expr$, $arg$)
-	java.awt.image.BufferedImage [cn.hutool.core.img.BackgroundRemoval]  →  BackgroundRemoval.backgroundRemoval($expr$, $arg$)
 	java.lang.String [cn.hutool.core.img.BackgroundRemoval]  →  BackgroundRemoval.backgroundRemoval($expr$, $arg$)
+	java.awt.image.BufferedImage [cn.hutool.core.img.BackgroundRemoval]  →  BackgroundRemoval.backgroundRemoval($expr$, $arg$)
 	java.io.File [cn.hutool.core.img.BackgroundRemoval]  →  BackgroundRemoval.backgroundRemoval($expr$, $arg$)
 
 .hexToRgb : cn.hutool.core.img.BackgroundRemoval.hexToRgb
@@ -11808,11 +11992,11 @@
 .getGanzhiOfDay : cn.hutool.core.date.chinese.GanZhi.getGanzhiOfDay
 	INT [cn.hutool.core.date.chinese.GanZhi]  →  GanZhi.getGanzhiOfDay($expr$, $arg$)
 
-.getGanzhiOfMonth : cn.hutool.core.date.chinese.GanZhi.getGanzhiOfMonth
-	INT [cn.hutool.core.date.chinese.GanZhi]  →  GanZhi.getGanzhiOfMonth($expr$, $arg$)
-
 .cyclicalm : cn.hutool.core.date.chinese.GanZhi.cyclicalm
 	INT [cn.hutool.core.date.chinese.GanZhi]  →  GanZhi.cyclicalm($expr$)
+
+.getGanzhiOfMonth : cn.hutool.core.date.chinese.GanZhi.getGanzhiOfMonth
+	INT [cn.hutool.core.date.chinese.GanZhi]  →  GanZhi.getGanzhiOfMonth($expr$, $arg$)
 
 .getGanzhiOfYear : cn.hutool.core.date.chinese.GanZhi.getGanzhiOfYear
 	INT [cn.hutool.core.date.chinese.GanZhi]  →  GanZhi.getGanzhiOfYear($expr$)
@@ -12166,8 +12350,14 @@
 
 ## PunyCode
 
+.decodeDomain : cn.hutool.core.codec.PunyCode.decodeDomain
+	java.lang.String [cn.hutool.core.codec.PunyCode]  →  PunyCode.decodeDomain($expr$)
+
 .encode : cn.hutool.core.codec.PunyCode.encode
 	java.lang.CharSequence [cn.hutool.core.codec.PunyCode]  →  PunyCode.encode($expr$, $arg$)
+
+.encodeDomain : cn.hutool.core.codec.PunyCode.encodeDomain
+	java.lang.String [cn.hutool.core.codec.PunyCode]  →  PunyCode.encodeDomain($expr$)
 
 .decode : cn.hutool.core.codec.PunyCode.decode
 	java.lang.String [cn.hutool.core.codec.PunyCode]  →  PunyCode.decode($expr$)
@@ -12201,12 +12391,12 @@
 	scala.Array [cn.hutool.core.codec.Base64Encoder]  →  Base64Encoder.encode($expr$, $arg$)
 	java.lang.CharSequence [cn.hutool.core.codec.Base64Encoder]  →  Base64Encoder.encode($expr$, $arg$)
 
+.encodeStr : cn.hutool.core.codec.Base64Encoder.encodeStr
+	scala.Array [cn.hutool.core.codec.Base64Encoder]  →  Base64Encoder.encodeStr($expr$, $arg$)
+
 .encodeUrlSafe : cn.hutool.core.codec.Base64Encoder.encodeUrlSafe
 	scala.Array [cn.hutool.core.codec.Base64Encoder]  →  Base64Encoder.encodeUrlSafe($expr$, $arg$)
 	java.lang.CharSequence [cn.hutool.core.codec.Base64Encoder]  →  Base64Encoder.encodeUrlSafe($expr$, $arg$)
-
-.encodeStr : cn.hutool.core.codec.Base64Encoder.encodeStr
-	scala.Array [cn.hutool.core.codec.Base64Encoder]  →  Base64Encoder.encodeStr($expr$, $arg$)
 
 
 ## Base64Decoder
@@ -14518,8 +14708,8 @@
 ## TreeRangeSet
 
 .create : com.google.common.collect.TreeRangeSet.create
-	com.google.common.collect.RangeSet [com.google.common.collect.TreeRangeSet]  →  TreeRangeSet.create($expr$)
 	java.lang.Iterable [com.google.common.collect.TreeRangeSet]  →  TreeRangeSet.create($expr$)
+	com.google.common.collect.RangeSet [com.google.common.collect.TreeRangeSet]  →  TreeRangeSet.create($expr$)
 	java.lang.Object [com.google.common.collect.TreeRangeSet]  →  TreeRangeSet.create()
 
 
@@ -14548,8 +14738,8 @@
 ## TreeBasedTable
 
 .create : com.google.common.collect.TreeBasedTable.create
-	java.util.Comparator [com.google.common.collect.TreeBasedTable]  →  TreeBasedTable.create($expr$, $arg$)
 	com.google.common.collect.TreeBasedTable [com.google.common.collect.TreeBasedTable]  →  TreeBasedTable.create($expr$)
+	java.util.Comparator [com.google.common.collect.TreeBasedTable]  →  TreeBasedTable.create($expr$, $arg$)
 	java.lang.Object [com.google.common.collect.TreeBasedTable]  →  TreeBasedTable.create()
 
 
@@ -14887,8 +15077,8 @@
 
 .filterKeys : com.google.common.collect.Multimaps.filterKeys
 	com.google.common.collect.SetMultimap [com.google.common.collect.Multimaps]  →  Multimaps.filterKeys($expr$, $arg$)
-	com.google.common.collect.ListMultimap [com.google.common.collect.Multimaps]  →  Multimaps.filterKeys($expr$, $arg$)
 	com.google.common.collect.Multimap [com.google.common.collect.Multimaps]  →  Multimaps.filterKeys($expr$, $arg$)
+	com.google.common.collect.ListMultimap [com.google.common.collect.Multimaps]  →  Multimaps.filterKeys($expr$, $arg$)
 
 .toMultimap : com.google.common.collect.Multimaps.toMultimap
 	java.util.function.Function [com.google.common.collect.Multimaps]  →  Multimaps.toMultimap($expr$, $arg$)
@@ -14932,8 +15122,8 @@
 	java.util.function.Function [com.google.common.collect.Multimaps]  →  Multimaps.flatteningToMultimap($expr$, $arg$)
 
 .transformValues : com.google.common.collect.Multimaps.transformValues
-	com.google.common.collect.Multimap [com.google.common.collect.Multimaps]  →  Multimaps.transformValues($expr$, $arg$)
 	com.google.common.collect.ListMultimap [com.google.common.collect.Multimaps]  →  Multimaps.transformValues($expr$, $arg$)
+	com.google.common.collect.Multimap [com.google.common.collect.Multimaps]  →  Multimaps.transformValues($expr$, $arg$)
 
 .synchronizedListMultimap : com.google.common.collect.Multimaps.synchronizedListMultimap
 	com.google.common.collect.ListMultimap [com.google.common.collect.Multimaps]  →  Multimaps.synchronizedListMultimap($expr$)
@@ -15038,8 +15228,8 @@
 
 .transformEntries : com.google.common.collect.Maps.transformEntries
 	java.util.Map [com.google.common.collect.Maps]  →  Maps.transformEntries($expr$, $arg$)
-	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.transformEntries($expr$, $arg$)
 	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.transformEntries($expr$, $arg$)
+	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.transformEntries($expr$, $arg$)
 
 .newHashMapWithExpectedSize : com.google.common.collect.Maps.newHashMapWithExpectedSize
 	INT [com.google.common.collect.Maps]  →  Maps.newHashMapWithExpectedSize($expr$)
@@ -15062,8 +15252,8 @@
 	java.util.Properties [com.google.common.collect.Maps]  →  Maps.fromProperties($expr$)
 
 .asMap : com.google.common.collect.Maps.asMap
-	java.util.SortedSet [com.google.common.collect.Maps]  →  Maps.asMap($expr$, $arg$)
 	java.util.NavigableSet [com.google.common.collect.Maps]  →  Maps.asMap($expr$, $arg$)
+	java.util.SortedSet [com.google.common.collect.Maps]  →  Maps.asMap($expr$, $arg$)
 	java.util.Set [com.google.common.collect.Maps]  →  Maps.asMap($expr$, $arg$)
 
 .unmodifiableNavigableMap : com.google.common.collect.Maps.unmodifiableNavigableMap
@@ -15071,8 +15261,8 @@
 
 .transformValues : com.google.common.collect.Maps.transformValues
 	java.util.Map [com.google.common.collect.Maps]  →  Maps.transformValues($expr$, $arg$)
-	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.transformValues($expr$, $arg$)
 	java.util.SortedMap [com.google.common.collect.Maps]  →  Maps.transformValues($expr$, $arg$)
+	java.util.NavigableMap [com.google.common.collect.Maps]  →  Maps.transformValues($expr$, $arg$)
 
 .newConcurrentMap : com.google.common.collect.Maps.newConcurrentMap
 	java.lang.Object [com.google.common.collect.Maps]  →  Maps.newConcurrentMap()
@@ -15807,11 +15997,11 @@
 
 ## DiscreteDomain
 
-.bigIntegers : com.google.common.collect.DiscreteDomain.bigIntegers
-	java.lang.Object [com.google.common.collect.DiscreteDomain]  →  DiscreteDomain.bigIntegers()
-
 .integers : com.google.common.collect.DiscreteDomain.integers
 	java.lang.Object [com.google.common.collect.DiscreteDomain]  →  DiscreteDomain.integers()
+
+.bigIntegers : com.google.common.collect.DiscreteDomain.bigIntegers
+	java.lang.Object [com.google.common.collect.DiscreteDomain]  →  DiscreteDomain.bigIntegers()
 
 .longs : com.google.common.collect.DiscreteDomain.longs
 	java.lang.Object [com.google.common.collect.DiscreteDomain]  →  DiscreteDomain.longs()

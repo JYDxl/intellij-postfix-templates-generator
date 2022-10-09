@@ -25,7 +25,7 @@
 		<scala.main.version>2.12</scala.main.version>
 
 		<guava.version>31.1-jre</guava.version>
-		<hutool.version>5.8.5</hutool.version>
+		<hutool.version>5.8.8</hutool.version>
 	</properties>
 
 	<dependencies>
