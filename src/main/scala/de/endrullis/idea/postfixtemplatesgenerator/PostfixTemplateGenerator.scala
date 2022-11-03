@@ -1,7 +1,7 @@
 package de.endrullis.idea.postfixtemplatesgenerator
 
 import org.github.util.tree.TreeUtil
-import org.github.util.{BitUtil, BufUtil, FuncUtil, ObjUtil}
+import org.github.util.{BitUtil, BufUtil, FuncUtil}
 import resource._
 
 import java.io.{File, PrintStream}
@@ -25,7 +25,6 @@ object PostfixTemplateGenerator {
 			classOf[BitUtil],
 			classOf[BufUtil],
 			classOf[FuncUtil],
-			classOf[ObjUtil],
 			classOf[TreeUtil],
 
 			classOf[Optional[_]],

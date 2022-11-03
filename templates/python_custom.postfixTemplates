@@ -1,14 +1,56 @@
 .id : Get id
-    ANY   →   id($expr$)
+    ANY   → id($expr$)
 
 .type : Get type
-    ANY   →   type($expr$)
+    ANY   → type($expr$)
 
 .del : Del obj
-    ANY   →   del $expr$
+    ANY   → del $expr$
 
 .next : Next item
-    ANY   →   next($expr$)
+    ANY   → next($expr$)
 
 .with : With obj
-    ANY   →   with $expr$ as$END$
+    ANY   → with $expr$ as$END$
+
+.sout : Print obj
+    ANY   → print($expr$)
+
+.vars : Turn obj to dict
+    ANY   → vars($expr$)
+
+.decimal : To decimal
+    ANY   → Decimal($expr$)
+
+.float : To float
+    ANY   → float($expr$)
+
+.str : To str
+    ANY   → str($expr$)
+
+.int : To int
+    ANY   → int($expr$)
+
+.dir : Dir obj
+    ANY   → dir($expr$)
+
+.max : Get max
+    ANY   → max($expr$)
+
+.min : Get min
+    ANY   → min($expr$)
+
+.forv : For v
+    ANY   → v for v in $expr$
+
+.dict : dict
+    ANY   → dict($expr$)
+
+.list : list
+    ANY   → list($expr$)
+
+.set : set
+    ANY   → set($expr$)
+
+.tuple : tuple
+    ANY   → tuple($expr$)
