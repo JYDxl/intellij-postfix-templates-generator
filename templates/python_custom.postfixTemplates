@@ -19,6 +19,9 @@
 .vars : Turn obj to dict
     ANY   → vars($expr$)
 
+.iter : Iter obj
+    ANY   → iter($expr$)
+
 .decimal : To decimal
     ANY   → Decimal($expr$)
 
@@ -54,3 +57,6 @@
 
 .tuple : tuple
     ANY   → tuple($expr$)
+
+.reducel : Reduce object
+    ANY   → reduce(lambda a, o: $first$, $expr$)$END$
