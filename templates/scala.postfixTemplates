@@ -37,18 +37,6 @@
 	java.lang.Object [org.github.util.FuncUtil]  →  FuncUtil.pass()
 
 
-## ObjUtil
-
-.firstOne : org.github.util.ObjUtil.firstOne
-	java.util.function.Predicate [org.github.util.ObjUtil]  →  ObjUtil.firstOne($expr$, $arg$)
-
-.firstNonBlank : org.github.util.ObjUtil.firstNonBlank
-	scala.Array [org.github.util.ObjUtil]  →  ObjUtil.firstNonBlank($expr$)
-
-.firstNonNull : org.github.util.ObjUtil.firstNonNull
-	scala.Array [org.github.util.ObjUtil]  →  ObjUtil.firstNonNull($expr$)
-
-
 ## TreeUtil
 
 .buildTree : org.github.util.tree.TreeUtil.buildTree
@@ -3258,8 +3246,8 @@
 
 .toArray : cn.hutool.core.util.ArrayUtil.toArray
 	java.util.Collection [cn.hutool.core.util.ArrayUtil]  →  ArrayUtil.toArray($expr$, $arg$)
-	java.lang.Iterable [cn.hutool.core.util.ArrayUtil]  →  ArrayUtil.toArray($expr$, $arg$)
 	java.nio.ByteBuffer [cn.hutool.core.util.ArrayUtil]  →  ArrayUtil.toArray($expr$)
+	java.lang.Iterable [cn.hutool.core.util.ArrayUtil]  →  ArrayUtil.toArray($expr$, $arg$)
 	java.util.Iterator [cn.hutool.core.util.ArrayUtil]  →  ArrayUtil.toArray($expr$, $arg$)
 
 .isAllNotNull : cn.hutool.core.util.ArrayUtil.isAllNotNull
@@ -3772,8 +3760,8 @@
 
 .getWriter : cn.hutool.poi.excel.ExcelUtil.getWriter
 	java.lang.String [cn.hutool.poi.excel.ExcelUtil]  →  ExcelUtil.getWriter($expr$, $arg$)
-	BOOLEAN [cn.hutool.poi.excel.ExcelUtil]  →  ExcelUtil.getWriter($expr$)
 	java.io.File [cn.hutool.poi.excel.ExcelUtil]  →  ExcelUtil.getWriter($expr$, $arg$)
+	BOOLEAN [cn.hutool.poi.excel.ExcelUtil]  →  ExcelUtil.getWriter($expr$)
 	java.lang.Object [cn.hutool.poi.excel.ExcelUtil]  →  ExcelUtil.getWriter()
 
 .indexToColName : cn.hutool.poi.excel.ExcelUtil.indexToColName
@@ -6731,8 +6719,8 @@
 
 .toBuffered : cn.hutool.core.io.IoUtil.toBuffered
 	java.io.OutputStream [cn.hutool.core.io.IoUtil]  →  IoUtil.toBuffered($expr$, $arg$)
-	java.io.Writer [cn.hutool.core.io.IoUtil]  →  IoUtil.toBuffered($expr$, $arg$)
 	java.io.Reader [cn.hutool.core.io.IoUtil]  →  IoUtil.toBuffered($expr$, $arg$)
+	java.io.Writer [cn.hutool.core.io.IoUtil]  →  IoUtil.toBuffered($expr$, $arg$)
 	java.io.InputStream [cn.hutool.core.io.IoUtil]  →  IoUtil.toBuffered($expr$, $arg$)
 
 .read : cn.hutool.core.io.IoUtil.read
@@ -7340,8 +7328,8 @@
 	javax.imageio.stream.ImageInputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.scale($expr$, $arg$)
 
 .cut : cn.hutool.core.img.ImgUtil.cut
-	java.io.File [cn.hutool.core.img.ImgUtil]  →  ImgUtil.cut($expr$, $arg$)
 	java.awt.Image [cn.hutool.core.img.ImgUtil]  →  ImgUtil.cut($expr$, $arg$)
+	java.io.File [cn.hutool.core.img.ImgUtil]  →  ImgUtil.cut($expr$, $arg$)
 	javax.imageio.stream.ImageInputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.cut($expr$, $arg$)
 	java.io.InputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.cut($expr$, $arg$)
 
@@ -7384,22 +7372,22 @@
 
 .backgroundRemoval : cn.hutool.core.img.ImgUtil.backgroundRemoval
 	java.io.ByteArrayOutputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.backgroundRemoval($expr$, $arg$)
-	java.lang.String [cn.hutool.core.img.ImgUtil]  →  ImgUtil.backgroundRemoval($expr$, $arg$)
 	java.awt.image.BufferedImage [cn.hutool.core.img.ImgUtil]  →  ImgUtil.backgroundRemoval($expr$, $arg$)
+	java.lang.String [cn.hutool.core.img.ImgUtil]  →  ImgUtil.backgroundRemoval($expr$, $arg$)
 	java.io.File [cn.hutool.core.img.ImgUtil]  →  ImgUtil.backgroundRemoval($expr$, $arg$)
 
 .createCompatibleImage : cn.hutool.core.img.ImgUtil.createCompatibleImage
 	INT [cn.hutool.core.img.ImgUtil]  →  ImgUtil.createCompatibleImage($expr$, $arg$)
 
 .gray : cn.hutool.core.img.ImgUtil.gray
-	java.io.File [cn.hutool.core.img.ImgUtil]  →  ImgUtil.gray($expr$, $arg$)
 	java.awt.Image [cn.hutool.core.img.ImgUtil]  →  ImgUtil.gray($expr$, $arg$)
+	java.io.File [cn.hutool.core.img.ImgUtil]  →  ImgUtil.gray($expr$, $arg$)
 	javax.imageio.stream.ImageInputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.gray($expr$, $arg$)
 	java.io.InputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.gray($expr$, $arg$)
 
 .flip : cn.hutool.core.img.ImgUtil.flip
-	java.io.File [cn.hutool.core.img.ImgUtil]  →  ImgUtil.flip($expr$, $arg$)
 	java.awt.Image [cn.hutool.core.img.ImgUtil]  →  ImgUtil.flip($expr$, $arg$)
+	java.io.File [cn.hutool.core.img.ImgUtil]  →  ImgUtil.flip($expr$, $arg$)
 
 .toBytes : cn.hutool.core.img.ImgUtil.toBytes
 	java.awt.Image [cn.hutool.core.img.ImgUtil]  →  ImgUtil.toBytes($expr$, $arg$)
@@ -7422,20 +7410,20 @@
 	java.awt.Image [cn.hutool.core.img.ImgUtil]  →  ImgUtil.getWriter($expr$, $arg$)
 
 .pressImage : cn.hutool.core.img.ImgUtil.pressImage
-	java.awt.Image [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressImage($expr$, $arg$)
 	java.io.File [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressImage($expr$, $arg$)
+	java.awt.Image [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressImage($expr$, $arg$)
 	java.io.InputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressImage($expr$, $arg$)
 	javax.imageio.stream.ImageInputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressImage($expr$, $arg$)
 
 .pressText : cn.hutool.core.img.ImgUtil.pressText
 	java.io.File [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressText($expr$, $arg$)
 	java.awt.Image [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressText($expr$, $arg$)
-	javax.imageio.stream.ImageInputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressText($expr$, $arg$)
 	java.io.InputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressText($expr$, $arg$)
+	javax.imageio.stream.ImageInputStream [cn.hutool.core.img.ImgUtil]  →  ImgUtil.pressText($expr$, $arg$)
 
 .sliceByRowsAndCols : cn.hutool.core.img.ImgUtil.sliceByRowsAndCols
-	java.awt.Image [cn.hutool.core.img.ImgUtil]  →  ImgUtil.sliceByRowsAndCols($expr$, $arg$)
 	java.io.File [cn.hutool.core.img.ImgUtil]  →  ImgUtil.sliceByRowsAndCols($expr$, $arg$)
+	java.awt.Image [cn.hutool.core.img.ImgUtil]  →  ImgUtil.sliceByRowsAndCols($expr$, $arg$)
 
 .randomColor : cn.hutool.core.img.ImgUtil.randomColor
 	java.util.Random [cn.hutool.core.img.ImgUtil]  →  ImgUtil.randomColor($expr$)
@@ -7882,6 +7870,9 @@
 .offsetMinute : cn.hutool.core.date.DateUtil.offsetMinute
 	java.util.Date [cn.hutool.core.date.DateUtil]  →  DateUtil.offsetMinute($expr$, $arg$)
 
+.isLastDayOfMonth : cn.hutool.core.date.DateUtil.isLastDayOfMonth
+	java.util.Date [cn.hutool.core.date.DateUtil]  →  DateUtil.isLastDayOfMonth($expr$)
+
 .nanosToSeconds : cn.hutool.core.date.DateUtil.nanosToSeconds
 	LONG [cn.hutool.core.date.DateUtil]  →  DateUtil.nanosToSeconds($expr$)
 
@@ -7926,6 +7917,9 @@
 .endOfSecond : cn.hutool.core.date.DateUtil.endOfSecond
 	java.util.Calendar [cn.hutool.core.date.DateUtil]  →  DateUtil.endOfSecond($expr$)
 	java.util.Date [cn.hutool.core.date.DateUtil]  →  DateUtil.endOfSecond($expr$)
+
+.getLastDayOfMonth : cn.hutool.core.date.DateUtil.getLastDayOfMonth
+	java.util.Date [cn.hutool.core.date.DateUtil]  →  DateUtil.getLastDayOfMonth($expr$)
 
 .formatHttpDate : cn.hutool.core.date.DateUtil.formatHttpDate
 	java.util.Date [cn.hutool.core.date.DateUtil]  →  DateUtil.formatHttpDate($expr$)
@@ -9508,12 +9502,12 @@
 	java.lang.Class [cn.hutool.log.dialect.tinylog.TinyLogFactory]  →  TinyLogFactory.get($expr$)
 	java.lang.Object [cn.hutool.log.dialect.tinylog.TinyLogFactory]  →  TinyLogFactory.get()
 
+.getCurrentLogFactory : cn.hutool.log.dialect.tinylog.TinyLogFactory.getCurrentLogFactory
+	java.lang.Object [cn.hutool.log.dialect.tinylog.TinyLogFactory]  →  TinyLogFactory.getCurrentLogFactory()
+
 .setCurrentLogFactory : cn.hutool.log.dialect.tinylog.TinyLogFactory.setCurrentLogFactory
 	cn.hutool.log.LogFactory [cn.hutool.log.dialect.tinylog.TinyLogFactory]  →  TinyLogFactory.setCurrentLogFactory($expr$)
 	java.lang.Class [cn.hutool.log.dialect.tinylog.TinyLogFactory]  →  TinyLogFactory.setCurrentLogFactory($expr$)
-
-.getCurrentLogFactory : cn.hutool.log.dialect.tinylog.TinyLogFactory.getCurrentLogFactory
-	java.lang.Object [cn.hutool.log.dialect.tinylog.TinyLogFactory]  →  TinyLogFactory.getCurrentLogFactory()
 
 .create : cn.hutool.log.dialect.tinylog.TinyLogFactory.create
 	java.lang.Object [cn.hutool.log.dialect.tinylog.TinyLogFactory]  →  TinyLogFactory.create()
@@ -9526,12 +9520,12 @@
 	java.lang.Class [cn.hutool.log.dialect.tinylog.TinyLog2Factory]  →  TinyLog2Factory.get($expr$)
 	java.lang.Object [cn.hutool.log.dialect.tinylog.TinyLog2Factory]  →  TinyLog2Factory.get()
 
+.getCurrentLogFactory : cn.hutool.log.dialect.tinylog.TinyLog2Factory.getCurrentLogFactory
+	java.lang.Object [cn.hutool.log.dialect.tinylog.TinyLog2Factory]  →  TinyLog2Factory.getCurrentLogFactory()
+
 .setCurrentLogFactory : cn.hutool.log.dialect.tinylog.TinyLog2Factory.setCurrentLogFactory
 	cn.hutool.log.LogFactory [cn.hutool.log.dialect.tinylog.TinyLog2Factory]  →  TinyLog2Factory.setCurrentLogFactory($expr$)
 	java.lang.Class [cn.hutool.log.dialect.tinylog.TinyLog2Factory]  →  TinyLog2Factory.setCurrentLogFactory($expr$)
-
-.getCurrentLogFactory : cn.hutool.log.dialect.tinylog.TinyLog2Factory.getCurrentLogFactory
-	java.lang.Object [cn.hutool.log.dialect.tinylog.TinyLog2Factory]  →  TinyLog2Factory.getCurrentLogFactory()
 
 .create : cn.hutool.log.dialect.tinylog.TinyLog2Factory.create
 	java.lang.Object [cn.hutool.log.dialect.tinylog.TinyLog2Factory]  →  TinyLog2Factory.create()
@@ -9544,12 +9538,12 @@
 	java.lang.Class [cn.hutool.log.dialect.slf4j.Slf4jLogFactory]  →  Slf4jLogFactory.get($expr$)
 	java.lang.Object [cn.hutool.log.dialect.slf4j.Slf4jLogFactory]  →  Slf4jLogFactory.get()
 
+.getCurrentLogFactory : cn.hutool.log.dialect.slf4j.Slf4jLogFactory.getCurrentLogFactory
+	java.lang.Object [cn.hutool.log.dialect.slf4j.Slf4jLogFactory]  →  Slf4jLogFactory.getCurrentLogFactory()
+
 .setCurrentLogFactory : cn.hutool.log.dialect.slf4j.Slf4jLogFactory.setCurrentLogFactory
 	cn.hutool.log.LogFactory [cn.hutool.log.dialect.slf4j.Slf4jLogFactory]  →  Slf4jLogFactory.setCurrentLogFactory($expr$)
 	java.lang.Class [cn.hutool.log.dialect.slf4j.Slf4jLogFactory]  →  Slf4jLogFactory.setCurrentLogFactory($expr$)
-
-.getCurrentLogFactory : cn.hutool.log.dialect.slf4j.Slf4jLogFactory.getCurrentLogFactory
-	java.lang.Object [cn.hutool.log.dialect.slf4j.Slf4jLogFactory]  →  Slf4jLogFactory.getCurrentLogFactory()
 
 .create : cn.hutool.log.dialect.slf4j.Slf4jLogFactory.create
 	java.lang.Object [cn.hutool.log.dialect.slf4j.Slf4jLogFactory]  →  Slf4jLogFactory.create()
@@ -9562,12 +9556,12 @@
 	java.lang.Class [cn.hutool.log.dialect.logtube.LogTubeLogFactory]  →  LogTubeLogFactory.get($expr$)
 	java.lang.Object [cn.hutool.log.dialect.logtube.LogTubeLogFactory]  →  LogTubeLogFactory.get()
 
+.getCurrentLogFactory : cn.hutool.log.dialect.logtube.LogTubeLogFactory.getCurrentLogFactory
+	java.lang.Object [cn.hutool.log.dialect.logtube.LogTubeLogFactory]  →  LogTubeLogFactory.getCurrentLogFactory()
+
 .setCurrentLogFactory : cn.hutool.log.dialect.logtube.LogTubeLogFactory.setCurrentLogFactory
 	cn.hutool.log.LogFactory [cn.hutool.log.dialect.logtube.LogTubeLogFactory]  →  LogTubeLogFactory.setCurrentLogFactory($expr$)
 	java.lang.Class [cn.hutool.log.dialect.logtube.LogTubeLogFactory]  →  LogTubeLogFactory.setCurrentLogFactory($expr$)
-
-.getCurrentLogFactory : cn.hutool.log.dialect.logtube.LogTubeLogFactory.getCurrentLogFactory
-	java.lang.Object [cn.hutool.log.dialect.logtube.LogTubeLogFactory]  →  LogTubeLogFactory.getCurrentLogFactory()
 
 .create : cn.hutool.log.dialect.logtube.LogTubeLogFactory.create
 	java.lang.Object [cn.hutool.log.dialect.logtube.LogTubeLogFactory]  →  LogTubeLogFactory.create()
@@ -9580,12 +9574,12 @@
 	java.lang.Class [cn.hutool.log.dialect.log4j2.Log4j2LogFactory]  →  Log4j2LogFactory.get($expr$)
 	java.lang.Object [cn.hutool.log.dialect.log4j2.Log4j2LogFactory]  →  Log4j2LogFactory.get()
 
+.getCurrentLogFactory : cn.hutool.log.dialect.log4j2.Log4j2LogFactory.getCurrentLogFactory
+	java.lang.Object [cn.hutool.log.dialect.log4j2.Log4j2LogFactory]  →  Log4j2LogFactory.getCurrentLogFactory()
+
 .setCurrentLogFactory : cn.hutool.log.dialect.log4j2.Log4j2LogFactory.setCurrentLogFactory
 	cn.hutool.log.LogFactory [cn.hutool.log.dialect.log4j2.Log4j2LogFactory]  →  Log4j2LogFactory.setCurrentLogFactory($expr$)
 	java.lang.Class [cn.hutool.log.dialect.log4j2.Log4j2LogFactory]  →  Log4j2LogFactory.setCurrentLogFactory($expr$)
-
-.getCurrentLogFactory : cn.hutool.log.dialect.log4j2.Log4j2LogFactory.getCurrentLogFactory
-	java.lang.Object [cn.hutool.log.dialect.log4j2.Log4j2LogFactory]  →  Log4j2LogFactory.getCurrentLogFactory()
 
 .create : cn.hutool.log.dialect.log4j2.Log4j2LogFactory.create
 	java.lang.Object [cn.hutool.log.dialect.log4j2.Log4j2LogFactory]  →  Log4j2LogFactory.create()
@@ -9598,12 +9592,12 @@
 	java.lang.Class [cn.hutool.log.dialect.log4j.Log4jLogFactory]  →  Log4jLogFactory.get($expr$)
 	java.lang.Object [cn.hutool.log.dialect.log4j.Log4jLogFactory]  →  Log4jLogFactory.get()
 
+.getCurrentLogFactory : cn.hutool.log.dialect.log4j.Log4jLogFactory.getCurrentLogFactory
+	java.lang.Object [cn.hutool.log.dialect.log4j.Log4jLogFactory]  →  Log4jLogFactory.getCurrentLogFactory()
+
 .setCurrentLogFactory : cn.hutool.log.dialect.log4j.Log4jLogFactory.setCurrentLogFactory
 	cn.hutool.log.LogFactory [cn.hutool.log.dialect.log4j.Log4jLogFactory]  →  Log4jLogFactory.setCurrentLogFactory($expr$)
 	java.lang.Class [cn.hutool.log.dialect.log4j.Log4jLogFactory]  →  Log4jLogFactory.setCurrentLogFactory($expr$)
-
-.getCurrentLogFactory : cn.hutool.log.dialect.log4j.Log4jLogFactory.getCurrentLogFactory
-	java.lang.Object [cn.hutool.log.dialect.log4j.Log4jLogFactory]  →  Log4jLogFactory.getCurrentLogFactory()
 
 .create : cn.hutool.log.dialect.log4j.Log4jLogFactory.create
 	java.lang.Object [cn.hutool.log.dialect.log4j.Log4jLogFactory]  →  Log4jLogFactory.create()
@@ -9616,12 +9610,12 @@
 	java.lang.Class [cn.hutool.log.dialect.jdk.JdkLogFactory]  →  JdkLogFactory.get($expr$)
 	java.lang.Object [cn.hutool.log.dialect.jdk.JdkLogFactory]  →  JdkLogFactory.get()
 
+.getCurrentLogFactory : cn.hutool.log.dialect.jdk.JdkLogFactory.getCurrentLogFactory
+	java.lang.Object [cn.hutool.log.dialect.jdk.JdkLogFactory]  →  JdkLogFactory.getCurrentLogFactory()
+
 .setCurrentLogFactory : cn.hutool.log.dialect.jdk.JdkLogFactory.setCurrentLogFactory
 	cn.hutool.log.LogFactory [cn.hutool.log.dialect.jdk.JdkLogFactory]  →  JdkLogFactory.setCurrentLogFactory($expr$)
 	java.lang.Class [cn.hutool.log.dialect.jdk.JdkLogFactory]  →  JdkLogFactory.setCurrentLogFactory($expr$)
-
-.getCurrentLogFactory : cn.hutool.log.dialect.jdk.JdkLogFactory.getCurrentLogFactory
-	java.lang.Object [cn.hutool.log.dialect.jdk.JdkLogFactory]  →  JdkLogFactory.getCurrentLogFactory()
 
 .create : cn.hutool.log.dialect.jdk.JdkLogFactory.create
 	java.lang.Object [cn.hutool.log.dialect.jdk.JdkLogFactory]  →  JdkLogFactory.create()
@@ -9634,12 +9628,12 @@
 	java.lang.Class [cn.hutool.log.dialect.jboss.JbossLogFactory]  →  JbossLogFactory.get($expr$)
 	java.lang.Object [cn.hutool.log.dialect.jboss.JbossLogFactory]  →  JbossLogFactory.get()
 
+.getCurrentLogFactory : cn.hutool.log.dialect.jboss.JbossLogFactory.getCurrentLogFactory
+	java.lang.Object [cn.hutool.log.dialect.jboss.JbossLogFactory]  →  JbossLogFactory.getCurrentLogFactory()
+
 .setCurrentLogFactory : cn.hutool.log.dialect.jboss.JbossLogFactory.setCurrentLogFactory
 	cn.hutool.log.LogFactory [cn.hutool.log.dialect.jboss.JbossLogFactory]  →  JbossLogFactory.setCurrentLogFactory($expr$)
 	java.lang.Class [cn.hutool.log.dialect.jboss.JbossLogFactory]  →  JbossLogFactory.setCurrentLogFactory($expr$)
-
-.getCurrentLogFactory : cn.hutool.log.dialect.jboss.JbossLogFactory.getCurrentLogFactory
-	java.lang.Object [cn.hutool.log.dialect.jboss.JbossLogFactory]  →  JbossLogFactory.getCurrentLogFactory()
 
 .create : cn.hutool.log.dialect.jboss.JbossLogFactory.create
 	java.lang.Object [cn.hutool.log.dialect.jboss.JbossLogFactory]  →  JbossLogFactory.create()
@@ -9652,12 +9646,12 @@
 	java.lang.Class [cn.hutool.log.dialect.console.ConsoleLogFactory]  →  ConsoleLogFactory.get($expr$)
 	java.lang.Object [cn.hutool.log.dialect.console.ConsoleLogFactory]  →  ConsoleLogFactory.get()
 
+.getCurrentLogFactory : cn.hutool.log.dialect.console.ConsoleLogFactory.getCurrentLogFactory
+	java.lang.Object [cn.hutool.log.dialect.console.ConsoleLogFactory]  →  ConsoleLogFactory.getCurrentLogFactory()
+
 .setCurrentLogFactory : cn.hutool.log.dialect.console.ConsoleLogFactory.setCurrentLogFactory
 	cn.hutool.log.LogFactory [cn.hutool.log.dialect.console.ConsoleLogFactory]  →  ConsoleLogFactory.setCurrentLogFactory($expr$)
 	java.lang.Class [cn.hutool.log.dialect.console.ConsoleLogFactory]  →  ConsoleLogFactory.setCurrentLogFactory($expr$)
-
-.getCurrentLogFactory : cn.hutool.log.dialect.console.ConsoleLogFactory.getCurrentLogFactory
-	java.lang.Object [cn.hutool.log.dialect.console.ConsoleLogFactory]  →  ConsoleLogFactory.getCurrentLogFactory()
 
 .create : cn.hutool.log.dialect.console.ConsoleLogFactory.create
 	java.lang.Object [cn.hutool.log.dialect.console.ConsoleLogFactory]  →  ConsoleLogFactory.create()
@@ -9676,12 +9670,12 @@
 	java.lang.Class [cn.hutool.log.dialect.console.ConsoleColorLogFactory]  →  ConsoleColorLogFactory.get($expr$)
 	java.lang.Object [cn.hutool.log.dialect.console.ConsoleColorLogFactory]  →  ConsoleColorLogFactory.get()
 
+.getCurrentLogFactory : cn.hutool.log.dialect.console.ConsoleColorLogFactory.getCurrentLogFactory
+	java.lang.Object [cn.hutool.log.dialect.console.ConsoleColorLogFactory]  →  ConsoleColorLogFactory.getCurrentLogFactory()
+
 .setCurrentLogFactory : cn.hutool.log.dialect.console.ConsoleColorLogFactory.setCurrentLogFactory
 	cn.hutool.log.LogFactory [cn.hutool.log.dialect.console.ConsoleColorLogFactory]  →  ConsoleColorLogFactory.setCurrentLogFactory($expr$)
 	java.lang.Class [cn.hutool.log.dialect.console.ConsoleColorLogFactory]  →  ConsoleColorLogFactory.setCurrentLogFactory($expr$)
-
-.getCurrentLogFactory : cn.hutool.log.dialect.console.ConsoleColorLogFactory.getCurrentLogFactory
-	java.lang.Object [cn.hutool.log.dialect.console.ConsoleColorLogFactory]  →  ConsoleColorLogFactory.getCurrentLogFactory()
 
 .create : cn.hutool.log.dialect.console.ConsoleColorLogFactory.create
 	java.lang.Object [cn.hutool.log.dialect.console.ConsoleColorLogFactory]  →  ConsoleColorLogFactory.create()
@@ -9703,12 +9697,12 @@
 	java.lang.Class [cn.hutool.log.dialect.commons.ApacheCommonsLogFactory]  →  ApacheCommonsLogFactory.get($expr$)
 	java.lang.Object [cn.hutool.log.dialect.commons.ApacheCommonsLogFactory]  →  ApacheCommonsLogFactory.get()
 
+.getCurrentLogFactory : cn.hutool.log.dialect.commons.ApacheCommonsLogFactory.getCurrentLogFactory
+	java.lang.Object [cn.hutool.log.dialect.commons.ApacheCommonsLogFactory]  →  ApacheCommonsLogFactory.getCurrentLogFactory()
+
 .setCurrentLogFactory : cn.hutool.log.dialect.commons.ApacheCommonsLogFactory.setCurrentLogFactory
 	cn.hutool.log.LogFactory [cn.hutool.log.dialect.commons.ApacheCommonsLogFactory]  →  ApacheCommonsLogFactory.setCurrentLogFactory($expr$)
 	java.lang.Class [cn.hutool.log.dialect.commons.ApacheCommonsLogFactory]  →  ApacheCommonsLogFactory.setCurrentLogFactory($expr$)
-
-.getCurrentLogFactory : cn.hutool.log.dialect.commons.ApacheCommonsLogFactory.getCurrentLogFactory
-	java.lang.Object [cn.hutool.log.dialect.commons.ApacheCommonsLogFactory]  →  ApacheCommonsLogFactory.getCurrentLogFactory()
 
 .create : cn.hutool.log.dialect.commons.ApacheCommonsLogFactory.create
 	java.lang.Object [cn.hutool.log.dialect.commons.ApacheCommonsLogFactory]  →  ApacheCommonsLogFactory.create()
@@ -9749,12 +9743,12 @@
 	java.lang.Class [cn.hutool.log.LogFactory]  →  LogFactory.get($expr$)
 	java.lang.Object [cn.hutool.log.LogFactory]  →  LogFactory.get()
 
+.getCurrentLogFactory : cn.hutool.log.LogFactory.getCurrentLogFactory
+	java.lang.Object [cn.hutool.log.LogFactory]  →  LogFactory.getCurrentLogFactory()
+
 .setCurrentLogFactory : cn.hutool.log.LogFactory.setCurrentLogFactory
 	cn.hutool.log.LogFactory [cn.hutool.log.LogFactory]  →  LogFactory.setCurrentLogFactory($expr$)
 	java.lang.Class [cn.hutool.log.LogFactory]  →  LogFactory.setCurrentLogFactory($expr$)
-
-.getCurrentLogFactory : cn.hutool.log.LogFactory.getCurrentLogFactory
-	java.lang.Object [cn.hutool.log.LogFactory]  →  LogFactory.getCurrentLogFactory()
 
 .create : cn.hutool.log.LogFactory.create
 	java.lang.Object [cn.hutool.log.LogFactory]  →  LogFactory.create()
@@ -12541,11 +12535,11 @@
 .ascToBcd : cn.hutool.core.codec.BCD.ascToBcd
 	scala.Array [cn.hutool.core.codec.BCD]  →  BCD.ascToBcd($expr$, $arg$)
 
-.bcdToStr : cn.hutool.core.codec.BCD.bcdToStr
-	scala.Array [cn.hutool.core.codec.BCD]  →  BCD.bcdToStr($expr$)
-
 .strToBcd : cn.hutool.core.codec.BCD.strToBcd
 	java.lang.String [cn.hutool.core.codec.BCD]  →  BCD.strToBcd($expr$)
+
+.bcdToStr : cn.hutool.core.codec.BCD.bcdToStr
+	scala.Array [cn.hutool.core.codec.BCD]  →  BCD.bcdToStr($expr$)
 
 
 ## HashCodeBuilder
@@ -14708,8 +14702,8 @@
 ## TreeRangeSet
 
 .create : com.google.common.collect.TreeRangeSet.create
-	java.lang.Iterable [com.google.common.collect.TreeRangeSet]  →  TreeRangeSet.create($expr$)
 	com.google.common.collect.RangeSet [com.google.common.collect.TreeRangeSet]  →  TreeRangeSet.create($expr$)
+	java.lang.Iterable [com.google.common.collect.TreeRangeSet]  →  TreeRangeSet.create($expr$)
 	java.lang.Object [com.google.common.collect.TreeRangeSet]  →  TreeRangeSet.create()
 
 
@@ -14738,8 +14732,8 @@
 ## TreeBasedTable
 
 .create : com.google.common.collect.TreeBasedTable.create
-	com.google.common.collect.TreeBasedTable [com.google.common.collect.TreeBasedTable]  →  TreeBasedTable.create($expr$)
 	java.util.Comparator [com.google.common.collect.TreeBasedTable]  →  TreeBasedTable.create($expr$, $arg$)
+	com.google.common.collect.TreeBasedTable [com.google.common.collect.TreeBasedTable]  →  TreeBasedTable.create($expr$)
 	java.lang.Object [com.google.common.collect.TreeBasedTable]  →  TreeBasedTable.create()
 
 
